@@ -23,11 +23,11 @@ jobs:
       - name: Fetch Upstream Changes
         run: git fetch upstream
 
-      - name: Rebase Changes and Push
+      - name: Merge Changes and Push
         run: |
           echo "checkout:"
           git checkout main
           echo "rebase:"
-          git rebase upstream/main
+          git merge upstream/main
           echo "push":
           git push origin main
