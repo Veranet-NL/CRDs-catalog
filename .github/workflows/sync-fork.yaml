@@ -21,7 +21,7 @@ jobs:
           git remote -v
 
       - name: Fetch Upstream Changes
-        run: git fetch upstream upstream/main
+        run: git fetch upstream FETCH_HEAD
 
       - name: Merge Changes and Push
         run: |
