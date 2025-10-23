@@ -21,13 +21,13 @@ jobs:
           git remote -v
 
       - name: Fetch Upstream Changes
-        run: git fetch upstream
+        run: git fetch upstream main
 
       - name: Merge Changes and Push
         run: |
           echo "checkout:"
           git checkout main
-          echo "rebase:"
+          echo "merge:"
           git merge upstream/main
           echo "push":
           git push origin main
