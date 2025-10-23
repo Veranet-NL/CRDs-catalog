@@ -9,6 +9,8 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.PAT_GIT_PUSH }}
     steps:
       - name: Checkout Forked Repository
         uses: actions/checkout@v3
