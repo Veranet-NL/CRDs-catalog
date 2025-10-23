@@ -17,23 +17,6 @@ jobs:
         with:
           token: ${{ secrets.PAT_GIT_PUSH }}
 
-#      - name: Add Upstream Remote
-#        run: |
-#          git remote add upstream https://github.com/datreeio/CRDs-catalog.git
-#          git remote -v
-#
-#      - name: Fetch Upstream Changes
-#        run: git fetch upstream main
-#
-#      - name: Merge Changes and Push
-#        run: |
-#          echo "checkout:"
-#          git checkout main
-#          echo "merge:"
-#          git merge upstream/main
-#          echo "push":
-#          git push origin main
-
       - name: Sync Fork
         run: |
           gh repo sync veranet-nl/CRDs-catalog -b main
