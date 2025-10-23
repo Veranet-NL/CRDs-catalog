@@ -16,13 +16,18 @@ jobs:
           token: ${{ secrets.PAT_GIT_PUSH }}
 
       - name: Add Upstream Remote
-        run: git remote add upstream https://github.com/datreeio/CRDs-catalog.git
+        run: |
+          git remote add upstream https://github.com/datreeio/CRDs-catalog.git
+          git remote -v
 
       - name: Fetch Upstream Changes
         run: git fetch upstream
 
-      - name: Merge Changes and Push
+      - name: Rebase Changes and Push
         run: |
+          echo "checkout:"
           git checkout main
-          git merge upstream/main
+          echo "rebase:"
+          git rebase upstream/main
+          echo "push":
           git push origin main
