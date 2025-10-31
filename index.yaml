@@ -4786,6 +4786,92 @@ eks.amazonaws.com:
     filename: eks.amazonaws.com/nodediagnostic_v1alpha1.json
     kind: NodeDiagnostic
     name: nodediagnostic_v1alpha1
+eks.aws.m.upbound.io:
+  - apiVersion: eks.aws.m.upbound.io/v1beta1
+    filename: eks.aws.m.upbound.io/podidentityassociation_v1beta1.json
+    kind: PodIdentityAssociation
+    name: podidentityassociation_v1beta1
+  - apiVersion: eks.aws.m.upbound.io/v1beta1
+    filename: eks.aws.m.upbound.io/accessentry_v1beta1.json
+    kind: AccessEntry
+    name: accessentry_v1beta1
+  - apiVersion: eks.aws.m.upbound.io/v1beta1
+    filename: eks.aws.m.upbound.io/accesspolicyassociation_v1beta1.json
+    kind: AccessPolicyAssociation
+    name: accesspolicyassociation_v1beta1
+  - apiVersion: eks.aws.m.upbound.io/v1beta1
+    filename: eks.aws.m.upbound.io/clusterauth_v1beta1.json
+    kind: ClusterAuth
+    name: clusterauth_v1beta1
+  - apiVersion: eks.aws.m.upbound.io/v1beta1
+    filename: eks.aws.m.upbound.io/fargateprofile_v1beta1.json
+    kind: FargateProfile
+    name: fargateprofile_v1beta1
+  - apiVersion: eks.aws.m.upbound.io/v1beta1
+    filename: eks.aws.m.upbound.io/nodegroup_v1beta1.json
+    kind: NodeGroup
+    name: nodegroup_v1beta1
+  - apiVersion: eks.aws.m.upbound.io/v1beta1
+    filename: eks.aws.m.upbound.io/identityproviderconfig_v1beta1.json
+    kind: IdentityProviderConfig
+    name: identityproviderconfig_v1beta1
+  - apiVersion: eks.aws.m.upbound.io/v1beta1
+    filename: eks.aws.m.upbound.io/cluster_v1beta1.json
+    kind: Cluster
+    name: cluster_v1beta1
+  - apiVersion: eks.aws.m.upbound.io/v1beta1
+    filename: eks.aws.m.upbound.io/addon_v1beta1.json
+    kind: Addon
+    name: addon_v1beta1
+eks.aws.upbound.io:
+  - apiVersion: eks.aws.upbound.io/v1beta2
+    filename: eks.aws.upbound.io/cluster_v1beta2.json
+    kind: Cluster
+    name: cluster_v1beta2
+  - apiVersion: eks.aws.upbound.io/v1beta1
+    filename: eks.aws.upbound.io/podidentityassociation_v1beta1.json
+    kind: PodIdentityAssociation
+    name: podidentityassociation_v1beta1
+  - apiVersion: eks.aws.upbound.io/v1beta1
+    filename: eks.aws.upbound.io/accessentry_v1beta1.json
+    kind: AccessEntry
+    name: accessentry_v1beta1
+  - apiVersion: eks.aws.upbound.io/v1beta1
+    filename: eks.aws.upbound.io/accesspolicyassociation_v1beta1.json
+    kind: AccessPolicyAssociation
+    name: accesspolicyassociation_v1beta1
+  - apiVersion: eks.aws.upbound.io/v1beta1
+    filename: eks.aws.upbound.io/clusterauth_v1beta1.json
+    kind: ClusterAuth
+    name: clusterauth_v1beta1
+  - apiVersion: eks.aws.upbound.io/v1beta2
+    filename: eks.aws.upbound.io/nodegroup_v1beta2.json
+    kind: NodeGroup
+    name: nodegroup_v1beta2
+  - apiVersion: eks.aws.upbound.io/v1beta1
+    filename: eks.aws.upbound.io/fargateprofile_v1beta1.json
+    kind: FargateProfile
+    name: fargateprofile_v1beta1
+  - apiVersion: eks.aws.upbound.io/v1beta1
+    filename: eks.aws.upbound.io/nodegroup_v1beta1.json
+    kind: NodeGroup
+    name: nodegroup_v1beta1
+  - apiVersion: eks.aws.upbound.io/v1beta2
+    filename: eks.aws.upbound.io/identityproviderconfig_v1beta2.json
+    kind: IdentityProviderConfig
+    name: identityproviderconfig_v1beta2
+  - apiVersion: eks.aws.upbound.io/v1beta1
+    filename: eks.aws.upbound.io/identityproviderconfig_v1beta1.json
+    kind: IdentityProviderConfig
+    name: identityproviderconfig_v1beta1
+  - apiVersion: eks.aws.upbound.io/v1beta1
+    filename: eks.aws.upbound.io/cluster_v1beta1.json
+    kind: Cluster
+    name: cluster_v1beta1
+  - apiVersion: eks.aws.upbound.io/v1beta1
+    filename: eks.aws.upbound.io/addon_v1beta1.json
+    kind: Addon
+    name: addon_v1beta1
 eks.services.k8s.aws:
   - apiVersion: eks.services.k8s.aws/v1alpha1
     filename: eks.services.k8s.aws/fargateprofile_v1alpha1.json
@@ -4815,6 +4901,80 @@ eks.services.k8s.aws:
     filename: eks.services.k8s.aws/identityproviderconfig_v1alpha1.json
     kind: IdentityProviderConfig
     name: identityproviderconfig_v1alpha1
+elasticache.aws.m.upbound.io:
+  - apiVersion: elasticache.aws.m.upbound.io/v1beta1
+    filename: elasticache.aws.m.upbound.io/usergroup_v1beta1.json
+    kind: UserGroup
+    name: usergroup_v1beta1
+  - apiVersion: elasticache.aws.m.upbound.io/v1beta1
+    filename: elasticache.aws.m.upbound.io/serverlesscache_v1beta1.json
+    kind: ServerlessCache
+    name: serverlesscache_v1beta1
+  - apiVersion: elasticache.aws.m.upbound.io/v1beta1
+    filename: elasticache.aws.m.upbound.io/replicationgroup_v1beta1.json
+    kind: ReplicationGroup
+    name: replicationgroup_v1beta1
+  - apiVersion: elasticache.aws.m.upbound.io/v1beta1
+    filename: elasticache.aws.m.upbound.io/parametergroup_v1beta1.json
+    kind: ParameterGroup
+    name: parametergroup_v1beta1
+  - apiVersion: elasticache.aws.m.upbound.io/v1beta1
+    filename: elasticache.aws.m.upbound.io/globalreplicationgroup_v1beta1.json
+    kind: GlobalReplicationGroup
+    name: globalreplicationgroup_v1beta1
+  - apiVersion: elasticache.aws.m.upbound.io/v1beta1
+    filename: elasticache.aws.m.upbound.io/user_v1beta1.json
+    kind: User
+    name: user_v1beta1
+  - apiVersion: elasticache.aws.m.upbound.io/v1beta1
+    filename: elasticache.aws.m.upbound.io/cluster_v1beta1.json
+    kind: Cluster
+    name: cluster_v1beta1
+  - apiVersion: elasticache.aws.m.upbound.io/v1beta1
+    filename: elasticache.aws.m.upbound.io/subnetgroup_v1beta1.json
+    kind: SubnetGroup
+    name: subnetgroup_v1beta1
+elasticache.aws.upbound.io:
+  - apiVersion: elasticache.aws.upbound.io/v1beta1
+    filename: elasticache.aws.upbound.io/usergroup_v1beta1.json
+    kind: UserGroup
+    name: usergroup_v1beta1
+  - apiVersion: elasticache.aws.upbound.io/v1beta1
+    filename: elasticache.aws.upbound.io/serverlesscache_v1beta1.json
+    kind: ServerlessCache
+    name: serverlesscache_v1beta1
+  - apiVersion: elasticache.aws.upbound.io/v1beta1
+    filename: elasticache.aws.upbound.io/replicationgroup_v1beta1.json
+    kind: ReplicationGroup
+    name: replicationgroup_v1beta1
+  - apiVersion: elasticache.aws.upbound.io/v1beta1
+    filename: elasticache.aws.upbound.io/parametergroup_v1beta1.json
+    kind: ParameterGroup
+    name: parametergroup_v1beta1
+  - apiVersion: elasticache.aws.upbound.io/v1beta2
+    filename: elasticache.aws.upbound.io/user_v1beta2.json
+    kind: User
+    name: user_v1beta2
+  - apiVersion: elasticache.aws.upbound.io/v1beta1
+    filename: elasticache.aws.upbound.io/globalreplicationgroup_v1beta1.json
+    kind: GlobalReplicationGroup
+    name: globalreplicationgroup_v1beta1
+  - apiVersion: elasticache.aws.upbound.io/v1beta1
+    filename: elasticache.aws.upbound.io/user_v1beta1.json
+    kind: User
+    name: user_v1beta1
+  - apiVersion: elasticache.aws.upbound.io/v1beta1
+    filename: elasticache.aws.upbound.io/cluster_v1beta1.json
+    kind: Cluster
+    name: cluster_v1beta1
+  - apiVersion: elasticache.aws.upbound.io/v1beta1
+    filename: elasticache.aws.upbound.io/subnetgroup_v1beta1.json
+    kind: SubnetGroup
+    name: subnetgroup_v1beta1
+  - apiVersion: elasticache.aws.upbound.io/v1beta2
+    filename: elasticache.aws.upbound.io/replicationgroup_v1beta2.json
+    kind: ReplicationGroup
+    name: replicationgroup_v1beta2
 elasticache.services.k8s.aws:
   - apiVersion: elasticache.services.k8s.aws/v1alpha1
     filename: elasticache.services.k8s.aws/snapshot_v1alpha1.json
@@ -10142,6 +10302,200 @@ rbacmanager.reactiveops.io:
     filename: rbacmanager.reactiveops.io/rbacdefinitions_v1alpha1.json
     kind: rbacdefinitions
     name: rbacdefinitions_v1alpha1
+rds.aws.m.upbound.io:
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/dbsnapshotcopy_v1beta1.json
+    kind: DBSnapshotCopy
+    name: dbsnapshotcopy_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/instancestate_v1beta1.json
+    kind: InstanceState
+    name: instancestate_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/dbinstanceautomatedbackupsreplication_v1beta1.json
+    kind: DBInstanceAutomatedBackupsReplication
+    name: dbinstanceautomatedbackupsreplication_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/instanceroleassociation_v1beta1.json
+    kind: InstanceRoleAssociation
+    name: instanceroleassociation_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/clusterparametergroup_v1beta1.json
+    kind: ClusterParameterGroup
+    name: clusterparametergroup_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/parametergroup_v1beta1.json
+    kind: ParameterGroup
+    name: parametergroup_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/snapshot_v1beta1.json
+    kind: Snapshot
+    name: snapshot_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/clusterendpoint_v1beta1.json
+    kind: ClusterEndpoint
+    name: clusterendpoint_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/optiongroup_v1beta1.json
+    kind: OptionGroup
+    name: optiongroup_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/eventsubscription_v1beta1.json
+    kind: EventSubscription
+    name: eventsubscription_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/proxytarget_v1beta1.json
+    kind: ProxyTarget
+    name: proxytarget_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/proxyendpoint_v1beta1.json
+    kind: ProxyEndpoint
+    name: proxyendpoint_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/globalcluster_v1beta1.json
+    kind: GlobalCluster
+    name: globalcluster_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/proxydefaulttargetgroup_v1beta1.json
+    kind: ProxyDefaultTargetGroup
+    name: proxydefaulttargetgroup_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/clusteractivitystream_v1beta1.json
+    kind: ClusterActivityStream
+    name: clusteractivitystream_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/clustersnapshot_v1beta1.json
+    kind: ClusterSnapshot
+    name: clustersnapshot_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/cluster_v1beta1.json
+    kind: Cluster
+    name: cluster_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/proxy_v1beta1.json
+    kind: Proxy
+    name: proxy_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/subnetgroup_v1beta1.json
+    kind: SubnetGroup
+    name: subnetgroup_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/clusterroleassociation_v1beta1.json
+    kind: ClusterRoleAssociation
+    name: clusterroleassociation_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/clusterinstance_v1beta1.json
+    kind: ClusterInstance
+    name: clusterinstance_v1beta1
+  - apiVersion: rds.aws.m.upbound.io/v1beta1
+    filename: rds.aws.m.upbound.io/instance_v1beta1.json
+    kind: Instance
+    name: instance_v1beta1
+rds.aws.upbound.io:
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/dbsnapshotcopy_v1beta1.json
+    kind: DBSnapshotCopy
+    name: dbsnapshotcopy_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/instancestate_v1beta1.json
+    kind: InstanceState
+    name: instancestate_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/dbinstanceautomatedbackupsreplication_v1beta1.json
+    kind: DBInstanceAutomatedBackupsReplication
+    name: dbinstanceautomatedbackupsreplication_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta2
+    filename: rds.aws.upbound.io/cluster_v1beta2.json
+    kind: Cluster
+    name: cluster_v1beta2
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/instanceroleassociation_v1beta1.json
+    kind: InstanceRoleAssociation
+    name: instanceroleassociation_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/clusterparametergroup_v1beta1.json
+    kind: ClusterParameterGroup
+    name: clusterparametergroup_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/parametergroup_v1beta1.json
+    kind: ParameterGroup
+    name: parametergroup_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/snapshot_v1beta1.json
+    kind: Snapshot
+    name: snapshot_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/clusterendpoint_v1beta1.json
+    kind: ClusterEndpoint
+    name: clusterendpoint_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta2
+    filename: rds.aws.upbound.io/proxydefaulttargetgroup_v1beta2.json
+    kind: ProxyDefaultTargetGroup
+    name: proxydefaulttargetgroup_v1beta2
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/optiongroup_v1beta1.json
+    kind: OptionGroup
+    name: optiongroup_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/eventsubscription_v1beta1.json
+    kind: EventSubscription
+    name: eventsubscription_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/proxytarget_v1beta1.json
+    kind: ProxyTarget
+    name: proxytarget_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/proxyendpoint_v1beta1.json
+    kind: ProxyEndpoint
+    name: proxyendpoint_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/globalcluster_v1beta1.json
+    kind: GlobalCluster
+    name: globalcluster_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/proxydefaulttargetgroup_v1beta1.json
+    kind: ProxyDefaultTargetGroup
+    name: proxydefaulttargetgroup_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/clusteractivitystream_v1beta1.json
+    kind: ClusterActivityStream
+    name: clusteractivitystream_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/clustersnapshot_v1beta1.json
+    kind: ClusterSnapshot
+    name: clustersnapshot_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/cluster_v1beta1.json
+    kind: Cluster
+    name: cluster_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/proxy_v1beta1.json
+    kind: Proxy
+    name: proxy_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/subnetgroup_v1beta1.json
+    kind: SubnetGroup
+    name: subnetgroup_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/clusterroleassociation_v1beta1.json
+    kind: ClusterRoleAssociation
+    name: clusterroleassociation_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta3
+    filename: rds.aws.upbound.io/instance_v1beta3.json
+    kind: Instance
+    name: instance_v1beta3
+  - apiVersion: rds.aws.upbound.io/v1beta2
+    filename: rds.aws.upbound.io/instance_v1beta2.json
+    kind: Instance
+    name: instance_v1beta2
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/clusterinstance_v1beta1.json
+    kind: ClusterInstance
+    name: clusterinstance_v1beta1
+  - apiVersion: rds.aws.upbound.io/v1beta1
+    filename: rds.aws.upbound.io/instance_v1beta1.json
+    kind: Instance
+    name: instance_v1beta1
 rds.services.k8s.aws:
   - apiVersion: rds.services.k8s.aws/v1alpha1
     filename: rds.services.k8s.aws/dbparametergroup_v1alpha1.json
@@ -11276,6 +11630,48 @@ snapshot.storage.k8s.io:
     filename: snapshot.storage.k8s.io/volumesnapshotclass_v1beta1.json
     kind: VolumeSnapshotClass
     name: volumesnapshotclass_v1beta1
+sns.aws.m.upbound.io:
+  - apiVersion: sns.aws.m.upbound.io/v1beta1
+    filename: sns.aws.m.upbound.io/smspreferences_v1beta1.json
+    kind: SMSPreferences
+    name: smspreferences_v1beta1
+  - apiVersion: sns.aws.m.upbound.io/v1beta1
+    filename: sns.aws.m.upbound.io/topicpolicy_v1beta1.json
+    kind: TopicPolicy
+    name: topicpolicy_v1beta1
+  - apiVersion: sns.aws.m.upbound.io/v1beta1
+    filename: sns.aws.m.upbound.io/platformapplication_v1beta1.json
+    kind: PlatformApplication
+    name: platformapplication_v1beta1
+  - apiVersion: sns.aws.m.upbound.io/v1beta1
+    filename: sns.aws.m.upbound.io/topicsubscription_v1beta1.json
+    kind: TopicSubscription
+    name: topicsubscription_v1beta1
+  - apiVersion: sns.aws.m.upbound.io/v1beta1
+    filename: sns.aws.m.upbound.io/topic_v1beta1.json
+    kind: Topic
+    name: topic_v1beta1
+sns.aws.upbound.io:
+  - apiVersion: sns.aws.upbound.io/v1beta1
+    filename: sns.aws.upbound.io/smspreferences_v1beta1.json
+    kind: SMSPreferences
+    name: smspreferences_v1beta1
+  - apiVersion: sns.aws.upbound.io/v1beta1
+    filename: sns.aws.upbound.io/topicpolicy_v1beta1.json
+    kind: TopicPolicy
+    name: topicpolicy_v1beta1
+  - apiVersion: sns.aws.upbound.io/v1beta1
+    filename: sns.aws.upbound.io/platformapplication_v1beta1.json
+    kind: PlatformApplication
+    name: platformapplication_v1beta1
+  - apiVersion: sns.aws.upbound.io/v1beta1
+    filename: sns.aws.upbound.io/topicsubscription_v1beta1.json
+    kind: TopicSubscription
+    name: topicsubscription_v1beta1
+  - apiVersion: sns.aws.upbound.io/v1beta1
+    filename: sns.aws.upbound.io/topic_v1beta1.json
+    kind: Topic
+    name: topic_v1beta1
 sns.services.k8s.aws:
   - apiVersion: sns.services.k8s.aws/v1alpha1
     filename: sns.services.k8s.aws/platformapplication_v1alpha1.json
@@ -11504,6 +11900,40 @@ sql.cnrm.cloud.google.com:
     filename: sql.cnrm.cloud.google.com/sqluser_v1beta1.json
     kind: sqluser
     name: sqluser_v1beta1
+sqs.aws.m.upbound.io:
+  - apiVersion: sqs.aws.m.upbound.io/v1beta1
+    filename: sqs.aws.m.upbound.io/queueredrivepolicy_v1beta1.json
+    kind: QueueRedrivePolicy
+    name: queueredrivepolicy_v1beta1
+  - apiVersion: sqs.aws.m.upbound.io/v1beta1
+    filename: sqs.aws.m.upbound.io/queuepolicy_v1beta1.json
+    kind: QueuePolicy
+    name: queuepolicy_v1beta1
+  - apiVersion: sqs.aws.m.upbound.io/v1beta1
+    filename: sqs.aws.m.upbound.io/queue_v1beta1.json
+    kind: Queue
+    name: queue_v1beta1
+  - apiVersion: sqs.aws.m.upbound.io/v1beta1
+    filename: sqs.aws.m.upbound.io/queueredriveallowpolicy_v1beta1.json
+    kind: QueueRedriveAllowPolicy
+    name: queueredriveallowpolicy_v1beta1
+sqs.aws.upbound.io:
+  - apiVersion: sqs.aws.upbound.io/v1beta1
+    filename: sqs.aws.upbound.io/queueredrivepolicy_v1beta1.json
+    kind: QueueRedrivePolicy
+    name: queueredrivepolicy_v1beta1
+  - apiVersion: sqs.aws.upbound.io/v1beta1
+    filename: sqs.aws.upbound.io/queuepolicy_v1beta1.json
+    kind: QueuePolicy
+    name: queuepolicy_v1beta1
+  - apiVersion: sqs.aws.upbound.io/v1beta1
+    filename: sqs.aws.upbound.io/queue_v1beta1.json
+    kind: Queue
+    name: queue_v1beta1
+  - apiVersion: sqs.aws.upbound.io/v1beta1
+    filename: sqs.aws.upbound.io/queueredriveallowpolicy_v1beta1.json
+    kind: QueueRedriveAllowPolicy
+    name: queueredriveallowpolicy_v1beta1
 sqs.services.k8s.aws:
   - apiVersion: sqs.services.k8s.aws/v1alpha1
     filename: sqs.services.k8s.aws/queue_v1alpha1.json
