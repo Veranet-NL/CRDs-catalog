@@ -7517,6 +7517,10 @@ kargo.akuity.io:
     filename: kargo.akuity.io/clusterpromotiontask_v1alpha1.json
     kind: clusterpromotiontask
     name: clusterpromotiontask_v1alpha1
+  - apiVersion: kargo.akuity.io/v1alpha1
+    filename: kargo.akuity.io/clusterconfig_v1alpha1.json
+    kind: ClusterConfig
+    name: clusterconfig_v1alpha1
 karpenter.azure.com:
   - apiVersion: karpenter.azure.com/v1beta1
     filename: karpenter.azure.com/aksnodeclass_v1beta1.json
