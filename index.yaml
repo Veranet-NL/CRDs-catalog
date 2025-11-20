@@ -5588,6 +5588,10 @@ gateway.networking.k8s.io:
     filename: gateway.networking.k8s.io/backendtlspolicy_v1alpha3.json
     kind: BackendTLSPolicy
     name: backendtlspolicy_v1alpha3
+  - apiVersion: gateway.networking.k8s.io/v1
+    filename: gateway.networking.k8s.io/backendtlspolicy_v1.json
+    kind: BackendTLSPolicy
+    name: backendtlspolicy_v1
 gateway.solo.io:
   - apiVersion: gateway.solo.io/v1
     filename: gateway.solo.io/virtualservice_v1.json
@@ -5973,6 +5977,51 @@ graphql.gloo.solo.io:
     filename: graphql.gloo.solo.io/graphqlapi_v1beta1.json
     kind: graphqlapi
     name: graphqlapi_v1beta1
+gravitee.io:
+  - apiVersion: gravitee.io/v1alpha1
+    filename: gravitee.io/gatewayclassparameters_v1alpha1.json
+    kind: gatewayclassparameters
+    name: gatewayclassparameters_v1alpha1
+  - apiVersion: gravitee.io/v1alpha1
+    filename: gravitee.io/managementcontext_v1alpha1.json
+    kind: managementcontext
+    name: managementcontext_v1alpha1
+  - apiVersion: gravitee.io/v1alpha1
+    filename: gravitee.io/application_v1alpha1.json
+    kind: application
+    name: application_v1alpha1
+  - apiVersion: gravitee.io/v1alpha1
+    filename: gravitee.io/group_v1alpha1.json
+    kind: group
+    name: group_v1alpha1
+  - apiVersion: gravitee.io/v1alpha1
+    filename: gravitee.io/apiresource_v1alpha1.json
+    kind: apiresource
+    name: apiresource_v1alpha1
+  - apiVersion: gravitee.io/v1alpha1
+    filename: gravitee.io/notification_v1alpha1.json
+    kind: Notification
+    name: notification_v1alpha1
+  - apiVersion: gravitee.io/v1alpha1
+    filename: gravitee.io/kafkaroute_v1alpha1.json
+    kind: kafkaroute
+    name: kafkaroute_v1alpha1
+  - apiVersion: gravitee.io/v1alpha1
+    filename: gravitee.io/apidefinition_v1alpha1.json
+    kind: ApiDefinition
+    name: apidefinition_v1alpha1
+  - apiVersion: gravitee.io/v1alpha1
+    filename: gravitee.io/sharedpolicygroup_v1alpha1.json
+    kind: SharedPolicyGroup
+    name: sharedpolicygroup_v1alpha1
+  - apiVersion: gravitee.io/v1alpha1
+    filename: gravitee.io/subscription_v1alpha1.json
+    kind: subscription
+    name: subscription_v1alpha1
+  - apiVersion: gravitee.io/v1alpha1
+    filename: gravitee.io/apiv4definition_v1alpha1.json
+    kind: ApiV4Definition
+    name: apiv4definition_v1alpha1
 groupsnapshot.storage.k8s.io:
   - apiVersion: groupsnapshot.storage.k8s.io/v1beta1
     filename: groupsnapshot.storage.k8s.io/volumegroupsnapshot_v1beta1.json
@@ -7704,6 +7753,10 @@ kubeflow.org:
     filename: kubeflow.org/poddefault_v1alpha1.json
     kind: PodDefault
     name: poddefault_v1alpha1
+  - apiVersion: kubeflow.org/v2beta1
+    filename: kubeflow.org/mpijob_v2beta1.json
+    kind: mpijob
+    name: mpijob_v2beta1
 kubernetesconfiguration.azure.com:
   - apiVersion: kubernetesconfiguration.azure.com/v1api20241101
     filename: kubernetesconfiguration.azure.com/fluxconfiguration_v1api20241101.json
