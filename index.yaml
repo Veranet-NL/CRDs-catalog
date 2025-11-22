@@ -7320,6 +7320,14 @@ jetstream.nats.io:
     filename: jetstream.nats.io/consumer_v1beta1.json
     kind: consumer
     name: consumer_v1beta1
+  - apiVersion: jetstream.nats.io/v1beta2
+    filename: jetstream.nats.io/keyvalue_v1beta2.json
+    kind: keyvalue
+    name: keyvalue_v1beta2
+  - apiVersion: jetstream.nats.io/v1beta2
+    filename: jetstream.nats.io/objectstore_v1beta2.json
+    kind: objectstore
+    name: objectstore_v1beta2
 job.min.io:
   - apiVersion: job.min.io/v1alpha1
     filename: job.min.io/miniojob_v1alpha1.json
