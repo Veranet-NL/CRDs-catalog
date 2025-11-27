@@ -2712,6 +2712,11 @@ compute.cnrm.cloud.google.com:
     filename: compute.cnrm.cloud.google.com/computesslpolicy_v1beta1.json
     kind: computesslpolicy
     name: computesslpolicy_v1beta1
+compute.coreweave.com:
+  - apiVersion: compute.coreweave.com/v1alpha1
+    filename: compute.coreweave.com/nodepool_v1alpha1.json
+    kind: NodePool
+    name: nodepool_v1alpha1
 config.concierge.pinniped.dev:
   - apiVersion: config.concierge.pinniped.dev/v1alpha1
     filename: config.concierge.pinniped.dev/credentialissuer_v1alpha1.json
@@ -12179,6 +12184,35 @@ sts.min.io:
     filename: sts.min.io/policybinding_v1alpha1.json
     kind: policybinding
     name: policybinding_v1alpha1
+stunner.l7mp.io:
+  - apiVersion: stunner.l7mp.io/v1alpha1
+    filename: stunner.l7mp.io/gatewayconfig_v1alpha1.json
+    kind: GatewayConfig
+    name: gatewayconfig_v1alpha1
+  - apiVersion: stunner.l7mp.io/v1
+    filename: stunner.l7mp.io/dataplane_v1.json
+    kind: Dataplane
+    name: dataplane_v1
+  - apiVersion: stunner.l7mp.io/v1alpha1
+    filename: stunner.l7mp.io/dataplane_v1alpha1.json
+    kind: Dataplane
+    name: dataplane_v1alpha1
+  - apiVersion: stunner.l7mp.io/v1
+    filename: stunner.l7mp.io/gatewayconfig_v1.json
+    kind: GatewayConfig
+    name: gatewayconfig_v1
+  - apiVersion: stunner.l7mp.io/v1alpha1
+    filename: stunner.l7mp.io/staticservice_v1alpha1.json
+    kind: StaticService
+    name: staticservice_v1alpha1
+  - apiVersion: stunner.l7mp.io/v1
+    filename: stunner.l7mp.io/udproute_v1.json
+    kind: UDPRoute
+    name: udproute_v1
+  - apiVersion: stunner.l7mp.io/v1
+    filename: stunner.l7mp.io/staticservice_v1.json
+    kind: StaticService
+    name: staticservice_v1
 subscription.azure.com:
   - apiVersion: subscription.azure.com/v1api20211001
     filename: subscription.azure.com/alias_v1api20211001.json
@@ -12479,6 +12513,83 @@ traefik.io:
     filename: traefik.io/middleware_v1alpha1.json
     kind: Middleware
     name: middleware_v1alpha1
+trident.netapp.io:
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentsnapshot_v1.json
+    kind: tridentsnapshot
+    name: tridentsnapshot_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentgroupsnapshot_v1.json
+    kind: tridentgroupsnapshot
+    name: tridentgroupsnapshot_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentconfigurator_v1.json
+    kind: tridentconfigurator
+    name: tridentconfigurator_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentvolume_v1.json
+    kind: tridentvolume
+    name: tridentvolume_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentactionsnapshotrestore_v1.json
+    kind: tridentactionsnapshotrestore
+    name: tridentactionsnapshotrestore_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentmirrorrelationship_v1.json
+    kind: tridentmirrorrelationship
+    name: tridentmirrorrelationship_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentstorageclass_v1.json
+    kind: tridentstorageclass
+    name: tridentstorageclass_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentactionmirrorupdate_v1.json
+    kind: tridentactionmirrorupdate
+    name: tridentactionmirrorupdate_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentbackend_v1.json
+    kind: tridentbackend
+    name: tridentbackend_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentversion_v1.json
+    kind: tridentversion
+    name: tridentversion_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentnoderemediationtemplate_v1.json
+    kind: tridentnoderemediationtemplate
+    name: tridentnoderemediationtemplate_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridenttransaction_v1.json
+    kind: tridenttransaction
+    name: tridenttransaction_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentbackendconfig_v1.json
+    kind: tridentbackendconfig
+    name: tridentbackendconfig_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentvolumereference_v1.json
+    kind: tridentvolumereference
+    name: tridentvolumereference_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentsnapshotinfo_v1.json
+    kind: tridentsnapshotinfo
+    name: tridentsnapshotinfo_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentnode_v1.json
+    kind: tridentnode
+    name: tridentnode_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentvolumepublication_v1.json
+    kind: tridentvolumepublication
+    name: tridentvolumepublication_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentnoderemediation_v1.json
+    kind: tridentnoderemediation
+    name: tridentnoderemediation_v1
+  - apiVersion: trident.netapp.io/v1
+    filename: trident.netapp.io/tridentorchestrator_v1.json
+    kind: tridentorchestrator
+    name: tridentorchestrator_v1
 trust.cert-manager.io:
   - apiVersion: trust.cert-manager.io/v1alpha1
     filename: trust.cert-manager.io/bundle_v1alpha1.json
