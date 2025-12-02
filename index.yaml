@@ -151,6 +151,14 @@ addons.cluster.x-k8s.io:
     filename: addons.cluster.x-k8s.io/clusterresourceset_v1alpha3.json
     kind: ClusterResourceSet
     name: clusterresourceset_v1alpha3
+  - apiVersion: addons.cluster.x-k8s.io/v1beta2
+    filename: addons.cluster.x-k8s.io/clusterresourcesetbinding_v1beta2.json
+    kind: ClusterResourceSetBinding
+    name: clusterresourcesetbinding_v1beta2
+  - apiVersion: addons.cluster.x-k8s.io/v1beta2
+    filename: addons.cluster.x-k8s.io/clusterresourceset_v1beta2.json
+    kind: ClusterResourceSet
+    name: clusterresourceset_v1beta2
 agent.k8s.elastic.co:
   - apiVersion: agent.k8s.elastic.co/v1alpha1
     filename: agent.k8s.elastic.co/agent_v1alpha1.json
@@ -534,6 +542,18 @@ apiextensions.crossplane.io:
     filename: apiextensions.crossplane.io/compositionrevision_v1beta1.json
     kind: CompositionRevision
     name: compositionrevision_v1beta1
+  - apiVersion: apiextensions.crossplane.io/v1alpha1
+    filename: apiextensions.crossplane.io/managedresourcedefinition_v1alpha1.json
+    kind: ManagedResourceDefinition
+    name: managedresourcedefinition_v1alpha1
+  - apiVersion: apiextensions.crossplane.io/v2
+    filename: apiextensions.crossplane.io/compositeresourcedefinition_v2.json
+    kind: CompositeResourceDefinition
+    name: compositeresourcedefinition_v2
+  - apiVersion: apiextensions.crossplane.io/v1alpha1
+    filename: apiextensions.crossplane.io/managedresourceactivationpolicy_v1alpha1.json
+    kind: ManagedResourceActivationPolicy
+    name: managedresourceactivationpolicy_v1alpha1
 apigateway.cnrm.cloud.google.com:
   - apiVersion: apigateway.cnrm.cloud.google.com/v1alpha1
     filename: apigateway.cnrm.cloud.google.com/apigatewayapiconfig_v1alpha1.json
@@ -1473,6 +1493,18 @@ bootstrap.cluster.x-k8s.io:
     filename: bootstrap.cluster.x-k8s.io/kubeadmconfigtemplate_v1beta2.json
     kind: KubeadmConfigTemplate
     name: kubeadmconfigtemplate_v1beta2
+  - apiVersion: bootstrap.cluster.x-k8s.io/v1beta1
+    filename: bootstrap.cluster.x-k8s.io/k0scontrollerconfig_v1beta1.json
+    kind: k0scontrollerconfig
+    name: k0scontrollerconfig_v1beta1
+  - apiVersion: bootstrap.cluster.x-k8s.io/v1beta1
+    filename: bootstrap.cluster.x-k8s.io/k0sworkerconfig_v1beta1.json
+    kind: k0sworkerconfig
+    name: k0sworkerconfig_v1beta1
+  - apiVersion: bootstrap.cluster.x-k8s.io/v1beta1
+    filename: bootstrap.cluster.x-k8s.io/k0sworkerconfigtemplate_v1beta1.json
+    kind: k0sworkerconfigtemplate
+    name: k0sworkerconfigtemplate_v1beta1
 cache.azure.com:
   - apiVersion: cache.azure.com/v1api20201201
     filename: cache.azure.com/redispatchschedule_v1api20201201.json
@@ -2941,6 +2973,22 @@ controlplane.cluster.x-k8s.io:
     filename: controlplane.cluster.x-k8s.io/kubeadmcontrolplanetemplate_v1beta2.json
     kind: KubeadmControlPlaneTemplate
     name: kubeadmcontrolplanetemplate_v1beta2
+  - apiVersion: controlplane.cluster.x-k8s.io/v1beta1
+    filename: controlplane.cluster.x-k8s.io/k0smotroncontrolplanetemplate_v1beta1.json
+    kind: k0smotroncontrolplanetemplate
+    name: k0smotroncontrolplanetemplate_v1beta1
+  - apiVersion: controlplane.cluster.x-k8s.io/v1beta1
+    filename: controlplane.cluster.x-k8s.io/k0scontrolplanetemplate_v1beta1.json
+    kind: k0scontrolplanetemplate
+    name: k0scontrolplanetemplate_v1beta1
+  - apiVersion: controlplane.cluster.x-k8s.io/v1beta1
+    filename: controlplane.cluster.x-k8s.io/k0smotroncontrolplane_v1beta1.json
+    kind: k0smotroncontrolplane
+    name: k0smotroncontrolplane_v1beta1
+  - apiVersion: controlplane.cluster.x-k8s.io/v1beta1
+    filename: controlplane.cluster.x-k8s.io/k0scontrolplane_v1beta1.json
+    kind: k0scontrolplane
+    name: k0scontrolplane_v1beta1
 core.cnrm.cloud.google.com:
   - apiVersion: core.cnrm.cloud.google.com/v1beta1
     filename: core.cnrm.cloud.google.com/configconnector_v1beta1.json
@@ -7174,11 +7222,72 @@ infrastructure.cluster.x-k8s.io:
     filename: infrastructure.cluster.x-k8s.io/vspherecluster_v1beta1.json
     kind: VSphereCluster
     name: vspherecluster_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/hcloudmachinetemplate_v1beta1.json
+    kind: HCloudMachineTemplate
+    name: hcloudmachinetemplate_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/hetznerbaremetalmachinetemplate_v1beta1.json
+    kind: HetznerBareMetalMachineTemplate
+    name: hetznerbaremetalmachinetemplate_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/hetznerbaremetalmachine_v1beta1.json
+    kind: HetznerBareMetalMachine
+    name: hetznerbaremetalmachine_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/hetznerbaremetalremediationtemplate_v1beta1.json
+    kind: HetznerBareMetalRemediationTemplate
+    name: hetznerbaremetalremediationtemplate_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/hetznerbaremetalremediation_v1beta1.json
+    kind: HetznerBareMetalRemediation
+    name: hetznerbaremetalremediation_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/hcloudremediationtemplate_v1beta1.json
+    kind: HCloudRemediationTemplate
+    name: hcloudremediationtemplate_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/hcloudremediation_v1beta1.json
+    kind: HCloudRemediation
+    name: hcloudremediation_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/hetznercluster_v1beta1.json
+    kind: HetznerCluster
+    name: hetznercluster_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/hetznerclustertemplate_v1beta1.json
+    kind: HetznerClusterTemplate
+    name: hetznerclustertemplate_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/hcloudmachine_v1beta1.json
+    kind: HCloudMachine
+    name: hcloudmachine_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/hetznerbaremetalhost_v1beta1.json
+    kind: HetznerBareMetalHost
+    name: hetznerbaremetalhost_v1beta1
 ingress.oraclecloud.com:
   - apiVersion: ingress.oraclecloud.com/v1beta1
     filename: ingress.oraclecloud.com/ingressclassparameters_v1beta1.json
     kind: IngressClassParameters
     name: ingressclassparameters_v1beta1
+ingress.v1.haproxy.org:
+  - apiVersion: ingress.v1.haproxy.org/v1
+    filename: ingress.v1.haproxy.org/global_v1.json
+    kind: Global
+    name: global_v1
+  - apiVersion: ingress.v1.haproxy.org/v1
+    filename: ingress.v1.haproxy.org/backend_v1.json
+    kind: Backend
+    name: backend_v1
+  - apiVersion: ingress.v1.haproxy.org/v1
+    filename: ingress.v1.haproxy.org/tcp_v1.json
+    kind: TCP
+    name: tcp_v1
+  - apiVersion: ingress.v1.haproxy.org/v1
+    filename: ingress.v1.haproxy.org/defaults_v1.json
+    kind: Defaults
+    name: defaults_v1
 insights.azure.com:
   - apiVersion: insights.azure.com/v1api20230101
     filename: insights.azure.com/actiongroup_v1api20230101.json
@@ -7282,6 +7391,14 @@ ipam.cluster.x-k8s.io:
     filename: ipam.cluster.x-k8s.io/ipaddressclaim_v1beta1.json
     kind: IPAddressClaim
     name: ipaddressclaim_v1beta1
+  - apiVersion: ipam.cluster.x-k8s.io/v1beta2
+    filename: ipam.cluster.x-k8s.io/ipaddress_v1beta2.json
+    kind: IPAddress
+    name: ipaddress_v1beta2
+  - apiVersion: ipam.cluster.x-k8s.io/v1beta2
+    filename: ipam.cluster.x-k8s.io/ipaddressclaim_v1beta2.json
+    kind: IPAddressClaim
+    name: ipaddressclaim_v1beta2
 isindir.github.com:
   - apiVersion: isindir.github.com/v1alpha3
     filename: isindir.github.com/sopssecret_v1alpha3.json
@@ -7338,6 +7455,15 @@ job.min.io:
     filename: job.min.io/miniojob_v1alpha1.json
     kind: miniojob
     name: miniojob_v1alpha1
+k0smotron.io:
+  - apiVersion: k0smotron.io/v1beta1
+    filename: k0smotron.io/cluster_v1beta1.json
+    kind: Cluster
+    name: cluster_v1beta1
+  - apiVersion: k0smotron.io/v1beta1
+    filename: k0smotron.io/jointokenrequest_v1beta1.json
+    kind: JoinTokenRequest
+    name: jointokenrequest_v1beta1
 k6.io:
   - apiVersion: k6.io/v1alpha1
     filename: k6.io/k6_v1alpha1.json
@@ -9697,6 +9823,19 @@ operators.coreos.com:
     filename: operators.coreos.com/operator_v1.json
     kind: Operator
     name: operator_v1
+ops.crossplane.io:
+  - apiVersion: ops.crossplane.io/v1alpha1
+    filename: ops.crossplane.io/watchoperation_v1alpha1.json
+    kind: WatchOperation
+    name: watchoperation_v1alpha1
+  - apiVersion: ops.crossplane.io/v1alpha1
+    filename: ops.crossplane.io/cronoperation_v1alpha1.json
+    kind: CronOperation
+    name: cronoperation_v1alpha1
+  - apiVersion: ops.crossplane.io/v1alpha1
+    filename: ops.crossplane.io/operation_v1alpha1.json
+    kind: Operation
+    name: operation_v1alpha1
 organizations.services.k8s.aws:
   - apiVersion: organizations.services.k8s.aws/v1alpha1
     filename: organizations.services.k8s.aws/organizationalunit_v1alpha1.json
@@ -10240,6 +10379,15 @@ prometheusservice.services.k8s.aws:
     filename: prometheusservice.services.k8s.aws/rulegroupsnamespace_v1alpha1.json
     kind: RuleGroupsNamespace
     name: rulegroupsnamespace_v1alpha1
+protection.crossplane.io:
+  - apiVersion: protection.crossplane.io/v1beta1
+    filename: protection.crossplane.io/clusterusage_v1beta1.json
+    kind: ClusterUsage
+    name: clusterusage_v1beta1
+  - apiVersion: protection.crossplane.io/v1beta1
+    filename: protection.crossplane.io/usage_v1beta1.json
+    kind: Usage
+    name: usage_v1beta1
 ps.percona.com:
   - apiVersion: ps.percona.com/v1alpha1
     filename: ps.percona.com/perconaservermysqlbackup_v1alpha1.json
@@ -10837,6 +10985,10 @@ runtime.cluster.x-k8s.io:
     filename: runtime.cluster.x-k8s.io/extensionconfig_v1alpha1.json
     kind: ExtensionConfig
     name: extensionconfig_v1alpha1
+  - apiVersion: runtime.cluster.x-k8s.io/v1beta2
+    filename: runtime.cluster.x-k8s.io/extensionconfig_v1beta2.json
+    kind: ExtensionConfig
+    name: extensionconfig_v1beta2
 s3.aws.m.upbound.io:
   - apiVersion: s3.aws.m.upbound.io/v1beta1
     filename: s3.aws.m.upbound.io/bucketpolicy_v1beta1.json
