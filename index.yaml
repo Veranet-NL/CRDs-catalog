@@ -6025,6 +6025,10 @@ grafana.integreatly.org:
     filename: grafana.integreatly.org/grafananotificationpolicyroute_v1beta1.json
     kind: GrafanaNotificationPolicyRoute
     name: grafananotificationpolicyroute_v1beta1
+  - apiVersion: grafana.integreatly.org/v1beta1
+    filename: grafana.integreatly.org/grafanaserviceaccount_v1beta1.json
+    kind: GrafanaServiceAccount
+    name: grafanaserviceaccount_v1beta1
 graphql.gloo.solo.io:
   - apiVersion: graphql.gloo.solo.io/v1beta1
     filename: graphql.gloo.solo.io/graphqlapi_v1beta1.json
@@ -7756,6 +7760,10 @@ karpenter.sh:
     filename: karpenter.sh/machine_v1alpha5.json
     kind: Machine
     name: machine_v1alpha5
+  - apiVersion: karpenter.sh/v1alpha1
+    filename: karpenter.sh/nodeoverlay_v1alpha1.json
+    kind: nodeoverlay
+    name: nodeoverlay_v1alpha1
 keda.sh:
   - apiVersion: keda.sh/v1alpha1
     filename: keda.sh/clustertriggerauthentication_v1alpha1.json
@@ -10949,6 +10957,38 @@ resources.teleport.dev:
     filename: resources.teleport.dev/teleportopensshserverv2_v1.json
     kind: teleportopensshserverv2
     name: teleportopensshserverv2_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportautoupdateconfigv1_v1.json
+    kind: teleportautoupdateconfigv1
+    name: teleportautoupdateconfigv1_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportrolev8_v1.json
+    kind: teleportrolev8
+    name: teleportrolev8_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportworkloadidentityv1_v1.json
+    kind: teleportworkloadidentityv1
+    name: teleportworkloadidentityv1_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportdatabasev3_v1.json
+    kind: teleportdatabasev3
+    name: teleportdatabasev3_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportappv3_v1.json
+    kind: teleportappv3
+    name: teleportappv3_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportautoupdateversionv1_v1.json
+    kind: teleportautoupdateversionv1
+    name: teleportautoupdateversionv1_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportbotv1_v1.json
+    kind: teleportbotv1
+    name: teleportbotv1_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleporttrustedclusterv2_v1.json
+    kind: teleporttrustedclusterv2
+    name: teleporttrustedclusterv2_v1
 restate.dev:
   - apiVersion: restate.dev/v1beta1
     filename: restate.dev/restatedeployment_v1beta1.json
