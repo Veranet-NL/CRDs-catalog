@@ -7676,6 +7676,42 @@ kafka.strimzi.io:
     filename: kafka.strimzi.io/kafkanodepool_v1beta2.json
     kind: kafkanodepool
     name: kafkanodepool_v1beta2
+  - apiVersion: kafka.strimzi.io/v1
+    filename: kafka.strimzi.io/kafka_v1.json
+    kind: kafka
+    name: kafka_v1
+  - apiVersion: kafka.strimzi.io/v1
+    filename: kafka.strimzi.io/kafkanodepool_v1.json
+    kind: kafkanodepool
+    name: kafkanodepool_v1
+  - apiVersion: kafka.strimzi.io/v1
+    filename: kafka.strimzi.io/kafkarebalance_v1.json
+    kind: kafkarebalance
+    name: kafkarebalance_v1
+  - apiVersion: kafka.strimzi.io/v1
+    filename: kafka.strimzi.io/kafkaconnect_v1.json
+    kind: kafkaconnect
+    name: kafkaconnect_v1
+  - apiVersion: kafka.strimzi.io/v1
+    filename: kafka.strimzi.io/kafkabridge_v1.json
+    kind: kafkabridge
+    name: kafkabridge_v1
+  - apiVersion: kafka.strimzi.io/v1
+    filename: kafka.strimzi.io/kafkaconnector_v1.json
+    kind: kafkaconnector
+    name: kafkaconnector_v1
+  - apiVersion: kafka.strimzi.io/v1
+    filename: kafka.strimzi.io/kafkatopic_v1.json
+    kind: kafkatopic
+    name: kafkatopic_v1
+  - apiVersion: kafka.strimzi.io/v1
+    filename: kafka.strimzi.io/kafkauser_v1.json
+    kind: kafkauser
+    name: kafkauser_v1
+  - apiVersion: kafka.strimzi.io/v1
+    filename: kafka.strimzi.io/kafkamirrormaker2_v1.json
+    kind: kafkamirrormaker2
+    name: kafkamirrormaker2_v1
 kargo.akuity.io:
   - apiVersion: kargo.akuity.io/v1alpha1
     filename: kargo.akuity.io/project_v1alpha1.json
