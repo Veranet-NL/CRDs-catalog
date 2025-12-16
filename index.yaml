@@ -567,6 +567,10 @@ apigateway.cnrm.cloud.google.com:
     filename: apigateway.cnrm.cloud.google.com/apigatewayapi_v1alpha1.json
     kind: apigatewayapi
     name: apigatewayapi_v1alpha1
+  - apiVersion: apigateway.cnrm.cloud.google.com/v1beta1
+    filename: apigateway.cnrm.cloud.google.com/apigatewayapi_v1beta1.json
+    kind: APIGatewayAPI
+    name: apigatewayapi_v1beta1
 apigatewayv2.services.k8s.aws:
   - apiVersion: apigatewayv2.services.k8s.aws/v1alpha1
     filename: apigatewayv2.services.k8s.aws/deployment_v1alpha1.json
@@ -637,6 +641,26 @@ apigee.cnrm.cloud.google.com:
     filename: apigee.cnrm.cloud.google.com/apigeeenvgroupattachment_v1alpha1.json
     kind: apigeeenvgroupattachment
     name: apigeeenvgroupattachment_v1alpha1
+  - apiVersion: apigee.cnrm.cloud.google.com/v1beta1
+    filename: apigee.cnrm.cloud.google.com/apigeeenvgroup_v1beta1.json
+    kind: ApigeeEnvgroup
+    name: apigeeenvgroup_v1beta1
+  - apiVersion: apigee.cnrm.cloud.google.com/v1beta1
+    filename: apigee.cnrm.cloud.google.com/apigeeinstanceattachment_v1beta1.json
+    kind: ApigeeInstanceAttachment
+    name: apigeeinstanceattachment_v1beta1
+  - apiVersion: apigee.cnrm.cloud.google.com/v1beta1
+    filename: apigee.cnrm.cloud.google.com/apigeeenvgroupattachment_v1beta1.json
+    kind: ApigeeEnvgroupAttachment
+    name: apigeeenvgroupattachment_v1beta1
+  - apiVersion: apigee.cnrm.cloud.google.com/v1beta1
+    filename: apigee.cnrm.cloud.google.com/apigeeinstance_v1beta1.json
+    kind: ApigeeInstance
+    name: apigeeinstance_v1beta1
+  - apiVersion: apigee.cnrm.cloud.google.com/v1beta1
+    filename: apigee.cnrm.cloud.google.com/apigeeendpointattachment_v1beta1.json
+    kind: ApigeeEndpointAttachment
+    name: apigeeendpointattachment_v1beta1
 apikeys.cnrm.cloud.google.com:
   - apiVersion: apikeys.cnrm.cloud.google.com/v1alpha1
     filename: apikeys.cnrm.cloud.google.com/apikeyskey_v1alpha1.json
@@ -894,6 +918,25 @@ appengine.cnrm.cloud.google.com:
     filename: appengine.cnrm.cloud.google.com/appenginefirewallrule_v1alpha1.json
     kind: appenginefirewallrule
     name: appenginefirewallrule_v1alpha1
+appgw.ingress.azure.io:
+  - apiVersion: appgw.ingress.azure.io/v1beta1
+    filename: appgw.ingress.azure.io/azureapplicationgatewayrewrite_v1beta1.json
+    kind: azureapplicationgatewayrewrite
+    name: azureapplicationgatewayrewrite_v1beta1
+appgw.ingress.k8s.io:
+  - apiVersion: appgw.ingress.k8s.io/v1
+    filename: appgw.ingress.k8s.io/azureingressprohibitedtarget_v1.json
+    kind: azureingressprohibitedtarget
+    name: azureingressprohibitedtarget_v1
+apphub.cnrm.cloud.google.com:
+  - apiVersion: apphub.cnrm.cloud.google.com/v1beta1
+    filename: apphub.cnrm.cloud.google.com/apphubapplication_v1beta1.json
+    kind: AppHubApplication
+    name: apphubapplication_v1beta1
+  - apiVersion: apphub.cnrm.cloud.google.com/v1alpha1
+    filename: apphub.cnrm.cloud.google.com/apphubapplication_v1alpha1.json
+    kind: AppHubApplication
+    name: apphubapplication_v1alpha1
 applicationautoscaling.services.k8s.aws:
   - apiVersion: applicationautoscaling.services.k8s.aws/v1alpha1
     filename: applicationautoscaling.services.k8s.aws/scalabletarget_v1alpha1.json
@@ -1111,6 +1154,23 @@ artifactregistry.cnrm.cloud.google.com:
     filename: artifactregistry.cnrm.cloud.google.com/artifactregistryrepository_v1beta1.json
     kind: artifactregistryrepository
     name: artifactregistryrepository_v1beta1
+asset.cnrm.cloud.google.com:
+  - apiVersion: asset.cnrm.cloud.google.com/v1alpha1
+    filename: asset.cnrm.cloud.google.com/assetsavedquery_v1alpha1.json
+    kind: AssetSavedQuery
+    name: assetsavedquery_v1alpha1
+  - apiVersion: asset.cnrm.cloud.google.com/v1alpha1
+    filename: asset.cnrm.cloud.google.com/assetfeed_v1alpha1.json
+    kind: AssetFeed
+    name: assetfeed_v1alpha1
+  - apiVersion: asset.cnrm.cloud.google.com/v1beta1
+    filename: asset.cnrm.cloud.google.com/assetfeed_v1beta1.json
+    kind: AssetFeed
+    name: assetfeed_v1beta1
+  - apiVersion: asset.cnrm.cloud.google.com/v1beta1
+    filename: asset.cnrm.cloud.google.com/assetsavedquery_v1beta1.json
+    kind: AssetSavedQuery
+    name: assetsavedquery_v1beta1
 authentication.concierge.pinniped.dev:
   - apiVersion: authentication.concierge.pinniped.dev/v1alpha1
     filename: authentication.concierge.pinniped.dev/jwtauthenticator_v1alpha1.json
@@ -1269,6 +1329,27 @@ azureprovider.k8s.io:
     filename: azureprovider.k8s.io/azureclusterproviderspec_v1alpha1.json
     kind: azureclusterproviderspec
     name: azureclusterproviderspec_v1alpha1
+backupdr.cnrm.cloud.google.com:
+  - apiVersion: backupdr.cnrm.cloud.google.com/v1alpha1
+    filename: backupdr.cnrm.cloud.google.com/backupdrbackupvault_v1alpha1.json
+    kind: BackupDRBackupVault
+    name: backupdrbackupvault_v1alpha1
+  - apiVersion: backupdr.cnrm.cloud.google.com/v1alpha1
+    filename: backupdr.cnrm.cloud.google.com/backupdrbackupplan_v1alpha1.json
+    kind: BackupDRBackupPlan
+    name: backupdrbackupplan_v1alpha1
+  - apiVersion: backupdr.cnrm.cloud.google.com/v1beta1
+    filename: backupdr.cnrm.cloud.google.com/backupdrbackupplan_v1beta1.json
+    kind: BackupDRBackupPlan
+    name: backupdrbackupplan_v1beta1
+  - apiVersion: backupdr.cnrm.cloud.google.com/v1beta1
+    filename: backupdr.cnrm.cloud.google.com/backupdrbackupplanassociation_v1beta1.json
+    kind: BackupDRBackupPlanAssociation
+    name: backupdrbackupplanassociation_v1beta1
+  - apiVersion: backupdr.cnrm.cloud.google.com/v1alpha1
+    filename: backupdr.cnrm.cloud.google.com/backupdrbackupplanassociation_v1alpha1.json
+    kind: BackupDRBackupPlanAssociation
+    name: backupdrbackupplanassociation_v1alpha1
 barmancloud.cnpg.io:
   - apiVersion: barmancloud.cnpg.io/v1
     filename: barmancloud.cnpg.io/objectstore_v1.json
@@ -1331,6 +1412,19 @@ bigqueryanalyticshub.cnrm.cloud.google.com:
     filename: bigqueryanalyticshub.cnrm.cloud.google.com/bigqueryanalyticshubdataexchange_v1beta1.json
     kind: BigQueryAnalyticsHubDataExchange
     name: bigqueryanalyticshubdataexchange_v1beta1
+  - apiVersion: bigqueryanalyticshub.cnrm.cloud.google.com/v1beta1
+    filename: bigqueryanalyticshub.cnrm.cloud.google.com/bigqueryanalyticshublisting_v1beta1.json
+    kind: BigQueryAnalyticsHubListing
+    name: bigqueryanalyticshublisting_v1beta1
+bigquerybiglake.cnrm.cloud.google.com:
+  - apiVersion: bigquerybiglake.cnrm.cloud.google.com/v1alpha1
+    filename: bigquerybiglake.cnrm.cloud.google.com/biglaketable_v1alpha1.json
+    kind: BigLakeTable
+    name: biglaketable_v1alpha1
+  - apiVersion: bigquerybiglake.cnrm.cloud.google.com/v1beta1
+    filename: bigquerybiglake.cnrm.cloud.google.com/biglaketable_v1beta1.json
+    kind: BigLakeTable
+    name: biglaketable_v1beta1
 bigqueryconnection.cnrm.cloud.google.com:
   - apiVersion: bigqueryconnection.cnrm.cloud.google.com/v1alpha1
     filename: bigqueryconnection.cnrm.cloud.google.com/bigqueryconnectionconnection_v1alpha1.json
@@ -1363,6 +1457,18 @@ bigqueryreservation.cnrm.cloud.google.com:
     filename: bigqueryreservation.cnrm.cloud.google.com/bigqueryreservationcapacitycommitment_v1alpha1.json
     kind: bigqueryreservationcapacitycommitment
     name: bigqueryreservationcapacitycommitment_v1alpha1
+  - apiVersion: bigqueryreservation.cnrm.cloud.google.com/v1beta1
+    filename: bigqueryreservation.cnrm.cloud.google.com/bigqueryreservationreservation_v1beta1.json
+    kind: BigQueryReservationReservation
+    name: bigqueryreservationreservation_v1beta1
+  - apiVersion: bigqueryreservation.cnrm.cloud.google.com/v1beta1
+    filename: bigqueryreservation.cnrm.cloud.google.com/bigqueryreservationassignment_v1beta1.json
+    kind: BigQueryReservationAssignment
+    name: bigqueryreservationassignment_v1beta1
+  - apiVersion: bigqueryreservation.cnrm.cloud.google.com/v1alpha1
+    filename: bigqueryreservation.cnrm.cloud.google.com/bigqueryreservationassignment_v1alpha1.json
+    kind: BigQueryReservationAssignment
+    name: bigqueryreservationassignment_v1alpha1
 bigtable.cnrm.cloud.google.com:
   - apiVersion: bigtable.cnrm.cloud.google.com/v1beta1
     filename: bigtable.cnrm.cloud.google.com/bigtableinstance_v1beta1.json
@@ -2060,6 +2166,15 @@ cloudbuild.cnrm.cloud.google.com:
     filename: cloudbuild.cnrm.cloud.google.com/cloudbuildworkerpool_v1beta1.json
     kind: CloudBuildWorkerPool
     name: cloudbuildworkerpool_v1beta1
+clouddeploy.cnrm.cloud.google.com:
+  - apiVersion: clouddeploy.cnrm.cloud.google.com/v1alpha1
+    filename: clouddeploy.cnrm.cloud.google.com/clouddeploydeliverypipeline_v1alpha1.json
+    kind: CloudDeployDeliveryPipeline
+    name: clouddeploydeliverypipeline_v1alpha1
+  - apiVersion: clouddeploy.cnrm.cloud.google.com/v1beta1
+    filename: clouddeploy.cnrm.cloud.google.com/clouddeploydeliverypipeline_v1beta1.json
+    kind: CloudDeployDeliveryPipeline
+    name: clouddeploydeliverypipeline_v1beta1
 cloudflare-operator.io:
   - apiVersion: cloudflare-operator.io/v1
     filename: cloudflare-operator.io/ip_v1.json
@@ -2119,6 +2234,19 @@ cloudiot.cnrm.cloud.google.com:
     filename: cloudiot.cnrm.cloud.google.com/cloudiotdevice_v1alpha1.json
     kind: cloudiotdevice
     name: cloudiotdevice_v1alpha1
+cloudquota.cnrm.cloud.google.com:
+  - apiVersion: cloudquota.cnrm.cloud.google.com/v1beta1
+    filename: cloudquota.cnrm.cloud.google.com/apiquotaadjustersettings_v1beta1.json
+    kind: APIQuotaAdjusterSettings
+    name: apiquotaadjustersettings_v1beta1
+  - apiVersion: cloudquota.cnrm.cloud.google.com/v1beta1
+    filename: cloudquota.cnrm.cloud.google.com/apiquotapreference_v1beta1.json
+    kind: APIQuotaPreference
+    name: apiquotapreference_v1beta1
+  - apiVersion: cloudquota.cnrm.cloud.google.com/v1alpha1
+    filename: cloudquota.cnrm.cloud.google.com/apiquotaadjustersettings_v1alpha1.json
+    kind: APIQuotaAdjusterSettings
+    name: apiquotaadjustersettings_v1alpha1
 cloudscheduler.cnrm.cloud.google.com:
   - apiVersion: cloudscheduler.cnrm.cloud.google.com/v1beta1
     filename: cloudscheduler.cnrm.cloud.google.com/cloudschedulerjob_v1beta1.json
@@ -2370,6 +2498,20 @@ clustersecret.io:
     filename: clustersecret.io/clustersecret_v1.json
     kind: clustersecret
     name: clustersecret_v1
+collectors.grafana.com:
+  - apiVersion: collectors.grafana.com/v1alpha1
+    filename: collectors.grafana.com/alloy_v1alpha1.json
+    kind: Alloy
+    name: alloy_v1alpha1
+composer.cnrm.cloud.google.com:
+  - apiVersion: composer.cnrm.cloud.google.com/v1alpha1
+    filename: composer.cnrm.cloud.google.com/composerenvironment_v1alpha1.json
+    kind: ComposerEnvironment
+    name: composerenvironment_v1alpha1
+  - apiVersion: composer.cnrm.cloud.google.com/v1beta1
+    filename: composer.cnrm.cloud.google.com/composerenvironment_v1beta1.json
+    kind: ComposerEnvironment
+    name: composerenvironment_v1beta1
 compute.azure.com:
   - apiVersion: compute.azure.com/v1api20200930
     filename: compute.azure.com/snapshot_v1api20200930.json
@@ -2744,6 +2886,10 @@ compute.cnrm.cloud.google.com:
     filename: compute.cnrm.cloud.google.com/computesslpolicy_v1beta1.json
     kind: computesslpolicy
     name: computesslpolicy_v1beta1
+  - apiVersion: compute.cnrm.cloud.google.com/v1
+    filename: compute.cnrm.cloud.google.com/computeclass_v1.json
+    kind: ComputeClass
+    name: computeclass_v1
 compute.coreweave.com:
   - apiVersion: compute.coreweave.com/v1alpha1
     filename: compute.coreweave.com/nodepool_v1alpha1.json
@@ -3627,6 +3773,14 @@ documentai.cnrm.cloud.google.com:
     filename: documentai.cnrm.cloud.google.com/documentaiprocessordefaultversion_v1alpha1.json
     kind: documentaiprocessordefaultversion
     name: documentaiprocessordefaultversion_v1alpha1
+  - apiVersion: documentai.cnrm.cloud.google.com/v1alpha1
+    filename: documentai.cnrm.cloud.google.com/documentaiprocessorversion_v1alpha1.json
+    kind: DocumentAIProcessorVersion
+    name: documentaiprocessorversion_v1alpha1
+  - apiVersion: documentai.cnrm.cloud.google.com/v1beta1
+    filename: documentai.cnrm.cloud.google.com/documentaiprocessorversion_v1beta1.json
+    kind: DocumentAIProcessorVersion
+    name: documentaiprocessorversion_v1beta1
 documentdb.azure.com:
   - apiVersion: documentdb.azure.com/v1api20231115
     filename: documentdb.azure.com/mongodbdatabasethroughputsetting_v1api20231115.json
@@ -5127,11 +5281,32 @@ enterprisesearch.k8s.elastic.co:
     filename: enterprisesearch.k8s.elastic.co/enterprisesearch_v1.json
     kind: EnterpriseSearch
     name: enterprisesearch_v1
+eraser.sh:
+  - apiVersion: eraser.sh/v1
+    filename: eraser.sh/imagejob_v1.json
+    kind: ImageJob
+    name: imagejob_v1
+  - apiVersion: eraser.sh/v1alpha1
+    filename: eraser.sh/imagejob_v1alpha1.json
+    kind: ImageJob
+    name: imagejob_v1alpha1
+  - apiVersion: eraser.sh/v1alpha1
+    filename: eraser.sh/imagelist_v1alpha1.json
+    kind: ImageList
+    name: imagelist_v1alpha1
+  - apiVersion: eraser.sh/v1
+    filename: eraser.sh/imagelist_v1.json
+    kind: ImageList
+    name: imagelist_v1
 essentialcontacts.cnrm.cloud.google.com:
   - apiVersion: essentialcontacts.cnrm.cloud.google.com/v1alpha1
     filename: essentialcontacts.cnrm.cloud.google.com/essentialcontactscontact_v1alpha1.json
     kind: essentialcontactscontact
     name: essentialcontactscontact_v1alpha1
+  - apiVersion: essentialcontacts.cnrm.cloud.google.com/v1beta1
+    filename: essentialcontacts.cnrm.cloud.google.com/essentialcontactscontact_v1beta1.json
+    kind: EssentialContactsContact
+    name: essentialcontactscontact_v1beta1
 etcd.k0sproject.io:
   - apiVersion: etcd.k0sproject.io/v1beta1
     filename: etcd.k0sproject.io/etcdmember_v1beta1.json
@@ -5400,6 +5575,10 @@ firestore.cnrm.cloud.google.com:
     filename: firestore.cnrm.cloud.google.com/firestoredatabase_v1alpha1.json
     kind: FirestoreDatabase
     name: firestoredatabase_v1alpha1
+  - apiVersion: firestore.cnrm.cloud.google.com/v1beta1
+    filename: firestore.cnrm.cloud.google.com/firestoredatabase_v1beta1.json
+    kind: FirestoreDatabase
+    name: firestoredatabase_v1beta1
 flagger.app:
   - apiVersion: flagger.app/v1beta1
     filename: flagger.app/metrictemplate_v1beta1.json
@@ -6422,6 +6601,14 @@ iap.cnrm.cloud.google.com:
     filename: iap.cnrm.cloud.google.com/iapidentityawareproxyclient_v1beta1.json
     kind: iapidentityawareproxyclient
     name: iapidentityawareproxyclient_v1beta1
+  - apiVersion: iap.cnrm.cloud.google.com/v1beta1
+    filename: iap.cnrm.cloud.google.com/iapsettings_v1beta1.json
+    kind: IAPSettings
+    name: iapsettings_v1beta1
+  - apiVersion: iap.cnrm.cloud.google.com/v1alpha1
+    filename: iap.cnrm.cloud.google.com/iapsettings_v1alpha1.json
+    kind: IAPSettings
+    name: iapsettings_v1alpha1
 identityplatform.cnrm.cloud.google.com:
   - apiVersion: identityplatform.cnrm.cloud.google.com/v1beta1
     filename: identityplatform.cnrm.cloud.google.com/identityplatformoauthidpconfig_v1beta1.json
@@ -7898,6 +8085,22 @@ kms.cnrm.cloud.google.com:
     filename: kms.cnrm.cloud.google.com/kmsautokeyconfig_v1alpha1.json
     kind: KMSAutokeyConfig
     name: kmsautokeyconfig_v1alpha1
+  - apiVersion: kms.cnrm.cloud.google.com/v1beta1
+    filename: kms.cnrm.cloud.google.com/kmsimportjob_v1beta1.json
+    kind: KMSImportJob
+    name: kmsimportjob_v1beta1
+  - apiVersion: kms.cnrm.cloud.google.com/v1beta1
+    filename: kms.cnrm.cloud.google.com/kmskeyhandle_v1beta1.json
+    kind: KMSKeyHandle
+    name: kmskeyhandle_v1beta1
+  - apiVersion: kms.cnrm.cloud.google.com/v1alpha1
+    filename: kms.cnrm.cloud.google.com/kmsimportjob_v1alpha1.json
+    kind: KMSImportJob
+    name: kmsimportjob_v1alpha1
+  - apiVersion: kms.cnrm.cloud.google.com/v1beta1
+    filename: kms.cnrm.cloud.google.com/kmsautokeyconfig_v1beta1.json
+    kind: KMSAutokeyConfig
+    name: kmsautokeyconfig_v1beta1
 kms.services.k8s.aws:
   - apiVersion: kms.services.k8s.aws/v1alpha1
     filename: kms.services.k8s.aws/grant_v1alpha1.json
@@ -8557,6 +8760,23 @@ managedidentity.azure.com:
     filename: managedidentity.azure.com/federatedidentitycredential_v1api20220131preview.json
     kind: federatedIdentityCredential
     name: federatedidentitycredential_v1api20220131preview
+managedkafka.cnrm.cloud.google.com:
+  - apiVersion: managedkafka.cnrm.cloud.google.com/v1alpha1
+    filename: managedkafka.cnrm.cloud.google.com/managedkafkatopic_v1alpha1.json
+    kind: ManagedKafkaTopic
+    name: managedkafkatopic_v1alpha1
+  - apiVersion: managedkafka.cnrm.cloud.google.com/v1beta1
+    filename: managedkafka.cnrm.cloud.google.com/managedkafkacluster_v1beta1.json
+    kind: ManagedKafkaCluster
+    name: managedkafkacluster_v1beta1
+  - apiVersion: managedkafka.cnrm.cloud.google.com/v1beta1
+    filename: managedkafka.cnrm.cloud.google.com/managedkafkatopic_v1beta1.json
+    kind: ManagedKafkaTopic
+    name: managedkafkatopic_v1beta1
+  - apiVersion: managedkafka.cnrm.cloud.google.com/v1alpha1
+    filename: managedkafka.cnrm.cloud.google.com/managedkafkacluster_v1alpha1.json
+    kind: ManagedKafkaCluster
+    name: managedkafkacluster_v1alpha1
 maps.k8s.elastic.co:
   - apiVersion: maps.k8s.elastic.co/v1alpha1
     filename: maps.k8s.elastic.co/elasticmapsserver_v1alpha1.json
@@ -8666,6 +8886,15 @@ metallb.io:
     filename: metallb.io/bgppeer_v1beta2.json
     kind: BGPPeer
     name: bgppeer_v1beta2
+metastore.cnrm.cloud.google.com:
+  - apiVersion: metastore.cnrm.cloud.google.com/v1beta1
+    filename: metastore.cnrm.cloud.google.com/metastorebackup_v1beta1.json
+    kind: MetastoreBackup
+    name: metastorebackup_v1beta1
+  - apiVersion: metastore.cnrm.cloud.google.com/v1alpha1
+    filename: metastore.cnrm.cloud.google.com/metastorebackup_v1alpha1.json
+    kind: MetastoreBackup
+    name: metastorebackup_v1alpha1
 migrations.kubevirt.io:
   - apiVersion: migrations.kubevirt.io/v1alpha1
     filename: migrations.kubevirt.io/migrationpolicy_v1alpha1.json
@@ -9523,6 +9752,14 @@ notebooks.cnrm.cloud.google.com:
     filename: notebooks.cnrm.cloud.google.com/notebooksenvironment_v1alpha1.json
     kind: notebooksenvironment
     name: notebooksenvironment_v1alpha1
+  - apiVersion: notebooks.cnrm.cloud.google.com/v1alpha1
+    filename: notebooks.cnrm.cloud.google.com/notebookinstance_v1alpha1.json
+    kind: NotebookInstance
+    name: notebookinstance_v1alpha1
+  - apiVersion: notebooks.cnrm.cloud.google.com/v1beta1
+    filename: notebooks.cnrm.cloud.google.com/notebookinstance_v1beta1.json
+    kind: NotebookInstance
+    name: notebookinstance_v1beta1
 notification.toolkit.fluxcd.io:
   - apiVersion: notification.toolkit.fluxcd.io/v1beta1
     filename: notification.toolkit.fluxcd.io/alert_v1beta1.json
@@ -10471,6 +10708,14 @@ pubsub.cnrm.cloud.google.com:
     filename: pubsub.cnrm.cloud.google.com/pubsubtopic_v1beta1.json
     kind: pubsubtopic
     name: pubsubtopic_v1beta1
+  - apiVersion: pubsub.cnrm.cloud.google.com/v1alpha1
+    filename: pubsub.cnrm.cloud.google.com/pubsubsnapshot_v1alpha1.json
+    kind: PubSubSnapshot
+    name: pubsubsnapshot_v1alpha1
+  - apiVersion: pubsub.cnrm.cloud.google.com/v1beta1
+    filename: pubsub.cnrm.cloud.google.com/pubsubsnapshot_v1beta1.json
+    kind: PubSubSnapshot
+    name: pubsubsnapshot_v1beta1
 pubsublite.cnrm.cloud.google.com:
   - apiVersion: pubsublite.cnrm.cloud.google.com/v1alpha1
     filename: pubsublite.cnrm.cloud.google.com/pubsublitetopic_v1alpha1.json
@@ -11633,6 +11878,14 @@ securesourcemanager.cnrm.cloud.google.com:
     filename: securesourcemanager.cnrm.cloud.google.com/securesourcemanagerrepository_v1alpha1.json
     kind: SecureSourceManagerRepository
     name: securesourcemanagerrepository_v1alpha1
+  - apiVersion: securesourcemanager.cnrm.cloud.google.com/v1beta1
+    filename: securesourcemanager.cnrm.cloud.google.com/securesourcemanagerrepository_v1beta1.json
+    kind: SecureSourceManagerRepository
+    name: securesourcemanagerrepository_v1beta1
+  - apiVersion: securesourcemanager.cnrm.cloud.google.com/v1beta1
+    filename: securesourcemanager.cnrm.cloud.google.com/securesourcemanagerinstance_v1beta1.json
+    kind: SecureSourceManagerInstance
+    name: securesourcemanagerinstance_v1beta1
 security.istio.io:
   - apiVersion: security.istio.io/v1beta1
     filename: security.istio.io/peerauthentication_v1beta1.json
@@ -12071,6 +12324,14 @@ spanner.cnrm.cloud.google.com:
     filename: spanner.cnrm.cloud.google.com/spannerinstance_v1beta1.json
     kind: SpannerInstance
     name: spannerinstance_v1beta1
+  - apiVersion: spanner.cnrm.cloud.google.com/v1beta1
+    filename: spanner.cnrm.cloud.google.com/spannerbackupschedule_v1beta1.json
+    kind: SpannerBackupSchedule
+    name: spannerbackupschedule_v1beta1
+  - apiVersion: spanner.cnrm.cloud.google.com/v1alpha1
+    filename: spanner.cnrm.cloud.google.com/spannerbackupschedule_v1alpha1.json
+    kind: SpannerBackupSchedule
+    name: spannerbackupschedule_v1alpha1
 sparkoperator.k8s.io:
   - apiVersion: sparkoperator.k8s.io/v1beta2
     filename: sparkoperator.k8s.io/sparkapplication_v1beta2.json
@@ -12080,6 +12341,31 @@ sparkoperator.k8s.io:
     filename: sparkoperator.k8s.io/scheduledsparkapplication_v1beta2.json
     kind: scheduledsparkapplication
     name: scheduledsparkapplication_v1beta2
+speech.cnrm.cloud.google.com:
+  - apiVersion: speech.cnrm.cloud.google.com/v1beta1
+    filename: speech.cnrm.cloud.google.com/speechrecognizer_v1beta1.json
+    kind: SpeechRecognizer
+    name: speechrecognizer_v1beta1
+  - apiVersion: speech.cnrm.cloud.google.com/v1alpha1
+    filename: speech.cnrm.cloud.google.com/speechrecognizer_v1alpha1.json
+    kind: SpeechRecognizer
+    name: speechrecognizer_v1alpha1
+  - apiVersion: speech.cnrm.cloud.google.com/v1beta1
+    filename: speech.cnrm.cloud.google.com/speechphraseset_v1beta1.json
+    kind: SpeechPhraseSet
+    name: speechphraseset_v1beta1
+  - apiVersion: speech.cnrm.cloud.google.com/v1alpha1
+    filename: speech.cnrm.cloud.google.com/speechcustomclass_v1alpha1.json
+    kind: SpeechCustomClass
+    name: speechcustomclass_v1alpha1
+  - apiVersion: speech.cnrm.cloud.google.com/v1beta1
+    filename: speech.cnrm.cloud.google.com/speechcustomclass_v1beta1.json
+    kind: SpeechCustomClass
+    name: speechcustomclass_v1beta1
+  - apiVersion: speech.cnrm.cloud.google.com/v1alpha1
+    filename: speech.cnrm.cloud.google.com/speechphraseset_v1alpha1.json
+    kind: SpeechPhraseSet
+    name: speechphraseset_v1alpha1
 spv.no:
   - apiVersion: spv.no/v2beta1
     filename: spv.no/azurekeyvaultsecret_v2beta1.json
@@ -12394,6 +12680,14 @@ storage.cnrm.cloud.google.com:
     filename: storage.cnrm.cloud.google.com/storagebucketaccesscontrol_v1beta1.json
     kind: storagebucketaccesscontrol
     name: storagebucketaccesscontrol_v1beta1
+  - apiVersion: storage.cnrm.cloud.google.com/v1alpha1
+    filename: storage.cnrm.cloud.google.com/storageanywherecache_v1alpha1.json
+    kind: StorageAnywhereCache
+    name: storageanywherecache_v1alpha1
+  - apiVersion: storage.cnrm.cloud.google.com/v1beta1
+    filename: storage.cnrm.cloud.google.com/storageanywherecache_v1beta1.json
+    kind: StorageAnywhereCache
+    name: storageanywherecache_v1beta1
 storagetransfer.cnrm.cloud.google.com:
   - apiVersion: storagetransfer.cnrm.cloud.google.com/v1beta1
     filename: storagetransfer.cnrm.cloud.google.com/storagetransferjob_v1beta1.json
@@ -13014,6 +13308,19 @@ vertexai.cnrm.cloud.google.com:
     filename: vertexai.cnrm.cloud.google.com/vertexaidataset_v1alpha1.json
     kind: vertexaidataset
     name: vertexaidataset_v1alpha1
+  - apiVersion: vertexai.cnrm.cloud.google.com/v1beta1
+    filename: vertexai.cnrm.cloud.google.com/vertexaimetadatastore_v1beta1.json
+    kind: VertexAIMetadataStore
+    name: vertexaimetadatastore_v1beta1
+vmwareengine.cnrm.cloud.google.com:
+  - apiVersion: vmwareengine.cnrm.cloud.google.com/v1alpha1
+    filename: vmwareengine.cnrm.cloud.google.com/vmwareengineexternaladdress_v1alpha1.json
+    kind: VMwareEngineExternalAddress
+    name: vmwareengineexternaladdress_v1alpha1
+  - apiVersion: vmwareengine.cnrm.cloud.google.com/v1beta1
+    filename: vmwareengine.cnrm.cloud.google.com/vmwareengineexternaladdress_v1beta1.json
+    kind: VMwareEngineExternalAddress
+    name: vmwareengineexternaladdress_v1beta1
 volsync.backube:
   - apiVersion: volsync.backube/v1alpha1
     filename: volsync.backube/replicationsource_v1alpha1.json
@@ -13147,3 +13454,19 @@ workstations.cnrm.cloud.google.com:
     filename: workstations.cnrm.cloud.google.com/workstationcluster_v1beta1.json
     kind: WorkstationCluster
     name: workstationcluster_v1beta1
+  - apiVersion: workstations.cnrm.cloud.google.com/v1beta1
+    filename: workstations.cnrm.cloud.google.com/workstation_v1beta1.json
+    kind: Workstation
+    name: workstation_v1beta1
+  - apiVersion: workstations.cnrm.cloud.google.com/v1alpha1
+    filename: workstations.cnrm.cloud.google.com/workstation_v1alpha1.json
+    kind: Workstation
+    name: workstation_v1alpha1
+  - apiVersion: workstations.cnrm.cloud.google.com/v1beta1
+    filename: workstations.cnrm.cloud.google.com/workstationconfig_v1beta1.json
+    kind: WorkstationConfig
+    name: workstationconfig_v1beta1
+  - apiVersion: workstations.cnrm.cloud.google.com/v1alpha1
+    filename: workstations.cnrm.cloud.google.com/workstationconfig_v1alpha1.json
+    kind: WorkstationConfig
+    name: workstationconfig_v1alpha1
