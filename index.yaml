@@ -832,6 +832,26 @@ apisix.apache.org:
     filename: apisix.apache.org/apisixtls_v2beta3.json
     kind: ApisixTls
     name: apisixtls_v2beta3
+  - apiVersion: apisix.apache.org/v1alpha1
+    filename: apisix.apache.org/gatewayproxy_v1alpha1.json
+    kind: GatewayProxy
+    name: gatewayproxy_v1alpha1
+  - apiVersion: apisix.apache.org/v1alpha1
+    filename: apisix.apache.org/backendtrafficpolicy_v1alpha1.json
+    kind: BackendTrafficPolicy
+    name: backendtrafficpolicy_v1alpha1
+  - apiVersion: apisix.apache.org/v1alpha1
+    filename: apisix.apache.org/httproutepolicy_v1alpha1.json
+    kind: HTTPRoutePolicy
+    name: httproutepolicy_v1alpha1
+  - apiVersion: apisix.apache.org/v1alpha1
+    filename: apisix.apache.org/consumer_v1alpha1.json
+    kind: Consumer
+    name: consumer_v1alpha1
+  - apiVersion: apisix.apache.org/v1alpha1
+    filename: apisix.apache.org/pluginconfig_v1alpha1.json
+    kind: PluginConfig
+    name: pluginconfig_v1alpha1
 apm.k8s.elastic.co:
   - apiVersion: apm.k8s.elastic.co/v1
     filename: apm.k8s.elastic.co/apmserver_v1.json
