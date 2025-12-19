@@ -2968,6 +2968,26 @@ configuration.konghq.com:
     filename: configuration.konghq.com/tcpingress_v1beta1.json
     kind: TCPIngress
     name: tcpingress_v1beta1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/konglicense_v1alpha1.json
+    kind: KongLicense
+    name: konglicense_v1alpha1
+  - apiVersion: configuration.konghq.com/v1beta1
+    filename: configuration.konghq.com/kongupstreampolicy_v1beta1.json
+    kind: KongUpstreamPolicy
+    name: kongupstreampolicy_v1beta1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongcustomentity_v1alpha1.json
+    kind: KongCustomEntity
+    name: kongcustomentity_v1alpha1
+  - apiVersion: configuration.konghq.com/v1beta1
+    filename: configuration.konghq.com/kongconsumergroup_v1beta1.json
+    kind: KongConsumerGroup
+    name: kongconsumergroup_v1beta1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongvault_v1alpha1.json
+    kind: KongVault
+    name: kongvault_v1alpha1
 container.cnrm.cloud.google.com:
   - apiVersion: container.cnrm.cloud.google.com/v1beta1
     filename: container.cnrm.cloud.google.com/containernodepool_v1beta1.json
