@@ -10103,6 +10103,22 @@ operator.victoriametrics.com:
     filename: operator.victoriametrics.com/vlsingle_v1.json
     kind: VLSingle
     name: vlsingle_v1
+  - apiVersion: operator.victoriametrics.com/v1
+    filename: operator.victoriametrics.com/vlagent_v1.json
+    kind: VLAgent
+    name: vlagent_v1
+  - apiVersion: operator.victoriametrics.com/v1
+    filename: operator.victoriametrics.com/vmanomaly_v1.json
+    kind: VMAnomaly
+    name: vmanomaly_v1
+  - apiVersion: operator.victoriametrics.com/v1
+    filename: operator.victoriametrics.com/vtsingle_v1.json
+    kind: VTSingle
+    name: vtsingle_v1
+  - apiVersion: operator.victoriametrics.com/v1
+    filename: operator.victoriametrics.com/vtcluster_v1.json
+    kind: VTCluster
+    name: vtcluster_v1
 operators.coreos.com:
   - apiVersion: operators.coreos.com/v2
     filename: operators.coreos.com/operatorcondition_v2.json
@@ -11129,6 +11145,11 @@ redis.redis.opstreelabs.in:
     filename: redis.redis.opstreelabs.in/rediscluster_v1beta2.json
     kind: RedisCluster
     name: rediscluster_v1beta2
+renovate-operator.mogenius.com:
+  - apiVersion: renovate-operator.mogenius.com/v1alpha1
+    filename: renovate-operator.mogenius.com/renovatejob_v1alpha1.json
+    kind: renovatejob
+    name: renovatejob_v1alpha1
 reports.kyverno.io:
   - apiVersion: reports.kyverno.io/v1
     filename: reports.kyverno.io/clusterephemeralreport_v1.json
