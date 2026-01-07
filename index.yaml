@@ -164,6 +164,11 @@ agent.k8s.elastic.co:
     filename: agent.k8s.elastic.co/agent_v1alpha1.json
     kind: Agent
     name: agent_v1alpha1
+ais.nvidia.com:
+  - apiVersion: ais.nvidia.com/v1beta1
+    filename: ais.nvidia.com/aistore_v1beta1.json
+    kind: AIStore
+    name: aistore_v1beta1
 aiven.io:
   - apiVersion: aiven.io/v1alpha1
     filename: aiven.io/clickhouseuser_v1alpha1.json
@@ -1043,6 +1048,15 @@ apps.jfrog.com:
     filename: apps.jfrog.com/secretrotator_v1alpha1.json
     kind: SecretRotator
     name: secretrotator_v1alpha1
+apps.projectsveltos.io:
+  - apiVersion: apps.projectsveltos.io/v1alpha1
+    filename: apps.projectsveltos.io/report_v1alpha1.json
+    kind: Report
+    name: report_v1alpha1
+  - apiVersion: apps.projectsveltos.io/v1alpha1
+    filename: apps.projectsveltos.io/cleaner_v1alpha1.json
+    kind: Cleaner
+    name: cleaner_v1alpha1
 aquasecurity.github.io:
   - apiVersion: aquasecurity.github.io/v1alpha1
     filename: aquasecurity.github.io/clustersbomreport_v1alpha1.json
@@ -5264,6 +5278,80 @@ elasticsearch.k8s.elastic.co:
     filename: elasticsearch.k8s.elastic.co/elasticsearch_v1.json
     kind: Elasticsearch
     name: elasticsearch_v1
+elbv2.aws.m.upbound.io:
+  - apiVersion: elbv2.aws.m.upbound.io/v1beta1
+    filename: elbv2.aws.m.upbound.io/lbtargetgroup_v1beta1.json
+    kind: LBTargetGroup
+    name: lbtargetgroup_v1beta1
+  - apiVersion: elbv2.aws.m.upbound.io/v1beta1
+    filename: elbv2.aws.m.upbound.io/lblistenerrule_v1beta1.json
+    kind: LBListenerRule
+    name: lblistenerrule_v1beta1
+  - apiVersion: elbv2.aws.m.upbound.io/v1beta1
+    filename: elbv2.aws.m.upbound.io/lbtruststore_v1beta1.json
+    kind: LBTrustStore
+    name: lbtruststore_v1beta1
+  - apiVersion: elbv2.aws.m.upbound.io/v1beta1
+    filename: elbv2.aws.m.upbound.io/lb_v1beta1.json
+    kind: LB
+    name: lb_v1beta1
+  - apiVersion: elbv2.aws.m.upbound.io/v1beta1
+    filename: elbv2.aws.m.upbound.io/lblistenercertificate_v1beta1.json
+    kind: LBListenerCertificate
+    name: lblistenercertificate_v1beta1
+  - apiVersion: elbv2.aws.m.upbound.io/v1beta1
+    filename: elbv2.aws.m.upbound.io/lbtargetgroupattachment_v1beta1.json
+    kind: LBTargetGroupAttachment
+    name: lbtargetgroupattachment_v1beta1
+  - apiVersion: elbv2.aws.m.upbound.io/v1beta1
+    filename: elbv2.aws.m.upbound.io/lblistener_v1beta1.json
+    kind: LBListener
+    name: lblistener_v1beta1
+elbv2.aws.upbound.io:
+  - apiVersion: elbv2.aws.upbound.io/v1beta1
+    filename: elbv2.aws.upbound.io/lbtargetgroup_v1beta1.json
+    kind: LBTargetGroup
+    name: lbtargetgroup_v1beta1
+  - apiVersion: elbv2.aws.upbound.io/v1beta1
+    filename: elbv2.aws.upbound.io/lblistenerrule_v1beta1.json
+    kind: LBListenerRule
+    name: lblistenerrule_v1beta1
+  - apiVersion: elbv2.aws.upbound.io/v1beta1
+    filename: elbv2.aws.upbound.io/lbtruststore_v1beta1.json
+    kind: LBTrustStore
+    name: lbtruststore_v1beta1
+  - apiVersion: elbv2.aws.upbound.io/v1beta2
+    filename: elbv2.aws.upbound.io/lblistener_v1beta2.json
+    kind: LBListener
+    name: lblistener_v1beta2
+  - apiVersion: elbv2.aws.upbound.io/v1beta2
+    filename: elbv2.aws.upbound.io/lb_v1beta2.json
+    kind: LB
+    name: lb_v1beta2
+  - apiVersion: elbv2.aws.upbound.io/v1beta2
+    filename: elbv2.aws.upbound.io/lbtargetgroup_v1beta2.json
+    kind: LBTargetGroup
+    name: lbtargetgroup_v1beta2
+  - apiVersion: elbv2.aws.upbound.io/v1beta2
+    filename: elbv2.aws.upbound.io/lblistenerrule_v1beta2.json
+    kind: LBListenerRule
+    name: lblistenerrule_v1beta2
+  - apiVersion: elbv2.aws.upbound.io/v1beta1
+    filename: elbv2.aws.upbound.io/lb_v1beta1.json
+    kind: LB
+    name: lb_v1beta1
+  - apiVersion: elbv2.aws.upbound.io/v1beta1
+    filename: elbv2.aws.upbound.io/lblistenercertificate_v1beta1.json
+    kind: LBListenerCertificate
+    name: lblistenercertificate_v1beta1
+  - apiVersion: elbv2.aws.upbound.io/v1beta1
+    filename: elbv2.aws.upbound.io/lbtargetgroupattachment_v1beta1.json
+    kind: LBTargetGroupAttachment
+    name: lbtargetgroupattachment_v1beta1
+  - apiVersion: elbv2.aws.upbound.io/v1beta1
+    filename: elbv2.aws.upbound.io/lblistener_v1beta1.json
+    kind: LBListener
+    name: lblistener_v1beta1
 elbv2.k8s.aws:
   - apiVersion: elbv2.k8s.aws/v1alpha1
     filename: elbv2.k8s.aws/targetgroupbinding_v1alpha1.json
@@ -6764,6 +6852,15 @@ image.toolkit.fluxcd.io:
     filename: image.toolkit.fluxcd.io/imagerepository_v1.json
     kind: ImageRepository
     name: imagerepository_v1
+infra.contrib.fluxcd.io:
+  - apiVersion: infra.contrib.fluxcd.io/v1alpha2
+    filename: infra.contrib.fluxcd.io/terraform_v1alpha2.json
+    kind: Terraform
+    name: terraform_v1alpha2
+  - apiVersion: infra.contrib.fluxcd.io/v1alpha1
+    filename: infra.contrib.fluxcd.io/terraform_v1alpha1.json
+    kind: Terraform
+    name: terraform_v1alpha1
 infrastructure.cluster.x-k8s.io:
   - apiVersion: infrastructure.cluster.x-k8s.io/v1beta2
     filename: infrastructure.cluster.x-k8s.io/awsclusterroleidentity_v1beta2.json
@@ -13178,6 +13275,15 @@ trust.cert-manager.io:
     filename: trust.cert-manager.io/bundle_v1alpha1.json
     kind: bundle
     name: bundle_v1alpha1
+tuppr.home-operations.com:
+  - apiVersion: tuppr.home-operations.com/v1alpha1
+    filename: tuppr.home-operations.com/kubernetesupgrade_v1alpha1.json
+    kind: KubernetesUpgrade
+    name: kubernetesupgrade_v1alpha1
+  - apiVersion: tuppr.home-operations.com/v1alpha1
+    filename: tuppr.home-operations.com/talosupgrade_v1alpha1.json
+    kind: TalosUpgrade
+    name: talosupgrade_v1alpha1
 twingate.com:
   - apiVersion: twingate.com/v1beta
     filename: twingate.com/twingateconnector_v1beta.json
