@@ -1119,6 +1119,11 @@ aquasecurity.github.io:
     filename: aquasecurity.github.io/exposedsecretreport_v1alpha1.json
     kind: ExposedSecretReport
     name: exposedsecretreport_v1alpha1
+argocd-image-updater.argoproj.io:
+  - apiVersion: argocd-image-updater.argoproj.io/v1alpha1
+    filename: argocd-image-updater.argoproj.io/imageupdater_v1alpha1.json
+    kind: ImageUpdater
+    name: imageupdater_v1alpha1
 argoproj.io:
   - apiVersion: argoproj.io/v1alpha1
     filename: argoproj.io/analysisrun_v1alpha1.json
@@ -10870,6 +10875,22 @@ policy.linkerd.io:
     filename: policy.linkerd.io/authorizationpolicy_v1alpha1.json
     kind: authorizationpolicy
     name: authorizationpolicy_v1alpha1
+  - apiVersion: policy.linkerd.io/v1beta3
+    filename: policy.linkerd.io/server_v1beta3.json
+    kind: server
+    name: server_v1beta3
+  - apiVersion: policy.linkerd.io/v1alpha1
+    filename: policy.linkerd.io/egressnetwork_v1alpha1.json
+    kind: EgressNetwork
+    name: egressnetwork_v1alpha1
+  - apiVersion: policy.linkerd.io/v1beta2
+    filename: policy.linkerd.io/server_v1beta2.json
+    kind: server
+    name: server_v1beta2
+  - apiVersion: policy.linkerd.io/v1alpha1
+    filename: policy.linkerd.io/httplocalratelimitpolicy_v1alpha1.json
+    kind: httplocalratelimitpolicy
+    name: httplocalratelimitpolicy_v1alpha1
 policy.sigstore.dev:
   - apiVersion: policy.sigstore.dev/v1alpha1
     filename: policy.sigstore.dev/clusterimagepolicy_v1alpha1.json
