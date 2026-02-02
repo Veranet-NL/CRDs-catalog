@@ -12146,6 +12146,11 @@ search.azure.com:
     filename: search.azure.com/searchservice_v1api20220901.json
     kind: searchService
     name: searchservice_v1api20220901
+seaweed.seaweedfs.com:
+  - apiVersion: seaweed.seaweedfs.com/v1
+    filename: seaweed.seaweedfs.com/seaweed_v1.json
+    kind: seaweed
+    name: seaweed_v1
 secretgenerator.mittwald.de:
   - apiVersion: secretgenerator.mittwald.de/v1alpha1
     filename: secretgenerator.mittwald.de/stringsecret_v1alpha1.json
