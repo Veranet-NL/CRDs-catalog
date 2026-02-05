@@ -2158,6 +2158,15 @@ clickhouse.altinity.com:
     filename: clickhouse.altinity.com/clickhouseinstallationtemplate_v1.json
     kind: clickhouseinstallationtemplate
     name: clickhouseinstallationtemplate_v1
+clickhouse.com:
+  - apiVersion: clickhouse.com/v1alpha1
+    filename: clickhouse.com/keepercluster_v1alpha1.json
+    kind: KeeperCluster
+    name: keepercluster_v1alpha1
+  - apiVersion: clickhouse.com/v1alpha1
+    filename: clickhouse.com/clickhousecluster_v1alpha1.json
+    kind: ClickHouseCluster
+    name: clickhousecluster_v1alpha1
 clone.kubevirt.io:
   - apiVersion: clone.kubevirt.io/v1alpha1
     filename: clone.kubevirt.io/virtualmachineclone_v1alpha1.json
@@ -3406,6 +3415,10 @@ dapr.io:
     filename: dapr.io/resiliency_v1alpha1.json
     kind: resiliency
     name: resiliency_v1alpha1
+  - apiVersion: dapr.io/v1alpha1
+    filename: dapr.io/httpendpoint_v1alpha1.json
+    kind: HTTPEndpoint
+    name: httpendpoint_v1alpha1
 databases.spotahome.com:
   - apiVersion: databases.spotahome.com/v1
     filename: databases.spotahome.com/redisfailover_v1.json
@@ -10926,6 +10939,10 @@ postgres-operator.crunchydata.com:
     filename: postgres-operator.crunchydata.com/crunchybridgecluster_v1beta1.json
     kind: CrunchyBridgeCluster
     name: crunchybridgecluster_v1beta1
+  - apiVersion: postgres-operator.crunchydata.com/v1
+    filename: postgres-operator.crunchydata.com/postgrescluster_v1.json
+    kind: PostgresCluster
+    name: postgrescluster_v1
 postgresql.cnpg.io:
   - apiVersion: postgresql.cnpg.io/v1
     filename: postgresql.cnpg.io/backup_v1.json
@@ -12124,6 +12141,22 @@ sagemaker.services.k8s.aws:
     filename: sagemaker.services.k8s.aws/endpoint_v1alpha1.json
     kind: Endpoint
     name: endpoint_v1alpha1
+  - apiVersion: sagemaker.services.k8s.aws/v1alpha1
+    filename: sagemaker.services.k8s.aws/space_v1alpha1.json
+    kind: Space
+    name: space_v1alpha1
+  - apiVersion: sagemaker.services.k8s.aws/v1alpha1
+    filename: sagemaker.services.k8s.aws/project_v1alpha1.json
+    kind: Project
+    name: project_v1alpha1
+  - apiVersion: sagemaker.services.k8s.aws/v1alpha1
+    filename: sagemaker.services.k8s.aws/labelingjob_v1alpha1.json
+    kind: LabelingJob
+    name: labelingjob_v1alpha1
+  - apiVersion: sagemaker.services.k8s.aws/v1alpha1
+    filename: sagemaker.services.k8s.aws/inferencecomponent_v1alpha1.json
+    kind: InferenceComponent
+    name: inferencecomponent_v1alpha1
 scylla.scylladb.com:
   - apiVersion: scylla.scylladb.com/v1alpha1
     filename: scylla.scylladb.com/scyllaoperatorconfig_v1alpha1.json
@@ -12151,6 +12184,11 @@ seaweed.seaweedfs.com:
     filename: seaweed.seaweedfs.com/seaweed_v1.json
     kind: seaweed
     name: seaweed_v1
+secret-sync.gke.io:
+  - apiVersion: secret-sync.gke.io/v1
+    filename: secret-sync.gke.io/secretsync_v1.json
+    kind: SecretSync
+    name: secretsync_v1
 secretgenerator.mittwald.de:
   - apiVersion: secretgenerator.mittwald.de/v1alpha1
     filename: secretgenerator.mittwald.de/stringsecret_v1alpha1.json
