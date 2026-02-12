@@ -8733,6 +8733,14 @@ kyverno.io:
     filename: kyverno.io/clusteradmissionreport_v2.json
     kind: ClusterAdmissionReport
     name: clusteradmissionreport_v2
+  - apiVersion: kyverno.io/v2beta1
+    filename: kyverno.io/globalcontextentry_v2beta1.json
+    kind: GlobalContextEntry
+    name: globalcontextentry_v2beta1
+  - apiVersion: kyverno.io/v2
+    filename: kyverno.io/globalcontextentry_v2.json
+    kind: GlobalContextEntry
+    name: globalcontextentry_v2
 lambda.services.k8s.aws:
   - apiVersion: lambda.services.k8s.aws/v1alpha1
     filename: lambda.services.k8s.aws/function_v1alpha1.json
@@ -10834,6 +10842,94 @@ policies.kyverno.io:
     filename: policies.kyverno.io/policyexception_v2beta1.json
     kind: PolicyException
     name: policyexception_v2beta1
+  - apiVersion: policies.kyverno.io/v1
+    filename: policies.kyverno.io/namespaceddeletingpolicy_v1.json
+    kind: namespaceddeletingpolicy
+    name: namespaceddeletingpolicy_v1
+  - apiVersion: policies.kyverno.io/v1beta1
+    filename: policies.kyverno.io/namespaceddeletingpolicy_v1beta1.json
+    kind: namespaceddeletingpolicy
+    name: namespaceddeletingpolicy_v1beta1
+  - apiVersion: policies.kyverno.io/v1beta1
+    filename: policies.kyverno.io/namespacedimagevalidatingpolicy_v1beta1.json
+    kind: namespacedimagevalidatingpolicy
+    name: namespacedimagevalidatingpolicy_v1beta1
+  - apiVersion: policies.kyverno.io/v1
+    filename: policies.kyverno.io/namespacedmutatingpolicy_v1.json
+    kind: namespacedmutatingpolicy
+    name: namespacedmutatingpolicy_v1
+  - apiVersion: policies.kyverno.io/v1beta1
+    filename: policies.kyverno.io/mutatingpolicy_v1beta1.json
+    kind: mutatingpolicy
+    name: mutatingpolicy_v1beta1
+  - apiVersion: policies.kyverno.io/v1
+    filename: policies.kyverno.io/namespacedimagevalidatingpolicy_v1.json
+    kind: namespacedimagevalidatingpolicy
+    name: namespacedimagevalidatingpolicy_v1
+  - apiVersion: policies.kyverno.io/v1
+    filename: policies.kyverno.io/deletingpolicy_v1.json
+    kind: deletingpolicy
+    name: deletingpolicy_v1
+  - apiVersion: policies.kyverno.io/v1beta1
+    filename: policies.kyverno.io/namespacedmutatingpolicy_v1beta1.json
+    kind: namespacedmutatingpolicy
+    name: namespacedmutatingpolicy_v1beta1
+  - apiVersion: policies.kyverno.io/v1beta1
+    filename: policies.kyverno.io/imagevalidatingpolicy_v1beta1.json
+    kind: imagevalidatingpolicy
+    name: imagevalidatingpolicy_v1beta1
+  - apiVersion: policies.kyverno.io/v1
+    filename: policies.kyverno.io/namespacedgeneratingpolicy_v1.json
+    kind: NamespacedGeneratingPolicy
+    name: namespacedgeneratingpolicy_v1
+  - apiVersion: policies.kyverno.io/v1beta1
+    filename: policies.kyverno.io/deletingpolicy_v1beta1.json
+    kind: deletingpolicy
+    name: deletingpolicy_v1beta1
+  - apiVersion: policies.kyverno.io/v1beta1
+    filename: policies.kyverno.io/generatingpolicy_v1beta1.json
+    kind: generatingpolicy
+    name: generatingpolicy_v1beta1
+  - apiVersion: policies.kyverno.io/v1
+    filename: policies.kyverno.io/mutatingpolicy_v1.json
+    kind: mutatingpolicy
+    name: mutatingpolicy_v1
+  - apiVersion: policies.kyverno.io/v1beta1
+    filename: policies.kyverno.io/namespacedgeneratingpolicy_v1beta1.json
+    kind: NamespacedGeneratingPolicy
+    name: namespacedgeneratingpolicy_v1beta1
+  - apiVersion: policies.kyverno.io/v1beta1
+    filename: policies.kyverno.io/validatingpolicy_v1beta1.json
+    kind: validatingpolicy
+    name: validatingpolicy_v1beta1
+  - apiVersion: policies.kyverno.io/v1beta1
+    filename: policies.kyverno.io/namespacedvalidatingpolicy_v1beta1.json
+    kind: namespacedvalidatingpolicy
+    name: namespacedvalidatingpolicy_v1beta1
+  - apiVersion: policies.kyverno.io/v1
+    filename: policies.kyverno.io/generatingpolicy_v1.json
+    kind: generatingpolicy
+    name: generatingpolicy_v1
+  - apiVersion: policies.kyverno.io/v1
+    filename: policies.kyverno.io/namespacedvalidatingpolicy_v1.json
+    kind: namespacedvalidatingpolicy
+    name: namespacedvalidatingpolicy_v1
+  - apiVersion: policies.kyverno.io/v1
+    filename: policies.kyverno.io/validatingpolicy_v1.json
+    kind: validatingpolicy
+    name: validatingpolicy_v1
+  - apiVersion: policies.kyverno.io/v1
+    filename: policies.kyverno.io/imagevalidatingpolicy_v1.json
+    kind: imagevalidatingpolicy
+    name: imagevalidatingpolicy_v1
+  - apiVersion: policies.kyverno.io/v1beta1
+    filename: policies.kyverno.io/policyexception_v1beta1.json
+    kind: PolicyException
+    name: policyexception_v1beta1
+  - apiVersion: policies.kyverno.io/v1
+    filename: policies.kyverno.io/policyexception_v1.json
+    kind: PolicyException
+    name: policyexception_v1
 policy.cert-manager.io:
   - apiVersion: policy.cert-manager.io/v1alpha1
     filename: policy.cert-manager.io/certificaterequestpolicy_v1alpha1.json
@@ -11014,6 +11110,99 @@ privilegedaccessmanager.cnrm.cloud.google.com:
     filename: privilegedaccessmanager.cnrm.cloud.google.com/privilegedaccessmanagerentitlement_v1beta1.json
     kind: PrivilegedAccessManagerEntitlement
     name: privilegedaccessmanagerentitlement_v1beta1
+projectcalico.org:
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/felixconfiguration_v3.json
+    kind: felixconfiguration
+    name: felixconfiguration_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/profile_v3.json
+    kind: profile
+    name: profile_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/tier_v3.json
+    kind: tier
+    name: tier_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/stagedglobalnetworkpolicy_v3.json
+    kind: stagedglobalnetworkpolicy
+    name: stagedglobalnetworkpolicy_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/bgpconfiguration_v3.json
+    kind: bgpconfiguration
+    name: bgpconfiguration_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/ippool_v3.json
+    kind: ippool
+    name: ippool_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/networkpolicy_v3.json
+    kind: networkpolicy
+    name: networkpolicy_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/networkset_v3.json
+    kind: networkset
+    name: networkset_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/stagedkubernetesnetworkpolicy_v3.json
+    kind: stagedkubernetesnetworkpolicy
+    name: stagedkubernetesnetworkpolicy_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/ipamconfiguration_v3.json
+    kind: ipamconfiguration
+    name: ipamconfiguration_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/hostendpoint_v3.json
+    kind: hostendpoint
+    name: hostendpoint_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/bgppeer_v3.json
+    kind: bgppeer
+    name: bgppeer_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/kubecontrollersconfiguration_v3.json
+    kind: kubecontrollersconfiguration
+    name: kubecontrollersconfiguration_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/globalnetworkset_v3.json
+    kind: globalnetworkset
+    name: globalnetworkset_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/clusterinformation_v3.json
+    kind: clusterinformation
+    name: clusterinformation_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/ipamhandle_v3.json
+    kind: ipamhandle
+    name: ipamhandle_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/caliconodestatus_v3.json
+    kind: caliconodestatus
+    name: caliconodestatus_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/stagednetworkpolicy_v3.json
+    kind: stagednetworkpolicy
+    name: stagednetworkpolicy_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/globalnetworkpolicy_v3.json
+    kind: globalnetworkpolicy
+    name: globalnetworkpolicy_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/ipreservation_v3.json
+    kind: ipreservation
+    name: ipreservation_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/blockaffinity_v3.json
+    kind: blockaffinity
+    name: blockaffinity_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/ipamblock_v3.json
+    kind: ipamblock
+    name: ipamblock_v3
+  - apiVersion: projectcalico.org/v3
+    filename: projectcalico.org/bgpfilter_v3.json
+    kind: bgpfilter
+    name: bgpfilter_v3
 projectcontour.io:
   - apiVersion: projectcontour.io/v1alpha1
     filename: projectcontour.io/extensionservice_v1alpha1.json
