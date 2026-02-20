@@ -1419,6 +1419,10 @@ backupdr.cnrm.cloud.google.com:
     filename: backupdr.cnrm.cloud.google.com/backupdrbackupplanassociation_v1alpha1.json
     kind: BackupDRBackupPlanAssociation
     name: backupdrbackupplanassociation_v1alpha1
+  - apiVersion: backupdr.cnrm.cloud.google.com/v1beta1
+    filename: backupdr.cnrm.cloud.google.com/backupdrbackupvault_v1beta1.json
+    kind: BackupDRBackupVault
+    name: backupdrbackupvault_v1beta1
 barmancloud.cnpg.io:
   - apiVersion: barmancloud.cnpg.io/v1
     filename: barmancloud.cnpg.io/objectstore_v1.json
@@ -3394,6 +3398,22 @@ customize.core.cnrm.cloud.google.com:
     filename: customize.core.cnrm.cloud.google.com/controllerresource_v1beta1.json
     kind: ControllerResource
     name: controllerresource_v1beta1
+  - apiVersion: customize.core.cnrm.cloud.google.com/v1beta1
+    filename: customize.core.cnrm.cloud.google.com/controllerreconciler_v1beta1.json
+    kind: ControllerReconciler
+    name: controllerreconciler_v1beta1
+  - apiVersion: customize.core.cnrm.cloud.google.com/v1alpha1
+    filename: customize.core.cnrm.cloud.google.com/namespacedcontrollerreconciler_v1alpha1.json
+    kind: NamespacedControllerReconciler
+    name: namespacedcontrollerreconciler_v1alpha1
+  - apiVersion: customize.core.cnrm.cloud.google.com/v1alpha1
+    filename: customize.core.cnrm.cloud.google.com/controllerreconciler_v1alpha1.json
+    kind: ControllerReconciler
+    name: controllerreconciler_v1alpha1
+  - apiVersion: customize.core.cnrm.cloud.google.com/v1beta1
+    filename: customize.core.cnrm.cloud.google.com/namespacedcontrollerreconciler_v1beta1.json
+    kind: NamespacedControllerReconciler
+    name: namespacedcontrollerreconciler_v1beta1
 dapr.io:
   - apiVersion: dapr.io/v1alpha1
     filename: dapr.io/component_v1alpha1.json
@@ -8582,6 +8602,58 @@ kueue.x-k8s.io:
     filename: kueue.x-k8s.io/workloadpriorityclass_v1beta1.json
     kind: WorkloadPriorityClass
     name: workloadpriorityclass_v1beta1
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/multikueueconfig_v1beta2.json
+    kind: MultiKueueConfig
+    name: multikueueconfig_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/workload_v1beta2.json
+    kind: Workload
+    name: workload_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/admissioncheck_v1beta2.json
+    kind: AdmissionCheck
+    name: admissioncheck_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/cohort_v1beta2.json
+    kind: Cohort
+    name: cohort_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/provisioningrequestconfig_v1beta2.json
+    kind: ProvisioningRequestConfig
+    name: provisioningrequestconfig_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/topology_v1beta2.json
+    kind: Topology
+    name: topology_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/clusterqueue_v1beta2.json
+    kind: ClusterQueue
+    name: clusterqueue_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/localqueue_v1beta2.json
+    kind: LocalQueue
+    name: localqueue_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta1
+    filename: kueue.x-k8s.io/cohort_v1beta1.json
+    kind: Cohort
+    name: cohort_v1beta1
+  - apiVersion: kueue.x-k8s.io/v1beta1
+    filename: kueue.x-k8s.io/topology_v1beta1.json
+    kind: Topology
+    name: topology_v1beta1
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/resourceflavor_v1beta2.json
+    kind: ResourceFlavor
+    name: resourceflavor_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/multikueuecluster_v1beta2.json
+    kind: MultiKueueCluster
+    name: multikueuecluster_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/workloadpriorityclass_v1beta2.json
+    kind: WorkloadPriorityClass
+    name: workloadpriorityclass_v1beta2
 kusto.azure.com:
   - apiVersion: kusto.azure.com/v1api20230815
     filename: kusto.azure.com/dataconnection_v1api20230815.json
@@ -8886,6 +8958,14 @@ logging.cnrm.cloud.google.com:
     filename: logging.cnrm.cloud.google.com/logginglogsink_v1beta1.json
     kind: logginglogsink
     name: logginglogsink_v1beta1
+  - apiVersion: logging.cnrm.cloud.google.com/v1alpha1
+    filename: logging.cnrm.cloud.google.com/logginglink_v1alpha1.json
+    kind: LoggingLink
+    name: logginglink_v1alpha1
+  - apiVersion: logging.cnrm.cloud.google.com/v1beta1
+    filename: logging.cnrm.cloud.google.com/logginglink_v1beta1.json
+    kind: LoggingLink
+    name: logginglink_v1beta1
 logging.openshift.io:
   - apiVersion: logging.openshift.io/v1
     filename: logging.openshift.io/clusterlogging_v1.json
@@ -9908,6 +9988,38 @@ networking.gke.io:
     filename: networking.gke.io/networklogging_v1alpha1.json
     kind: NetworkLogging
     name: networklogging_v1alpha1
+  - apiVersion: networking.gke.io/v1
+    filename: networking.gke.io/gcptrafficextension_v1.json
+    kind: GCPTrafficExtension
+    name: gcptrafficextension_v1
+  - apiVersion: networking.gke.io/v1
+    filename: networking.gke.io/gcproutingextension_v1.json
+    kind: GCPRoutingExtension
+    name: gcproutingextension_v1
+  - apiVersion: networking.gke.io/v1
+    filename: networking.gke.io/gcptrafficdistributionpolicy_v1.json
+    kind: GCPTrafficDistributionPolicy
+    name: gcptrafficdistributionpolicy_v1
+  - apiVersion: networking.gke.io/v1
+    filename: networking.gke.io/gkeiproute_v1.json
+    kind: GKEIPRoute
+    name: gkeiproute_v1
+  - apiVersion: networking.gke.io/v1
+    filename: networking.gke.io/gcpwasmplugin_v1.json
+    kind: GCPWasmPlugin
+    name: gcpwasmplugin_v1
+  - apiVersion: networking.gke.io/v1
+    filename: networking.gke.io/nodetopology_v1.json
+    kind: NodeTopology
+    name: nodetopology_v1
+  - apiVersion: networking.gke.io/v1
+    filename: networking.gke.io/servicefunctionchain_v1.json
+    kind: ServiceFunctionChain
+    name: servicefunctionchain_v1
+  - apiVersion: networking.gke.io/v1
+    filename: networking.gke.io/trafficselector_v1.json
+    kind: TrafficSelector
+    name: trafficselector_v1
 networking.istio.io:
   - apiVersion: networking.istio.io/v1
     filename: networking.istio.io/workloadgroup_v1.json
@@ -10483,6 +10595,10 @@ orgpolicy.cnrm.cloud.google.com:
     filename: orgpolicy.cnrm.cloud.google.com/orgpolicycustomconstraint_v1alpha1.json
     kind: orgpolicycustomconstraint
     name: orgpolicycustomconstraint_v1alpha1
+  - apiVersion: orgpolicy.cnrm.cloud.google.com/v1beta1
+    filename: orgpolicy.cnrm.cloud.google.com/orgpolicycustomconstraint_v1beta1.json
+    kind: OrgPolicyCustomConstraint
+    name: orgpolicycustomconstraint_v1beta1
 osconfig.cnrm.cloud.google.com:
   - apiVersion: osconfig.cnrm.cloud.google.com/v1alpha1
     filename: osconfig.cnrm.cloud.google.com/osconfigpatchdeployment_v1alpha1.json
