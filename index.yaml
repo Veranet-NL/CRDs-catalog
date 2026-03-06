@@ -10983,6 +10983,38 @@ platform.confluent.io:
     filename: platform.confluent.io/controlcenter_v1beta1.json
     kind: ControlCenter
     name: controlcenter_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/flinkapplication_v1beta1.json
+    kind: flinkapplication
+    name: flinkapplication_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/cmfrestclass_v1beta1.json
+    kind: cmfrestclass
+    name: cmfrestclass_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/schemaimporter_v1beta1.json
+    kind: schemaimporter
+    name: schemaimporter_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/usmagent_v1beta1.json
+    kind: usmagent
+    name: usmagent_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/flinkenvironment_v1beta1.json
+    kind: flinkenvironment
+    name: flinkenvironment_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/gateway_v1beta1.json
+    kind: gateway
+    name: gateway_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/referencegrant_v1beta1.json
+    kind: ReferenceGrant
+    name: referencegrant_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/kraftmigrationjob_v1beta1.json
+    kind: kraftmigrationjob
+    name: kraftmigrationjob_v1beta1
 policies.kyverno.io:
   - apiVersion: policies.kyverno.io/v1beta1
     filename: policies.kyverno.io/generatingpolicy_v1beta1.json
