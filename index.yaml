@@ -71,6 +71,19 @@ acme.cert-manager.io:
     filename: acme.cert-manager.io/order_v1.json
     kind: Order
     name: order_v1
+acmpca.services.k8s.aws:
+  - apiVersion: acmpca.services.k8s.aws/v1alpha1
+    filename: acmpca.services.k8s.aws/certificate_v1alpha1.json
+    kind: Certificate
+    name: certificate_v1alpha1
+  - apiVersion: acmpca.services.k8s.aws/v1alpha1
+    filename: acmpca.services.k8s.aws/certificateauthorityactivation_v1alpha1.json
+    kind: CertificateAuthorityActivation
+    name: certificateauthorityactivation_v1alpha1
+  - apiVersion: acmpca.services.k8s.aws/v1alpha1
+    filename: acmpca.services.k8s.aws/certificateauthority_v1alpha1.json
+    kind: CertificateAuthority
+    name: certificateauthority_v1alpha1
 actions.github.com:
   - apiVersion: actions.github.com/v1alpha1
     filename: actions.github.com/ephemeralrunner_v1alpha1.json
@@ -159,6 +172,11 @@ addons.cluster.x-k8s.io:
     filename: addons.cluster.x-k8s.io/clusterresourcesetbinding_v1beta2.json
     kind: ClusterResourceSetBinding
     name: clusterresourcesetbinding_v1beta2
+aga.k8s.aws:
+  - apiVersion: aga.k8s.aws/v1beta1
+    filename: aga.k8s.aws/globalaccelerator_v1beta1.json
+    kind: GlobalAccelerator
+    name: globalaccelerator_v1beta1
 agent.k8s.elastic.co:
   - apiVersion: agent.k8s.elastic.co/v1alpha1
     filename: agent.k8s.elastic.co/agent_v1alpha1.json
@@ -996,6 +1014,27 @@ apphub.cnrm.cloud.google.com:
     filename: apphub.cnrm.cloud.google.com/apphubapplication_v1alpha1.json
     kind: AppHubApplication
     name: apphubapplication_v1alpha1
+application-networking.k8s.aws:
+  - apiVersion: application-networking.k8s.aws/v1alpha1
+    filename: application-networking.k8s.aws/serviceimport_v1alpha1.json
+    kind: ServiceImport
+    name: serviceimport_v1alpha1
+  - apiVersion: application-networking.k8s.aws/v1alpha1
+    filename: application-networking.k8s.aws/targetgrouppolicy_v1alpha1.json
+    kind: targetgrouppolicy
+    name: targetgrouppolicy_v1alpha1
+  - apiVersion: application-networking.k8s.aws/v1alpha1
+    filename: application-networking.k8s.aws/accesslogpolicy_v1alpha1.json
+    kind: accesslogpolicy
+    name: accesslogpolicy_v1alpha1
+  - apiVersion: application-networking.k8s.aws/v1alpha1
+    filename: application-networking.k8s.aws/serviceexport_v1alpha1.json
+    kind: ServiceExport
+    name: serviceexport_v1alpha1
+  - apiVersion: application-networking.k8s.aws/v1alpha1
+    filename: application-networking.k8s.aws/vpcassociationpolicy_v1alpha1.json
+    kind: vpcassociationpolicy
+    name: vpcassociationpolicy_v1alpha1
 applicationautoscaling.services.k8s.aws:
   - apiVersion: applicationautoscaling.services.k8s.aws/v1alpha1
     filename: applicationautoscaling.services.k8s.aws/scalabletarget_v1alpha1.json
@@ -5667,6 +5706,15 @@ eventhub.azure.com:
     filename: eventhub.azure.com/namespacesauthorizationrule_v1api20240101.json
     kind: namespacesauthorizationrule
     name: namespacesauthorizationrule_v1api20240101
+eventing.keda.sh:
+  - apiVersion: eventing.keda.sh/v1alpha1
+    filename: eventing.keda.sh/cloudeventsource_v1alpha1.json
+    kind: CloudEventSource
+    name: cloudeventsource_v1alpha1
+  - apiVersion: eventing.keda.sh/v1alpha1
+    filename: eventing.keda.sh/clustercloudeventsource_v1alpha1.json
+    kind: clustercloudeventsource
+    name: clustercloudeventsource_v1alpha1
 executor.testkube.io:
   - apiVersion: executor.testkube.io/v1
     filename: executor.testkube.io/executor_v1.json
@@ -6048,6 +6096,19 @@ gateway.envoyproxy.io:
     filename: gateway.envoyproxy.io/backend_v1alpha1.json
     kind: Backend
     name: backend_v1alpha1
+gateway.k8s.aws:
+  - apiVersion: gateway.k8s.aws/v1beta1
+    filename: gateway.k8s.aws/targetgroupconfiguration_v1beta1.json
+    kind: TargetGroupConfiguration
+    name: targetgroupconfiguration_v1beta1
+  - apiVersion: gateway.k8s.aws/v1beta1
+    filename: gateway.k8s.aws/listenerruleconfiguration_v1beta1.json
+    kind: ListenerRuleConfiguration
+    name: listenerruleconfiguration_v1beta1
+  - apiVersion: gateway.k8s.aws/v1beta1
+    filename: gateway.k8s.aws/loadbalancerconfiguration_v1beta1.json
+    kind: LoadBalancerConfiguration
+    name: loadbalancerconfiguration_v1beta1
 gateway.kgateway.dev:
   - apiVersion: gateway.kgateway.dev/v1alpha1
     filename: gateway.kgateway.dev/listenerpolicy_v1alpha1.json
@@ -6163,6 +6224,35 @@ gateway.networking.x-k8s.io:
     filename: gateway.networking.x-k8s.io/xbackendtrafficpolicy_v1alpha1.json
     kind: XBackendTrafficPolicy
     name: xbackendtrafficpolicy_v1alpha1
+gateway.nginx.org:
+  - apiVersion: gateway.nginx.org/v1alpha1
+    filename: gateway.nginx.org/upstreamsettingspolicy_v1alpha1.json
+    kind: UpstreamSettingsPolicy
+    name: upstreamsettingspolicy_v1alpha1
+  - apiVersion: gateway.nginx.org/v1alpha2
+    filename: gateway.nginx.org/nginxproxy_v1alpha2.json
+    kind: NginxProxy
+    name: nginxproxy_v1alpha2
+  - apiVersion: gateway.nginx.org/v1alpha2
+    filename: gateway.nginx.org/observabilitypolicy_v1alpha2.json
+    kind: ObservabilityPolicy
+    name: observabilitypolicy_v1alpha2
+  - apiVersion: gateway.nginx.org/v1alpha1
+    filename: gateway.nginx.org/clientsettingspolicy_v1alpha1.json
+    kind: ClientSettingsPolicy
+    name: clientsettingspolicy_v1alpha1
+  - apiVersion: gateway.nginx.org/v1alpha1
+    filename: gateway.nginx.org/snippetsfilter_v1alpha1.json
+    kind: SnippetsFilter
+    name: snippetsfilter_v1alpha1
+  - apiVersion: gateway.nginx.org/v1alpha1
+    filename: gateway.nginx.org/nginxgateway_v1alpha1.json
+    kind: NginxGateway
+    name: nginxgateway_v1alpha1
+  - apiVersion: gateway.nginx.org/v1alpha1
+    filename: gateway.nginx.org/observabilitypolicy_v1alpha1.json
+    kind: ObservabilityPolicy
+    name: observabilitypolicy_v1alpha1
 gateway.solo.io:
   - apiVersion: gateway.solo.io/v1
     filename: gateway.solo.io/virtualservice_v1.json
@@ -6679,6 +6769,11 @@ hivemq.com:
     filename: hivemq.com/hivemqcluster_v1.json
     kind: hivemqcluster
     name: hivemqcluster_v1
+http.keda.sh:
+  - apiVersion: http.keda.sh/v1alpha1
+    filename: http.keda.sh/httpscaledobject_v1alpha1.json
+    kind: HTTPScaledObject
+    name: httpscaledobject_v1alpha1
 iam.aws.m.upbound.io:
   - apiVersion: iam.aws.m.upbound.io/v1beta1
     filename: iam.aws.m.upbound.io/servicespecificcredential_v1beta1.json
@@ -8495,6 +8590,16 @@ kms.services.k8s.aws:
     filename: kms.services.k8s.aws/alias_v1alpha1.json
     kind: Alias
     name: alias_v1alpha1
+kro.run:
+  - apiVersion: kro.run/v1alpha1
+    filename: kro.run/resourcegraphdefinition_v1alpha1.json
+    kind: ResourceGraphDefinition
+    name: resourcegraphdefinition_v1alpha1
+kubefledged.io:
+  - apiVersion: kubefledged.io/v1alpha2
+    filename: kubefledged.io/imagecache_v1alpha2.json
+    kind: ImageCache
+    name: imagecache_v1alpha2
 kubeflow.org:
   - apiVersion: kubeflow.org/v1
     filename: kubeflow.org/profile_v1.json
@@ -11591,6 +11696,15 @@ rabbitmq.com:
     filename: rabbitmq.com/operatorpolicy_v1beta1.json
     kind: OperatorPolicy
     name: operatorpolicy_v1beta1
+ram.services.k8s.aws:
+  - apiVersion: ram.services.k8s.aws/v1alpha1
+    filename: ram.services.k8s.aws/permission_v1alpha1.json
+    kind: Permission
+    name: permission_v1alpha1
+  - apiVersion: ram.services.k8s.aws/v1alpha1
+    filename: ram.services.k8s.aws/resourceshare_v1alpha1.json
+    kind: ResourceShare
+    name: resourceshare_v1alpha1
 ratelimit.solo.io:
   - apiVersion: ratelimit.solo.io/v1alpha1
     filename: ratelimit.solo.io/ratelimitconfig_v1alpha1.json
@@ -12687,6 +12801,11 @@ secrets.infisical.com:
     filename: secrets.infisical.com/infisicalpushsecret_v1alpha1.json
     kind: InfisicalPushSecret
     name: infisicalpushsecret_v1alpha1
+secretsmanager.services.k8s.aws:
+  - apiVersion: secretsmanager.services.k8s.aws/v1alpha1
+    filename: secretsmanager.services.k8s.aws/secret_v1alpha1.json
+    kind: Secret
+    name: secret_v1alpha1
 securesourcemanager.cnrm.cloud.google.com:
   - apiVersion: securesourcemanager.cnrm.cloud.google.com/v1alpha1
     filename: securesourcemanager.cnrm.cloud.google.com/securesourcemanagerinstance_v1alpha1.json
@@ -13674,6 +13793,15 @@ templates.kluctl.io:
     filename: templates.kluctl.io/githubcomment_v1alpha1.json
     kind: GithubComment
     name: githubcomment_v1alpha1
+tempo.grafana.com:
+  - apiVersion: tempo.grafana.com/v1alpha1
+    filename: tempo.grafana.com/tempomonolithic_v1alpha1.json
+    kind: TempoMonolithic
+    name: tempomonolithic_v1alpha1
+  - apiVersion: tempo.grafana.com/v1alpha1
+    filename: tempo.grafana.com/tempostack_v1alpha1.json
+    kind: TempoStack
+    name: tempostack_v1alpha1
 temporal.io:
   - apiVersion: temporal.io/v1beta1
     filename: temporal.io/temporalclusterclient_v1beta1.json
