@@ -2677,6 +2677,11 @@ clustersecret.io:
     filename: clustersecret.io/clustersecret_v1.json
     kind: clustersecret
     name: clustersecret_v1
+cognitoidentityprovider.services.k8s.aws:
+  - apiVersion: cognitoidentityprovider.services.k8s.aws/v1alpha1
+    filename: cognitoidentityprovider.services.k8s.aws/userpool_v1alpha1.json
+    kind: UserPool
+    name: userpool_v1alpha1
 collectors.grafana.com:
   - apiVersion: collectors.grafana.com/v1alpha1
     filename: collectors.grafana.com/alloy_v1alpha1.json
@@ -6769,6 +6774,15 @@ hivemq.com:
     filename: hivemq.com/hivemqcluster_v1.json
     kind: hivemqcluster
     name: hivemqcluster_v1
+holmesgpt.dev:
+  - apiVersion: holmesgpt.dev/v1alpha1
+    filename: holmesgpt.dev/scheduledhealthcheck_v1alpha1.json
+    kind: scheduledhealthcheck
+    name: scheduledhealthcheck_v1alpha1
+  - apiVersion: holmesgpt.dev/v1alpha1
+    filename: holmesgpt.dev/healthcheck_v1alpha1.json
+    kind: healthcheck
+    name: healthcheck_v1alpha1
 http.keda.sh:
   - apiVersion: http.keda.sh/v1alpha1
     filename: http.keda.sh/httpscaledobject_v1alpha1.json
@@ -10179,6 +10193,10 @@ networking.gke.io:
     filename: networking.gke.io/gcptrafficdistributionpolicy_v1.json
     kind: GCPTrafficDistributionPolicy
     name: gcptrafficdistributionpolicy_v1
+  - apiVersion: networking.gke.io/v1alpha1
+    filename: networking.gke.io/fqdnnetworkpolicy_v1alpha1.json
+    kind: FQDNNetworkPolicy
+    name: fqdnnetworkpolicy_v1alpha1
 networking.istio.io:
   - apiVersion: networking.istio.io/v1
     filename: networking.istio.io/workloadgroup_v1.json
@@ -13019,6 +13037,22 @@ serving.kserve.io:
     filename: serving.kserve.io/clusterservingruntime_v1alpha1.json
     kind: clusterservingruntime
     name: clusterservingruntime_v1alpha1
+  - apiVersion: serving.kserve.io/v1alpha1
+    filename: serving.kserve.io/clusterstoragecontainer_v1alpha1.json
+    kind: clusterstoragecontainer
+    name: clusterstoragecontainer_v1alpha1
+  - apiVersion: serving.kserve.io/v1alpha1
+    filename: serving.kserve.io/localmodelnode_v1alpha1.json
+    kind: localmodelnode
+    name: localmodelnode_v1alpha1
+  - apiVersion: serving.kserve.io/v1alpha1
+    filename: serving.kserve.io/localmodelnodegroup_v1alpha1.json
+    kind: localmodelnodegroup
+    name: localmodelnodegroup_v1alpha1
+  - apiVersion: serving.kserve.io/v1alpha1
+    filename: serving.kserve.io/localmodelcache_v1alpha1.json
+    kind: localmodelcache
+    name: localmodelcache_v1alpha1
 sfn.services.k8s.aws:
   - apiVersion: sfn.services.k8s.aws/v1alpha1
     filename: sfn.services.k8s.aws/activity_v1alpha1.json
