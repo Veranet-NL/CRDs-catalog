@@ -1300,6 +1300,11 @@ asset.cnrm.cloud.google.com:
     filename: asset.cnrm.cloud.google.com/assetfeed_v1beta1.json
     kind: AssetFeed
     name: assetfeed_v1beta1
+auditlog.cattle.io:
+  - apiVersion: auditlog.cattle.io/v1
+    filename: auditlog.cattle.io/auditpolicy_v1.json
+    kind: auditpolicy
+    name: auditpolicy_v1
 authentication.concierge.pinniped.dev:
   - apiVersion: authentication.concierge.pinniped.dev/v1alpha1
     filename: authentication.concierge.pinniped.dev/jwtauthenticator_v1alpha1.json
@@ -1847,6 +1852,19 @@ capsule.clastix.io:
     filename: capsule.clastix.io/tenant_v1beta1.json
     kind: Tenant
     name: tenant_v1beta1
+catalog.cattle.io:
+  - apiVersion: catalog.cattle.io/v1
+    filename: catalog.cattle.io/clusterrepo_v1.json
+    kind: ClusterRepo
+    name: clusterrepo_v1
+  - apiVersion: catalog.cattle.io/v1
+    filename: catalog.cattle.io/app_v1.json
+    kind: app
+    name: app_v1
+  - apiVersion: catalog.cattle.io/v1
+    filename: catalog.cattle.io/uiplugin_v1.json
+    kind: uiplugin
+    name: uiplugin_v1
 cdi.kubevirt.io:
   - apiVersion: cdi.kubevirt.io/v1beta1
     filename: cdi.kubevirt.io/volumeclonesource_v1beta1.json
@@ -5920,6 +5938,15 @@ flagger.app:
     filename: flagger.app/canary_v1beta1.json
     kind: Canary
     name: canary_v1beta1
+fleet.cattle.io:
+  - apiVersion: fleet.cattle.io/v1alpha1
+    filename: fleet.cattle.io/bundle_v1alpha1.json
+    kind: bundle
+    name: bundle_v1alpha1
+  - apiVersion: fleet.cattle.io/v1alpha1
+    filename: fleet.cattle.io/clustergroup_v1alpha1.json
+    kind: clustergroup
+    name: clustergroup_v1alpha1
 fleetmanagement.grafana.crossplane.io:
   - apiVersion: fleetmanagement.grafana.crossplane.io/v1alpha1
     filename: fleetmanagement.grafana.crossplane.io/collector_v1alpha1.json
@@ -9357,6 +9384,47 @@ managedkafka.cnrm.cloud.google.com:
     filename: managedkafka.cnrm.cloud.google.com/managedkafkatopic_v1beta1.json
     kind: ManagedKafkaTopic
     name: managedkafkatopic_v1beta1
+management.cattle.io:
+  - apiVersion: management.cattle.io/v3
+    filename: management.cattle.io/globalrolebinding_v3.json
+    kind: GlobalRoleBinding
+    name: globalrolebinding_v3
+  - apiVersion: management.cattle.io/v3
+    filename: management.cattle.io/authconfig_v3.json
+    kind: authconfig
+    name: authconfig_v3
+  - apiVersion: management.cattle.io/v3
+    filename: management.cattle.io/projectroletemplatebinding_v3.json
+    kind: ProjectRoleTemplateBinding
+    name: projectroletemplatebinding_v3
+  - apiVersion: management.cattle.io/v3
+    filename: management.cattle.io/project_v3.json
+    kind: Project
+    name: project_v3
+  - apiVersion: management.cattle.io/v3
+    filename: management.cattle.io/globalrole_v3.json
+    kind: GlobalRole
+    name: globalrole_v3
+  - apiVersion: management.cattle.io/v3
+    filename: management.cattle.io/clusterregistrationtoken_v3.json
+    kind: clusterregistrationtoken
+    name: clusterregistrationtoken_v3
+  - apiVersion: management.cattle.io/v3
+    filename: management.cattle.io/clusterroletemplatebinding_v3.json
+    kind: ClusterRoleTemplateBinding
+    name: clusterroletemplatebinding_v3
+  - apiVersion: management.cattle.io/v3
+    filename: management.cattle.io/managedchart_v3.json
+    kind: managedchart
+    name: managedchart_v3
+  - apiVersion: management.cattle.io/v3
+    filename: management.cattle.io/podsecurityadmissionconfigurationtemplate_v3.json
+    kind: podsecurityadmissionconfigurationtemplate
+    name: podsecurityadmissionconfigurationtemplate_v3
+  - apiVersion: management.cattle.io/v3
+    filename: management.cattle.io/roletemplate_v3.json
+    kind: RoleTemplate
+    name: roletemplate_v3
 maps.k8s.elastic.co:
   - apiVersion: maps.k8s.elastic.co/v1alpha1
     filename: maps.k8s.elastic.co/elasticmapsserver_v1alpha1.json
@@ -11579,6 +11647,11 @@ protection.crossplane.io:
     filename: protection.crossplane.io/clusterusage_v1beta1.json
     kind: ClusterUsage
     name: clusterusage_v1beta1
+provisioning.cattle.io:
+  - apiVersion: provisioning.cattle.io/v1
+    filename: provisioning.cattle.io/cluster_v1.json
+    kind: Cluster
+    name: cluster_v1
 ps.percona.com:
   - apiVersion: ps.percona.com/v1alpha1
     filename: ps.percona.com/perconaservermysqlbackup_v1alpha1.json
@@ -12203,6 +12276,15 @@ restate.dev:
     filename: restate.dev/restatedeployment_v1beta1.json
     kind: RestateDeployment
     name: restatedeployment_v1beta1
+rke.cattle.io:
+  - apiVersion: rke.cattle.io/v1
+    filename: rke.cattle.io/custommachine_v1.json
+    kind: CustomMachine
+    name: custommachine_v1
+  - apiVersion: rke.cattle.io/v1
+    filename: rke.cattle.io/etcdsnapshot_v1.json
+    kind: ETCDSnapshot
+    name: etcdsnapshot_v1
 route53.services.k8s.aws:
   - apiVersion: route53.services.k8s.aws/v1alpha1
     filename: route53.services.k8s.aws/hostedzone_v1alpha1.json
