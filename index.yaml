@@ -6243,6 +6243,18 @@ gateway.networking.k8s.io:
     filename: gateway.networking.k8s.io/backendtlspolicy_v1.json
     kind: BackendTLSPolicy
     name: backendtlspolicy_v1
+  - apiVersion: gateway.networking.k8s.io/v1
+    filename: gateway.networking.k8s.io/tlsroute_v1.json
+    kind: TLSRoute
+    name: tlsroute_v1
+  - apiVersion: gateway.networking.k8s.io/v1
+    filename: gateway.networking.k8s.io/listenerset_v1.json
+    kind: ListenerSet
+    name: listenerset_v1
+  - apiVersion: gateway.networking.k8s.io/v1
+    filename: gateway.networking.k8s.io/referencegrant_v1.json
+    kind: ReferenceGrant
+    name: referencegrant_v1
 gateway.networking.x-k8s.io:
   - apiVersion: gateway.networking.x-k8s.io/v1alpha1
     filename: gateway.networking.x-k8s.io/xlistenerset_v1alpha1.json
@@ -6677,6 +6689,10 @@ grafana.integreatly.org:
     filename: grafana.integreatly.org/grafanaserviceaccount_v1beta1.json
     kind: GrafanaServiceAccount
     name: grafanaserviceaccount_v1beta1
+  - apiVersion: grafana.integreatly.org/v1beta1
+    filename: grafana.integreatly.org/grafanamanifest_v1beta1.json
+    kind: GrafanaManifest
+    name: grafanamanifest_v1beta1
 graphql.gloo.solo.io:
   - apiVersion: graphql.gloo.solo.io/v1beta1
     filename: graphql.gloo.solo.io/graphqlapi_v1beta1.json
