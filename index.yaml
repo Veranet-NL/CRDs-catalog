@@ -172,6 +172,14 @@ addons.cluster.x-k8s.io:
     filename: addons.cluster.x-k8s.io/clusterresourcesetbinding_v1beta2.json
     kind: ClusterResourceSetBinding
     name: clusterresourcesetbinding_v1beta2
+  - apiVersion: addons.cluster.x-k8s.io/v1alpha1
+    filename: addons.cluster.x-k8s.io/helmreleaseproxy_v1alpha1.json
+    kind: HelmReleaseProxy
+    name: helmreleaseproxy_v1alpha1
+  - apiVersion: addons.cluster.x-k8s.io/v1alpha1
+    filename: addons.cluster.x-k8s.io/helmchartproxy_v1alpha1.json
+    kind: HelmChartProxy
+    name: helmchartproxy_v1alpha1
 aga.k8s.aws:
   - apiVersion: aga.k8s.aws/v1beta1
     filename: aga.k8s.aws/globalaccelerator_v1beta1.json
@@ -2050,6 +2058,10 @@ cert-manager.k8s.cloudflare.com:
     filename: cert-manager.k8s.cloudflare.com/originissuer_v1.json
     kind: OriginIssuer
     name: originissuer_v1
+  - apiVersion: cert-manager.k8s.cloudflare.com/v1
+    filename: cert-manager.k8s.cloudflare.com/clusteroriginissuer_v1.json
+    kind: ClusterOriginIssuer
+    name: clusteroriginissuer_v1
 certificatemanager.cnrm.cloud.google.com:
   - apiVersion: certificatemanager.cnrm.cloud.google.com/v1alpha1
     filename: certificatemanager.cnrm.cloud.google.com/certificatemanagercertificate_v1alpha1.json
@@ -3593,6 +3605,10 @@ datadoghq.com:
     filename: datadoghq.com/datadoggenericresource_v1alpha1.json
     kind: DatadogGenericResource
     name: datadoggenericresource_v1alpha1
+  - apiVersion: datadoghq.com/v1alpha1
+    filename: datadoghq.com/datadogagentinternal_v1alpha1.json
+    kind: DatadogAgentInternal
+    name: datadogagentinternal_v1alpha1
 datafactory.azure.com:
   - apiVersion: datafactory.azure.com/v1api20180601
     filename: datafactory.azure.com/factory_v1api20180601.json
@@ -7965,6 +7981,22 @@ infrastructure.cluster.x-k8s.io:
     filename: infrastructure.cluster.x-k8s.io/hetznercluster_v1beta1.json
     kind: HetznerCluster
     name: hetznercluster_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/oscmachinetemplate_v1beta1.json
+    kind: OscMachineTemplate
+    name: oscmachinetemplate_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/oscclustertemplate_v1beta1.json
+    kind: OscClusterTemplate
+    name: oscclustertemplate_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/oscmachine_v1beta1.json
+    kind: OscMachine
+    name: oscmachine_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/osccluster_v1beta1.json
+    kind: OscCluster
+    name: osccluster_v1beta1
 ingress.oraclecloud.com:
   - apiVersion: ingress.oraclecloud.com/v1beta1
     filename: ingress.oraclecloud.com/ingressclassparameters_v1beta1.json
@@ -12057,6 +12089,11 @@ rds.services.k8s.aws:
     filename: rds.services.k8s.aws/dbclustersnapshot_v1alpha1.json
     kind: DBClusterSnapshot
     name: dbclustersnapshot_v1alpha1
+readiness.node.x-k8s.io:
+  - apiVersion: readiness.node.x-k8s.io/v1alpha1
+    filename: readiness.node.x-k8s.io/nodereadinessrule_v1alpha1.json
+    kind: NodeReadinessRule
+    name: nodereadinessrule_v1alpha1
 recaptchaenterprise.cnrm.cloud.google.com:
   - apiVersion: recaptchaenterprise.cnrm.cloud.google.com/v1beta1
     filename: recaptchaenterprise.cnrm.cloud.google.com/recaptchaenterprisekey_v1beta1.json
