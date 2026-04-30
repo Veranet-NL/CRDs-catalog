@@ -1124,6 +1124,10 @@ apps.gitlab.com:
     filename: apps.gitlab.com/gitlab_v1beta1.json
     kind: GitLab
     name: gitlab_v1beta1
+  - apiVersion: apps.gitlab.com/v1beta2
+    filename: apps.gitlab.com/runner_v1beta2.json
+    kind: Runner
+    name: runner_v1beta2
 apps.jfrog.com:
   - apiVersion: apps.jfrog.com/v1alpha1
     filename: apps.jfrog.com/secretrotator_v1alpha1.json
@@ -1335,6 +1339,11 @@ authorization.azure.com:
     filename: authorization.azure.com/roleassignment_v1api20220401.json
     kind: RoleAssignment
     name: roleassignment_v1api20220401
+authzed.com:
+  - apiVersion: authzed.com/v1alpha1
+    filename: authzed.com/spicedbcluster_v1alpha1.json
+    kind: SpiceDBCluster
+    name: spicedbcluster_v1alpha1
 autopilot.k0sproject.io:
   - apiVersion: autopilot.k0sproject.io/v1beta2
     filename: autopilot.k0sproject.io/updateconfig_v1beta2.json
@@ -12329,6 +12338,11 @@ restate.dev:
     filename: restate.dev/restatedeployment_v1beta1.json
     kind: RestateDeployment
     name: restatedeployment_v1beta1
+rke-machine-config.cattle.io:
+  - apiVersion: rke-machine-config.cattle.io/v1
+    filename: rke-machine-config.cattle.io/hetznerconfig_v1.json
+    kind: HetznerConfig
+    name: hetznerconfig_v1
 rke.cattle.io:
   - apiVersion: rke.cattle.io/v1
     filename: rke.cattle.io/custommachine_v1.json
@@ -13138,6 +13152,10 @@ services.k8s.aws:
     filename: services.k8s.aws/adoptedresource_v1alpha1.json
     kind: AdoptedResource
     name: adoptedresource_v1alpha1
+  - apiVersion: services.k8s.aws/v1alpha1
+    filename: services.k8s.aws/iamroleselector_v1alpha1.json
+    kind: IAMRoleSelector
+    name: iamroleselector_v1alpha1
 serviceusage.cnrm.cloud.google.com:
   - apiVersion: serviceusage.cnrm.cloud.google.com/v1beta1
     filename: serviceusage.cnrm.cloud.google.com/service_v1beta1.json
