@@ -2494,6 +2494,84 @@ cloudwatch.services.k8s.aws:
     filename: cloudwatch.services.k8s.aws/metricalarm_v1alpha1.json
     kind: MetricAlarm
     name: metricalarm_v1alpha1
+cloudwatchevents.aws.m.upbound.io:
+  - apiVersion: cloudwatchevents.aws.m.upbound.io/v1beta1
+    filename: cloudwatchevents.aws.m.upbound.io/rule_v1beta1.json
+    kind: Rule
+    name: rule_v1beta1
+  - apiVersion: cloudwatchevents.aws.m.upbound.io/v1beta1
+    filename: cloudwatchevents.aws.m.upbound.io/permission_v1beta1.json
+    kind: Permission
+    name: permission_v1beta1
+  - apiVersion: cloudwatchevents.aws.m.upbound.io/v1beta1
+    filename: cloudwatchevents.aws.m.upbound.io/connection_v1beta1.json
+    kind: Connection
+    name: connection_v1beta1
+  - apiVersion: cloudwatchevents.aws.m.upbound.io/v1beta1
+    filename: cloudwatchevents.aws.m.upbound.io/bus_v1beta1.json
+    kind: Bus
+    name: bus_v1beta1
+  - apiVersion: cloudwatchevents.aws.m.upbound.io/v1beta1
+    filename: cloudwatchevents.aws.m.upbound.io/archive_v1beta1.json
+    kind: Archive
+    name: archive_v1beta1
+  - apiVersion: cloudwatchevents.aws.m.upbound.io/v1beta1
+    filename: cloudwatchevents.aws.m.upbound.io/apidestination_v1beta1.json
+    kind: APIDestination
+    name: apidestination_v1beta1
+  - apiVersion: cloudwatchevents.aws.m.upbound.io/v1beta1
+    filename: cloudwatchevents.aws.m.upbound.io/buspolicy_v1beta1.json
+    kind: BusPolicy
+    name: buspolicy_v1beta1
+  - apiVersion: cloudwatchevents.aws.m.upbound.io/v1beta1
+    filename: cloudwatchevents.aws.m.upbound.io/target_v1beta1.json
+    kind: Target
+    name: target_v1beta1
+cloudwatchevents.aws.upbound.io:
+  - apiVersion: cloudwatchevents.aws.upbound.io/v1beta1
+    filename: cloudwatchevents.aws.upbound.io/rule_v1beta1.json
+    kind: Rule
+    name: rule_v1beta1
+  - apiVersion: cloudwatchevents.aws.upbound.io/v1beta2
+    filename: cloudwatchevents.aws.upbound.io/connection_v1beta2.json
+    kind: Connection
+    name: connection_v1beta2
+  - apiVersion: cloudwatchevents.aws.upbound.io/v1beta1
+    filename: cloudwatchevents.aws.upbound.io/permission_v1beta1.json
+    kind: Permission
+    name: permission_v1beta1
+  - apiVersion: cloudwatchevents.aws.upbound.io/v1beta1
+    filename: cloudwatchevents.aws.upbound.io/connection_v1beta1.json
+    kind: Connection
+    name: connection_v1beta1
+  - apiVersion: cloudwatchevents.aws.upbound.io/v1beta1
+    filename: cloudwatchevents.aws.upbound.io/bus_v1beta1.json
+    kind: Bus
+    name: bus_v1beta1
+  - apiVersion: cloudwatchevents.aws.upbound.io/v1beta2
+    filename: cloudwatchevents.aws.upbound.io/target_v1beta2.json
+    kind: Target
+    name: target_v1beta2
+  - apiVersion: cloudwatchevents.aws.upbound.io/v1beta1
+    filename: cloudwatchevents.aws.upbound.io/archive_v1beta1.json
+    kind: Archive
+    name: archive_v1beta1
+  - apiVersion: cloudwatchevents.aws.upbound.io/v1beta1
+    filename: cloudwatchevents.aws.upbound.io/apidestination_v1beta1.json
+    kind: APIDestination
+    name: apidestination_v1beta1
+  - apiVersion: cloudwatchevents.aws.upbound.io/v1beta1
+    filename: cloudwatchevents.aws.upbound.io/buspolicy_v1beta1.json
+    kind: BusPolicy
+    name: buspolicy_v1beta1
+  - apiVersion: cloudwatchevents.aws.upbound.io/v1beta1
+    filename: cloudwatchevents.aws.upbound.io/target_v1beta1.json
+    kind: Target
+    name: target_v1beta1
+  - apiVersion: cloudwatchevents.aws.upbound.io/v1beta2
+    filename: cloudwatchevents.aws.upbound.io/permission_v1beta2.json
+    kind: Permission
+    name: permission_v1beta2
 cloudwatchlogs.services.k8s.aws:
   - apiVersion: cloudwatchlogs.services.k8s.aws/v1alpha1
     filename: cloudwatchlogs.services.k8s.aws/loggroup_v1alpha1.json
