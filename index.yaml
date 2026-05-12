@@ -10795,6 +10795,31 @@ operator.cluster.x-k8s.io:
     filename: operator.cluster.x-k8s.io/runtimeextensionprovider_v1alpha2.json
     kind: RuntimeExtensionProvider
     name: runtimeextensionprovider_v1alpha2
+operator.dash0.com:
+  - apiVersion: operator.dash0.com/v1alpha1
+    filename: operator.dash0.com/dash0monitoring_v1alpha1.json
+    kind: Dash0Monitoring
+    name: dash0monitoring_v1alpha1
+  - apiVersion: operator.dash0.com/v1alpha1
+    filename: operator.dash0.com/dash0operatorconfiguration_v1alpha1.json
+    kind: Dash0OperatorConfiguration
+    name: dash0operatorconfiguration_v1alpha1
+  - apiVersion: operator.dash0.com/v1beta1
+    filename: operator.dash0.com/dash0monitoring_v1beta1.json
+    kind: Dash0Monitoring
+    name: dash0monitoring_v1beta1
+  - apiVersion: operator.dash0.com/v1alpha1
+    filename: operator.dash0.com/dash0syntheticcheck_v1alpha1.json
+    kind: Dash0SyntheticCheck
+    name: dash0syntheticcheck_v1alpha1
+  - apiVersion: operator.dash0.com/v1beta1
+    filename: operator.dash0.com/dash0notificationchannel_v1beta1.json
+    kind: Dash0NotificationChannel
+    name: dash0notificationchannel_v1beta1
+  - apiVersion: operator.dash0.com/v1alpha1
+    filename: operator.dash0.com/dash0view_v1alpha1.json
+    kind: Dash0View
+    name: dash0view_v1alpha1
 operator.h3poteto.dev:
   - apiVersion: operator.h3poteto.dev/v1alpha1
     filename: operator.h3poteto.dev/endpointgroupbinding_v1alpha1.json
