@@ -3446,6 +3446,31 @@ config.gatekeeper.sh:
     filename: config.gatekeeper.sh/config_v1alpha1.json
     kind: Config
     name: config_v1alpha1
+config.projectsveltos.io:
+  - apiVersion: config.projectsveltos.io/v1beta1
+    filename: config.projectsveltos.io/clustersummary_v1beta1.json
+    kind: ClusterSummary
+    name: clustersummary_v1beta1
+  - apiVersion: config.projectsveltos.io/v1beta1
+    filename: config.projectsveltos.io/clusterprofile_v1beta1.json
+    kind: ClusterProfile
+    name: clusterprofile_v1beta1
+  - apiVersion: config.projectsveltos.io/v1beta1
+    filename: config.projectsveltos.io/clusterconfiguration_v1beta1.json
+    kind: ClusterConfiguration
+    name: clusterconfiguration_v1beta1
+  - apiVersion: config.projectsveltos.io/v1beta1
+    filename: config.projectsveltos.io/clusterreport_v1beta1.json
+    kind: ClusterReport
+    name: clusterreport_v1beta1
+  - apiVersion: config.projectsveltos.io/v1beta1
+    filename: config.projectsveltos.io/clusterpromotion_v1beta1.json
+    kind: ClusterPromotion
+    name: clusterpromotion_v1beta1
+  - apiVersion: config.projectsveltos.io/v1beta1
+    filename: config.projectsveltos.io/profile_v1beta1.json
+    kind: Profile
+    name: profile_v1beta1
 config.supervisor.pinniped.dev:
   - apiVersion: config.supervisor.pinniped.dev/v1alpha1
     filename: config.supervisor.pinniped.dev/federationdomain_v1alpha1.json
@@ -3711,6 +3736,14 @@ controlplane.cluster.x-k8s.io:
     filename: controlplane.cluster.x-k8s.io/kubeadmcontrolplane_v1beta2.json
     kind: KubeadmControlPlane
     name: kubeadmcontrolplane_v1beta2
+  - apiVersion: controlplane.cluster.x-k8s.io/v1alpha1
+    filename: controlplane.cluster.x-k8s.io/kamajicontrolplane_v1alpha1.json
+    kind: KamajiControlPlane
+    name: kamajicontrolplane_v1alpha1
+  - apiVersion: controlplane.cluster.x-k8s.io/v1alpha1
+    filename: controlplane.cluster.x-k8s.io/kamajicontrolplanetemplate_v1alpha1.json
+    kind: KamajiControlPlaneTemplate
+    name: kamajicontrolplanetemplate_v1alpha1
 core.cnrm.cloud.google.com:
   - apiVersion: core.cnrm.cloud.google.com/v1beta1
     filename: core.cnrm.cloud.google.com/configconnector_v1beta1.json
@@ -8582,6 +8615,22 @@ ipam.cluster.x-k8s.io:
     filename: ipam.cluster.x-k8s.io/ipaddressclaim_v1beta2.json
     kind: IPAddressClaim
     name: ipaddressclaim_v1beta2
+  - apiVersion: ipam.cluster.x-k8s.io/v1alpha1
+    filename: ipam.cluster.x-k8s.io/globalinclusterippool_v1alpha1.json
+    kind: GlobalInClusterIPPool
+    name: globalinclusterippool_v1alpha1
+  - apiVersion: ipam.cluster.x-k8s.io/v1alpha2
+    filename: ipam.cluster.x-k8s.io/inclusterippool_v1alpha2.json
+    kind: InClusterIPPool
+    name: inclusterippool_v1alpha2
+  - apiVersion: ipam.cluster.x-k8s.io/v1alpha1
+    filename: ipam.cluster.x-k8s.io/inclusterippool_v1alpha1.json
+    kind: InClusterIPPool
+    name: inclusterippool_v1alpha1
+  - apiVersion: ipam.cluster.x-k8s.io/v1alpha2
+    filename: ipam.cluster.x-k8s.io/globalinclusterippool_v1alpha2.json
+    kind: GlobalInClusterIPPool
+    name: globalinclusterippool_v1alpha2
 isindir.github.com:
   - apiVersion: isindir.github.com/v1alpha3
     filename: isindir.github.com/sopssecret_v1alpha3.json
@@ -9608,6 +9657,79 @@ lambda.services.k8s.aws:
     filename: lambda.services.k8s.aws/version_v1alpha1.json
     kind: Version
     name: version_v1alpha1
+lib.projectsveltos.io:
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/sveltoscluster_v1beta1.json
+    kind: SveltosCluster
+    name: sveltoscluster_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/clusterhealthcheck_v1beta1.json
+    kind: ClusterHealthCheck
+    name: clusterhealthcheck_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/eventreport_v1beta1.json
+    kind: EventReport
+    name: eventreport_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/healthcheck_v1beta1.json
+    kind: HealthCheck
+    name: healthcheck_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/classifierreport_v1beta1.json
+    kind: ClassifierReport
+    name: classifierreport_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/resourcesummary_v1beta1.json
+    kind: ResourceSummary
+    name: resourcesummary_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/eventtrigger_v1beta1.json
+    kind: EventTrigger
+    name: eventtrigger_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/techsupport_v1beta1.json
+    kind: Techsupport
+    name: techsupport_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/healthcheckreport_v1beta1.json
+    kind: HealthCheckReport
+    name: healthcheckreport_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/eventsource_v1beta1.json
+    kind: EventSource
+    name: eventsource_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/configurationgroup_v1beta1.json
+    kind: ConfigurationGroup
+    name: configurationgroup_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/clusterset_v1beta1.json
+    kind: ClusterSet
+    name: clusterset_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/accessrequest_v1beta1.json
+    kind: AccessRequest
+    name: accessrequest_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/configurationbundle_v1beta1.json
+    kind: ConfigurationBundle
+    name: configurationbundle_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/reloader_v1beta1.json
+    kind: Reloader
+    name: reloader_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/debuggingconfiguration_v1beta1.json
+    kind: DebuggingConfiguration
+    name: debuggingconfiguration_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/reloaderreport_v1beta1.json
+    kind: ReloaderReport
+    name: reloaderreport_v1beta1
+  - apiVersion: lib.projectsveltos.io/v1beta1
+    filename: lib.projectsveltos.io/classifier_v1beta1.json
+    kind: Classifier
+    name: classifier_v1beta1
 linkerd.io:
   - apiVersion: linkerd.io/v1alpha1
     filename: linkerd.io/serviceprofile_v1alpha1.json
@@ -14244,6 +14366,11 @@ sns.services.k8s.aws:
     filename: sns.services.k8s.aws/subscription_v1alpha1.json
     kind: Subscription
     name: subscription_v1alpha1
+source.extensions.fluxcd.io:
+  - apiVersion: source.extensions.fluxcd.io/v1beta1
+    filename: source.extensions.fluxcd.io/artifactgenerator_v1beta1.json
+    kind: ArtifactGenerator
+    name: artifactgenerator_v1beta1
 source.toolkit.fluxcd.io:
   - apiVersion: source.toolkit.fluxcd.io/v1beta1
     filename: source.toolkit.fluxcd.io/bucket_v1beta1.json
