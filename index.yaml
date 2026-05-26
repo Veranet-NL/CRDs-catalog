@@ -1418,6 +1418,104 @@ asset.cnrm.cloud.google.com:
     filename: asset.cnrm.cloud.google.com/assetfeed_v1beta1.json
     kind: AssetFeed
     name: assetfeed_v1beta1
+atlas.generated.mongodb.com:
+  - apiVersion: atlas.generated.mongodb.com/v1
+    filename: atlas.generated.mongodb.com/databaseuser_v1.json
+    kind: databaseuser
+    name: databaseuser_v1
+  - apiVersion: atlas.generated.mongodb.com/v1
+    filename: atlas.generated.mongodb.com/ipaccesslistentry_v1.json
+    kind: ipaccesslistentry
+    name: ipaccesslistentry_v1
+  - apiVersion: atlas.generated.mongodb.com/v1
+    filename: atlas.generated.mongodb.com/flexcluster_v1.json
+    kind: flexcluster
+    name: flexcluster_v1
+  - apiVersion: atlas.generated.mongodb.com/v1
+    filename: atlas.generated.mongodb.com/cluster_v1.json
+    kind: cluster
+    name: cluster_v1
+  - apiVersion: atlas.generated.mongodb.com/v1
+    filename: atlas.generated.mongodb.com/group_v1.json
+    kind: group
+    name: group_v1
+atlas.mongodb.com:
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasdatabaseuser_v1.json
+    kind: AtlasDatabaseUser
+    name: atlasdatabaseuser_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasdeployment_v1.json
+    kind: AtlasDeployment
+    name: atlasdeployment_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasprivateendpoint_v1.json
+    kind: AtlasPrivateEndpoint
+    name: atlasprivateendpoint_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasbackuppolicy_v1.json
+    kind: AtlasBackupPolicy
+    name: atlasbackuppolicy_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasproject_v1.json
+    kind: AtlasProject
+    name: atlasproject_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasbackupcompliancepolicy_v1.json
+    kind: AtlasBackupCompliancePolicy
+    name: atlasbackupcompliancepolicy_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasthirdpartyintegration_v1.json
+    kind: AtlasThirdPartyIntegration
+    name: atlasthirdpartyintegration_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasorgsettings_v1.json
+    kind: atlasorgsettings
+    name: atlasorgsettings_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlascustomrole_v1.json
+    kind: AtlasCustomRole
+    name: atlascustomrole_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasstreamconnection_v1.json
+    kind: AtlasStreamConnection
+    name: atlasstreamconnection_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasbackupschedule_v1.json
+    kind: AtlasBackupSchedule
+    name: atlasbackupschedule_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasnetworkpeering_v1.json
+    kind: AtlasNetworkPeering
+    name: atlasnetworkpeering_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasdatafederation_v1.json
+    kind: AtlasDataFederation
+    name: atlasdatafederation_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlassearchindexconfig_v1.json
+    kind: AtlasSearchIndexConfig
+    name: atlassearchindexconfig_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasstreaminstance_v1.json
+    kind: AtlasStreamInstance
+    name: atlasstreaminstance_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasipaccesslist_v1.json
+    kind: AtlasIPAccessList
+    name: atlasipaccesslist_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasteam_v1.json
+    kind: AtlasTeam
+    name: atlasteam_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasfederatedauth_v1.json
+    kind: AtlasFederatedAuth
+    name: atlasfederatedauth_v1
+  - apiVersion: atlas.mongodb.com/v1
+    filename: atlas.mongodb.com/atlasnetworkcontainer_v1.json
+    kind: AtlasNetworkContainer
+    name: atlasnetworkcontainer_v1
 auditlog.cattle.io:
   - apiVersion: auditlog.cattle.io/v1
     filename: auditlog.cattle.io/auditpolicy_v1.json
@@ -1468,6 +1566,15 @@ autoscaling.cast.ai:
     filename: autoscaling.cast.ai/recommendations_v1.json
     kind: recommendations
     name: recommendations_v1
+autoscaling.internal.knative.dev:
+  - apiVersion: autoscaling.internal.knative.dev/v1alpha1
+    filename: autoscaling.internal.knative.dev/podautoscaler_v1alpha1.json
+    kind: PodAutoscaler
+    name: podautoscaler_v1alpha1
+  - apiVersion: autoscaling.internal.knative.dev/v1alpha1
+    filename: autoscaling.internal.knative.dev/metric_v1alpha1.json
+    kind: Metric
+    name: metric_v1alpha1
 autoscaling.k8s.elastic.co:
   - apiVersion: autoscaling.k8s.elastic.co/v1alpha1
     filename: autoscaling.k8s.elastic.co/elasticsearchautoscaler_v1alpha1.json
@@ -1937,6 +2044,11 @@ cache.azure.com:
     filename: cache.azure.com/redis_v1api20230401.json
     kind: redis
     name: redis_v1api20230401
+caching.internal.knative.dev:
+  - apiVersion: caching.internal.knative.dev/v1alpha1
+    filename: caching.internal.knative.dev/image_v1alpha1.json
+    kind: Image
+    name: image_v1alpha1
 capi.weave.works:
   - apiVersion: capi.weave.works/v1alpha1
     filename: capi.weave.works/clusterbootstrapconfig_v1alpha1.json
@@ -1975,6 +2087,26 @@ capsule.clastix.io:
     filename: capsule.clastix.io/tenant_v1beta1.json
     kind: Tenant
     name: tenant_v1beta1
+  - apiVersion: capsule.clastix.io/v1beta1
+    filename: capsule.clastix.io/proxysetting_v1beta1.json
+    kind: ProxySetting
+    name: proxysetting_v1beta1
+  - apiVersion: capsule.clastix.io/v1beta1
+    filename: capsule.clastix.io/globalproxysettings_v1beta1.json
+    kind: GlobalProxySettings
+    name: globalproxysettings_v1beta1
+  - apiVersion: capsule.clastix.io/v1beta2
+    filename: capsule.clastix.io/tenantowner_v1beta2.json
+    kind: TenantOwner
+    name: tenantowner_v1beta2
+  - apiVersion: capsule.clastix.io/v1beta2
+    filename: capsule.clastix.io/resourcepoolclaim_v1beta2.json
+    kind: ResourcePoolClaim
+    name: resourcepoolclaim_v1beta2
+  - apiVersion: capsule.clastix.io/v1beta2
+    filename: capsule.clastix.io/resourcepool_v1beta2.json
+    kind: Resourcepool
+    name: resourcepool_v1beta2
 catalog.cattle.io:
   - apiVersion: catalog.cattle.io/v1
     filename: catalog.cattle.io/clusterrepo_v1.json
@@ -6198,6 +6330,39 @@ eventing.keda.sh:
     filename: eventing.keda.sh/clustercloudeventsource_v1alpha1.json
     kind: clustercloudeventsource
     name: clustercloudeventsource_v1alpha1
+eventing.knative.dev:
+  - apiVersion: eventing.knative.dev/v1beta3
+    filename: eventing.knative.dev/eventtype_v1beta3.json
+    kind: EventType
+    name: eventtype_v1beta3
+  - apiVersion: eventing.knative.dev/v1
+    filename: eventing.knative.dev/trigger_v1.json
+    kind: Trigger
+    name: trigger_v1
+  - apiVersion: eventing.knative.dev/v1alpha1
+    filename: eventing.knative.dev/requestreply_v1alpha1.json
+    kind: requestreply
+    name: requestreply_v1alpha1
+  - apiVersion: eventing.knative.dev/v1
+    filename: eventing.knative.dev/broker_v1.json
+    kind: Broker
+    name: broker_v1
+  - apiVersion: eventing.knative.dev/v1beta2
+    filename: eventing.knative.dev/eventtype_v1beta2.json
+    kind: EventType
+    name: eventtype_v1beta2
+  - apiVersion: eventing.knative.dev/v1alpha1
+    filename: eventing.knative.dev/eventtransform_v1alpha1.json
+    kind: eventtransform
+    name: eventtransform_v1alpha1
+  - apiVersion: eventing.knative.dev/v1alpha1
+    filename: eventing.knative.dev/eventpolicy_v1alpha1.json
+    kind: eventpolicy
+    name: eventpolicy_v1alpha1
+  - apiVersion: eventing.knative.dev/v1beta1
+    filename: eventing.knative.dev/eventtype_v1beta1.json
+    kind: EventType
+    name: eventtype_v1beta1
 executor.testkube.io:
   - apiVersion: executor.testkube.io/v1
     filename: executor.testkube.io/executor_v1.json
@@ -6447,6 +6612,15 @@ flink.apache.org:
     filename: flink.apache.org/flinksessionjob_v1beta1.json
     kind: flinksessionjob
     name: flinksessionjob_v1beta1
+flows.knative.dev:
+  - apiVersion: flows.knative.dev/v1
+    filename: flows.knative.dev/sequence_v1.json
+    kind: Sequence
+    name: sequence_v1
+  - apiVersion: flows.knative.dev/v1
+    filename: flows.knative.dev/parallel_v1.json
+    kind: Parallel
+    name: parallel_v1
 fluentbit.fluent.io:
   - apiVersion: fluentbit.fluent.io/v1alpha2
     filename: fluentbit.fluent.io/collector_v1alpha2.json
@@ -10148,6 +10322,15 @@ memorydb.services.k8s.aws:
     filename: memorydb.services.k8s.aws/user_v1alpha1.json
     kind: User
     name: user_v1alpha1
+messaging.knative.dev:
+  - apiVersion: messaging.knative.dev/v1
+    filename: messaging.knative.dev/subscription_v1.json
+    kind: Subscription
+    name: subscription_v1
+  - apiVersion: messaging.knative.dev/v1
+    filename: messaging.knative.dev/channel_v1.json
+    kind: Channel
+    name: channel_v1
 metal3.io:
   - apiVersion: metal3.io/v1alpha1
     filename: metal3.io/firmwareschema_v1alpha1.json
@@ -10970,6 +11153,23 @@ networking.gke.io:
     filename: networking.gke.io/fqdnnetworkpolicy_v1alpha1.json
     kind: FQDNNetworkPolicy
     name: fqdnnetworkpolicy_v1alpha1
+networking.internal.knative.dev:
+  - apiVersion: networking.internal.knative.dev/v1alpha1
+    filename: networking.internal.knative.dev/clusterdomainclaim_v1alpha1.json
+    kind: ClusterDomainClaim
+    name: clusterdomainclaim_v1alpha1
+  - apiVersion: networking.internal.knative.dev/v1alpha1
+    filename: networking.internal.knative.dev/ingress_v1alpha1.json
+    kind: Ingress
+    name: ingress_v1alpha1
+  - apiVersion: networking.internal.knative.dev/v1alpha1
+    filename: networking.internal.knative.dev/certificate_v1alpha1.json
+    kind: Certificate
+    name: certificate_v1alpha1
+  - apiVersion: networking.internal.knative.dev/v1alpha1
+    filename: networking.internal.knative.dev/serverlessservice_v1alpha1.json
+    kind: ServerlessService
+    name: serverlessservice_v1alpha1
 networking.istio.io:
   - apiVersion: networking.istio.io/v1
     filename: networking.istio.io/workloadgroup_v1.json
@@ -11469,6 +11669,15 @@ operator.h3poteto.dev:
     filename: operator.h3poteto.dev/endpointgroupbinding_v1alpha1.json
     kind: EndpointGroupBinding
     name: endpointgroupbinding_v1alpha1
+operator.knative.dev:
+  - apiVersion: operator.knative.dev/v1beta1
+    filename: operator.knative.dev/knativeserving_v1beta1.json
+    kind: KnativeServing
+    name: knativeserving_v1beta1
+  - apiVersion: operator.knative.dev/v1beta1
+    filename: operator.knative.dev/knativeeventing_v1beta1.json
+    kind: KnativeEventing
+    name: knativeeventing_v1beta1
 operator.open-cluster-management.io:
   - apiVersion: operator.open-cluster-management.io/v1
     filename: operator.open-cluster-management.io/klusterlet_v1.json
@@ -14122,6 +14331,27 @@ serviceusage.cnrm.cloud.google.com:
     filename: serviceusage.cnrm.cloud.google.com/serviceidentity_v1beta1.json
     kind: serviceidentity
     name: serviceidentity_v1beta1
+serving.knative.dev:
+  - apiVersion: serving.knative.dev/v1
+    filename: serving.knative.dev/configuration_v1.json
+    kind: Configuration
+    name: configuration_v1
+  - apiVersion: serving.knative.dev/v1beta1
+    filename: serving.knative.dev/domainmapping_v1beta1.json
+    kind: DomainMapping
+    name: domainmapping_v1beta1
+  - apiVersion: serving.knative.dev/v1
+    filename: serving.knative.dev/route_v1.json
+    kind: Route
+    name: route_v1
+  - apiVersion: serving.knative.dev/v1
+    filename: serving.knative.dev/revision_v1.json
+    kind: Revision
+    name: revision_v1
+  - apiVersion: serving.knative.dev/v1
+    filename: serving.knative.dev/service_v1.json
+    kind: Service
+    name: service_v1
 serving.kserve.io:
   - apiVersion: serving.kserve.io/v1alpha1
     filename: serving.kserve.io/inferencegraph_v1alpha1.json
@@ -14189,6 +14419,15 @@ signalrservice.azure.com:
     filename: signalrservice.azure.com/replica_v1api20240301.json
     kind: replica
     name: replica_v1api20240301
+sinks.knative.dev:
+  - apiVersion: sinks.knative.dev/v1alpha1
+    filename: sinks.knative.dev/integrationsink_v1alpha1.json
+    kind: IntegrationSink
+    name: integrationsink_v1alpha1
+  - apiVersion: sinks.knative.dev/v1alpha1
+    filename: sinks.knative.dev/jobsink_v1alpha1.json
+    kind: JobSink
+    name: jobsink_v1alpha1
 slo.grafana.crossplane.io:
   - apiVersion: slo.grafana.crossplane.io/v1alpha1
     filename: slo.grafana.crossplane.io/slo_v1alpha1.json
@@ -14437,6 +14676,31 @@ sourcerepo.cnrm.cloud.google.com:
     filename: sourcerepo.cnrm.cloud.google.com/sourcereporepository_v1beta1.json
     kind: sourcereporepository
     name: sourcereporepository_v1beta1
+sources.knative.dev:
+  - apiVersion: sources.knative.dev/v1
+    filename: sources.knative.dev/pingsource_v1.json
+    kind: PingSource
+    name: pingsource_v1
+  - apiVersion: sources.knative.dev/v1
+    filename: sources.knative.dev/apiserversource_v1.json
+    kind: ApiServerSource
+    name: apiserversource_v1
+  - apiVersion: sources.knative.dev/v1
+    filename: sources.knative.dev/containersource_v1.json
+    kind: ContainerSource
+    name: containersource_v1
+  - apiVersion: sources.knative.dev/v1beta2
+    filename: sources.knative.dev/pingsource_v1beta2.json
+    kind: PingSource
+    name: pingsource_v1beta2
+  - apiVersion: sources.knative.dev/v1
+    filename: sources.knative.dev/sinkbinding_v1.json
+    kind: SinkBinding
+    name: sinkbinding_v1
+  - apiVersion: sources.knative.dev/v1alpha1
+    filename: sources.knative.dev/integrationsource_v1alpha1.json
+    kind: IntegrationSource
+    name: integrationsource_v1alpha1
 spanner.cnrm.cloud.google.com:
   - apiVersion: spanner.cnrm.cloud.google.com/v1beta1
     filename: spanner.cnrm.cloud.google.com/spannerdatabase_v1beta1.json
@@ -14914,6 +15178,14 @@ tailscale.com:
     filename: tailscale.com/dnsconfig_v1alpha1.json
     kind: DNSConfig
     name: dnsconfig_v1alpha1
+  - apiVersion: tailscale.com/v1alpha1
+    filename: tailscale.com/tailnet_v1alpha1.json
+    kind: tailnet
+    name: tailnet_v1alpha1
+  - apiVersion: tailscale.com/v1alpha1
+    filename: tailscale.com/proxygrouppolicy_v1alpha1.json
+    kind: proxygrouppolicy
+    name: proxygrouppolicy_v1alpha1
 talos.dev:
   - apiVersion: talos.dev/v1alpha1
     filename: talos.dev/serviceaccount_v1alpha1.json
@@ -15004,6 +15276,26 @@ temporal.io:
     filename: temporal.io/temporalnamespace_v1beta1.json
     kind: TemporalNamespace
     name: temporalnamespace_v1beta1
+  - apiVersion: temporal.io/v1alpha1
+    filename: temporal.io/temporalworkerdeployment_v1alpha1.json
+    kind: temporalworkerdeployment
+    name: temporalworkerdeployment_v1alpha1
+  - apiVersion: temporal.io/v1alpha1
+    filename: temporal.io/connection_v1alpha1.json
+    kind: connection
+    name: connection_v1alpha1
+  - apiVersion: temporal.io/v1alpha1
+    filename: temporal.io/workerresourcetemplate_v1alpha1.json
+    kind: workerresourcetemplate
+    name: workerresourcetemplate_v1alpha1
+  - apiVersion: temporal.io/v1alpha1
+    filename: temporal.io/workerdeployment_v1alpha1.json
+    kind: workerdeployment
+    name: workerdeployment_v1alpha1
+  - apiVersion: temporal.io/v1alpha1
+    filename: temporal.io/temporalconnection_v1alpha1.json
+    kind: temporalconnection
+    name: temporalconnection_v1alpha1
 tests.testkube.io:
   - apiVersion: tests.testkube.io/v2
     filename: tests.testkube.io/script_v2.json
