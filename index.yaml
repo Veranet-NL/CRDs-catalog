@@ -13491,6 +13491,46 @@ resources.teleport.dev:
     filename: resources.teleport.dev/teleportautoupdateconfigv1_v1.json
     kind: teleportautoupdateconfigv1
     name: teleportautoupdateconfigv1_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportscopedroleassignmentv1_v1.json
+    kind: teleportscopedroleassignmentv1
+    name: teleportscopedroleassignmentv1_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportretrievalmodelv1_v1.json
+    kind: teleportretrievalmodelv1
+    name: teleportretrievalmodelv1_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportsamlidpserviceproviderv1_v1.json
+    kind: teleportsamlidpserviceproviderv1
+    name: teleportsamlidpserviceproviderv1_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportinferencepolicy_v1.json
+    kind: teleportinferencepolicy
+    name: teleportinferencepolicy_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportscopedrolev1_v1.json
+    kind: teleportscopedrolev1
+    name: teleportscopedrolev1_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportinferencemodel_v1.json
+    kind: teleportinferencemodel
+    name: teleportinferencemodel_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportlockv2_v1.json
+    kind: teleportlockv2
+    name: teleportlockv2_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportaccessmonitoringrulev1_v1.json
+    kind: teleportaccessmonitoringrulev1
+    name: teleportaccessmonitoringrulev1_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportinferencesecret_v1.json
+    kind: teleportinferencesecret
+    name: teleportinferencesecret_v1
+  - apiVersion: resources.teleport.dev/v1
+    filename: resources.teleport.dev/teleportscopedtokenv1_v1.json
+    kind: teleportscopedtokenv1
+    name: teleportscopedtokenv1_v1
 restate.dev:
   - apiVersion: restate.dev/v1
     filename: restate.dev/restatecluster_v1.json
