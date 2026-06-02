@@ -8656,6 +8656,18 @@ infrastructure.cluster.x-k8s.io:
     filename: infrastructure.cluster.x-k8s.io/osccluster_v1beta1.json
     kind: OscCluster
     name: osccluster_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/azureasomanagedcluster_v1beta1.json
+    kind: AzureASOManagedCluster
+    name: azureasomanagedcluster_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/azureasomanagedcontrolplane_v1beta1.json
+    kind: AzureASOManagedControlPlane
+    name: azureasomanagedcontrolplane_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/azureasomanagedmachinepool_v1beta1.json
+    kind: AzureASOManagedMachinePool
+    name: azureasomanagedmachinepool_v1beta1
 ingress.oraclecloud.com:
   - apiVersion: ingress.oraclecloud.com/v1beta1
     filename: ingress.oraclecloud.com/ingressclassparameters_v1beta1.json
