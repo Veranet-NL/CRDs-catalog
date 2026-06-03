@@ -20,6 +20,31 @@
           "items": {
             "description": "MCPRouteBackendRef wraps a EG's BackendObjectReference to reference an MCP server.",
             "properties": {
+              "forwardHeaders": {
+                "description": "ForwardHeaders specifies HTTP headers to extract from the incoming client request\nand forward to this backend MCP server.\nThis enables per-user authentication passthrough (e.g., personal access tokens)\nwithout requiring OAuth configuration.\nEach entry specifies a header name to extract and an optional rename for the backend.",
+                "items": {
+                  "description": "MCPHeaderForward specifies a header to extract from the incoming request and forward to a backend.",
+                  "properties": {
+                    "backendHeader": {
+                      "description": "BackendHeader is the header name to use when forwarding to the backend.\nIf not specified, the original header name is used.",
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "name": {
+                      "description": "Name is the header name to extract from the incoming client request.",
+                      "minLength": 1,
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name"
+                  ],
+                  "type": "object",
+                  "additionalProperties": false
+                },
+                "maxItems": 32,
+                "type": "array"
+              },
               "group": {
                 "default": "",
                 "description": "Group is the group of the referent. For example, \"gateway.networking.k8s.io\".\nWhen unspecified or empty string, core API group is inferred.",
@@ -50,7 +75,7 @@
               },
               "path": {
                 "default": "/mcp",
-                "description": "Path is the HTTP endpoint path of the baackend MCP server.\nIf not specified, the default is \"/mcp\".",
+                "description": "Path is the HTTP endpoint path of the backend MCP server.\nIf not specified, the default is \"/mcp\".",
                 "maxLength": 1024,
                 "type": "string"
               },
@@ -68,12 +93,17 @@
                     "description": "APIKey is a mechanism to access a backend. The API key will be injected into the request headers.",
                     "properties": {
                       "header": {
-                        "description": "Header is the HTTP header to inject the API key into. If not specified,\ndefaults to \"Authorization\".\nWhen the header is \"Authorization\", the injected header value will be\nprefixed with \"Bearer \".",
+                        "description": "Header is the HTTP header to inject the API key into. If not specified,\ndefaults to \"Authorization\".\nWhen the header is \"Authorization\", the injected header value will be\nprefixed with \"Bearer \".\n\nEither one of Header or QueryParam can be specified to inject the API key.",
                         "minLength": 1,
                         "type": "string"
                       },
                       "inline": {
                         "description": "Inline contains the API key as an inline string.",
+                        "type": "string"
+                      },
+                      "queryParam": {
+                        "description": "QueryParam is the HTTP query parameter to inject the API key into.\nFor example, if QueryParam is set to \"api_key\", and the API key is \"mysecretkey\", the request URL will be modified to include\n\"?api_key=mysecretkey\".\n\nEither one of Header or QueryParam can be specified to inject the API key.",
+                        "minLength": 1,
                         "type": "string"
                       },
                       "secretRef": {
@@ -120,6 +150,10 @@
                       {
                         "message": "exactly one of secretRef or inline must be set",
                         "rule": "(has(self.secretRef) && !has(self.inline)) || (!has(self.secretRef) && has(self.inline))"
+                      },
+                      {
+                        "message": "only one of header or queryParam can be set",
+                        "rule": "!(has(self.header) && has(self.queryParam))"
                       }
                     ],
                     "additionalProperties": false
@@ -131,6 +165,22 @@
               "toolSelector": {
                 "description": "ToolSelector filters the tools exposed by this MCP server.\nSupports exact matches and RE2-compatible regular expressions for both include and exclude patterns.\nIf not specified, all tools from the MCP server are exposed.",
                 "properties": {
+                  "exclude": {
+                    "description": "Exclude is a list of tool names to exclude. The specified tools will not be available.\nExclude rules take precedence over include rules.",
+                    "items": {
+                      "type": "string"
+                    },
+                    "maxItems": 32,
+                    "type": "array"
+                  },
+                  "excludeRegex": {
+                    "description": "ExcludeRegex is a list of RE2-compatible regular expressions that, when matched, exclude the tool.\nTools matching these patterns will not be available. Exclude rules take precedence over include rules.",
+                    "items": {
+                      "type": "string"
+                    },
+                    "maxItems": 32,
+                    "type": "array"
+                  },
                   "include": {
                     "description": "Include is a list of tool names to include. Only the specified tools will be available.",
                     "items": {
@@ -151,8 +201,16 @@
                 "type": "object",
                 "x-kubernetes-validations": [
                   {
-                    "message": "exactly one of include or includeRegex must be specified",
-                    "rule": "(has(self.include) && !has(self.includeRegex)) || (!has(self.include) && has(self.includeRegex))"
+                    "message": "include and includeRegex are mutually exclusive",
+                    "rule": "!(has(self.include) && has(self.includeRegex))"
+                  },
+                  {
+                    "message": "exclude and excludeRegex are mutually exclusive",
+                    "rule": "!(has(self.exclude) && has(self.excludeRegex))"
+                  },
+                  {
+                    "message": "at least one of include, includeRegex, exclude, or excludeRegex must be specified",
+                    "rule": "has(self.include) || has(self.includeRegex) || has(self.exclude) || has(self.excludeRegex)"
                   }
                 ],
                 "additionalProperties": false
@@ -2934,6 +2992,30 @@
                     "type": "string"
                   },
                   "maxItems": 32,
+                  "type": "array"
+                },
+                "claimToHeaders": {
+                  "description": "ClaimToHeaders specifies JWT claims to extract and forward as HTTP headers to backend MCP servers.\nThis enables backends to access user identity for authorization, auditing, or personalization.\n\nSecurity considerations:\n- Any client-provided headers matching the configured header names will be stripped to prevent forgery\n- Only the specified claims are extracted; the full JWT is not forwarded to backends\n- Consider using a header prefix (e.g., \"X-Jwt-Claim-\") to avoid conflicts with other headers",
+                  "items": {
+                    "description": "ClaimToHeader defines a configuration to convert JWT claims into HTTP headers",
+                    "properties": {
+                      "claim": {
+                        "description": "Claim is the JWT Claim that should be saved into the header : it can be a nested claim of type\n(eg. \"claim.nested.key\", \"sub\"). The nested claim name must use dot \".\"\nto separate the JSON name path.",
+                        "type": "string"
+                      },
+                      "header": {
+                        "description": "Header defines the name of the HTTP request header that the JWT Claim will be saved into.",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "claim",
+                      "header"
+                    ],
+                    "type": "object",
+                    "additionalProperties": false
+                  },
+                  "maxItems": 16,
                   "type": "array"
                 },
                 "issuer": {

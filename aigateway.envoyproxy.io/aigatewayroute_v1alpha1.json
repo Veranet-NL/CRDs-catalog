@@ -15,104 +15,13 @@
     "spec": {
       "description": "Spec defines the details of the AIGatewayRoute.",
       "properties": {
-        "filterConfig": {
-          "description": "FilterConfig is the configuration for the AI Gateway filter inserted in the generated HTTPRoute.\n\nAn AI Gateway filter is responsible for the transformation of the request and response\nas well as the routing behavior based on the model name extracted from the request content, etc.\n\nCurrently, the filter is only implemented as an external processor filter, which might be\nextended to other types of filters in the future. See https://github.com/envoyproxy/ai-gateway/issues/90",
-          "properties": {
-            "externalProcessor": {
-              "description": "ExternalProcessor is the configuration for the external processor filter.\nThis is optional, and if not set, the default values of Deployment spec will be used.",
-              "properties": {
-                "resources": {
-                  "description": "Resources required by the external processor container.\nMore info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/\n\nDeprecated: Use GatewayConfig for gateway-scoped resource configuration instead.\nConfigure resources using GatewayConfig.spec.extProc.resources and reference it\nfrom the Gateway via the \"aigateway.envoyproxy.io/gateway-config\" annotation.\nThis field will be removed in a future version.\n\nNote: when multiple AIGatewayRoute resources are attached to the same Gateway, and each\nAIGatewayRoute has a different resource configuration, the ai-gateway will pick one of them\nto configure the resource requirements of the external processor container.",
-                  "properties": {
-                    "claims": {
-                      "description": "Claims lists the names of resources, defined in spec.resourceClaims,\nthat are used by this container.\n\nThis field depends on the\nDynamicResourceAllocation feature gate.\n\nThis field is immutable. It can only be set for containers.",
-                      "items": {
-                        "description": "ResourceClaim references one entry in PodSpec.ResourceClaims.",
-                        "properties": {
-                          "name": {
-                            "description": "Name must match the name of one entry in pod.spec.resourceClaims of\nthe Pod where this field is used. It makes that resource available\ninside a container.",
-                            "type": "string"
-                          },
-                          "request": {
-                            "description": "Request is the name chosen for a request in the referenced claim.\nIf empty, everything from the claim is made available, otherwise\nonly the result of this request.",
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "name"
-                        ],
-                        "type": "object",
-                        "additionalProperties": false
-                      },
-                      "type": "array",
-                      "x-kubernetes-list-map-keys": [
-                        "name"
-                      ],
-                      "x-kubernetes-list-type": "map"
-                    },
-                    "limits": {
-                      "additionalProperties": {
-                        "anyOf": [
-                          {
-                            "type": "integer"
-                          },
-                          {
-                            "type": "string"
-                          }
-                        ],
-                        "pattern": "^(\\+|-)?(([0-9]+(\\.[0-9]*)?)|(\\.[0-9]+))(([KMGTPE]i)|[numkMGTPE]|([eE](\\+|-)?(([0-9]+(\\.[0-9]*)?)|(\\.[0-9]+))))?$",
-                        "x-kubernetes-int-or-string": true
-                      },
-                      "description": "Limits describes the maximum amount of compute resources allowed.\nMore info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
-                      "type": "object"
-                    },
-                    "requests": {
-                      "additionalProperties": {
-                        "anyOf": [
-                          {
-                            "type": "integer"
-                          },
-                          {
-                            "type": "string"
-                          }
-                        ],
-                        "pattern": "^(\\+|-)?(([0-9]+(\\.[0-9]*)?)|(\\.[0-9]+))(([KMGTPE]i)|[numkMGTPE]|([eE](\\+|-)?(([0-9]+(\\.[0-9]*)?)|(\\.[0-9]+))))?$",
-                        "x-kubernetes-int-or-string": true
-                      },
-                      "description": "Requests describes the minimum amount of compute resources required.\nIf Requests is omitted for a container, it defaults to Limits if that is explicitly specified,\notherwise to an implementation-defined value. Requests cannot exceed Limits.\nMore info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
-                      "type": "object"
-                    }
-                  },
-                  "type": "object",
-                  "additionalProperties": false
-                }
-              },
-              "type": "object",
-              "additionalProperties": false
-            },
-            "type": {
-              "default": "ExternalProcessor",
-              "description": "Type specifies the type of the filter configuration.\n\nCurrently, only ExternalProcessor is supported, and default is ExternalProcessor.",
-              "enum": [
-                "ExternalProcessor",
-                "DynamicModule"
-              ],
-              "type": "string"
-            }
-          },
-          "required": [
-            "type"
-          ],
-          "type": "object",
-          "additionalProperties": false
-        },
         "llmRequestCosts": {
-          "description": "LLMRequestCosts specifies how to capture the cost of the LLM-related request, notably the token usage.\nThe AI Gateway filter will capture each specified number and store it in the Envoy's dynamic\nmetadata per HTTP request. The namespaced key is \"io.envoy.ai_gateway\",\n\nFor example, let's say we have the following LLMRequestCosts configuration:\n```yaml\n\tllmRequestCosts:\n\t- metadataKey: llm_input_token\n\t  type: InputToken\n\t- metadataKey: llm_output_token\n\t  type: OutputToken\n\t- metadataKey: llm_total_token\n\t  type: TotalToken\n\t- metadataKey: llm_cached_input_token\n\t  type: CachedInputToken\n- metadataKey: llm_cache_creation_input_token\n   type: CacheCreationInputToken\n```\nThen, with the following BackendTrafficPolicy of Envoy Gateway, you can have three\nrate limit buckets for each unique x-user-id header value. One bucket is for the input token,\nthe other is for the output token, and the last one is for the total token.\nEach bucket will be reduced by the corresponding token usage captured by the AI Gateway filter.\n\n```yaml\n\tapiVersion: gateway.envoyproxy.io/v1alpha1\n\tkind: BackendTrafficPolicy\n\tmetadata:\n\t  name: some-example-token-rate-limit\n\t  namespace: default\n\tspec:\n\t  targetRefs:\n\t  - group: gateway.networking.k8s.io\n\t     kind: HTTPRoute\n\t     name: usage-rate-limit\n\t  rateLimit:\n\t    type: Global\n\t    global:\n\t      rules:\n\t        - clientSelectors:\n\t            # Do the rate limiting based on the x-user-id header.\n\t            - headers:\n\t                - name: x-user-id\n\t                  type: Distinct\n\t          limit:\n\t            # Configures the number of \"tokens\" allowed per hour.\n\t            requests: 10000\n\t            unit: Hour\n\t          cost:\n\t            request:\n\t              from: Number\n\t              # Setting the request cost to zero allows to only check the rate limit budget,\n\t              # and not consume the budget on the request path.\n\t              number: 0\n\t            # This specifies the cost of the response retrieved from the dynamic metadata set by the AI Gateway filter.\n\t            # The extracted value will be used to consume the rate limit budget, and subsequent requests will be rate limited\n\t            # if the budget is exhausted.\n\t            response:\n\t              from: Metadata\n\t              metadata:\n\t                namespace: io.envoy.ai_gateway\n\t                key: llm_input_token\n\t        - clientSelectors:\n\t            - headers:\n\t                - name: x-user-id\n\t                  type: Distinct\n\t          limit:\n\t            requests: 10000\n\t            unit: Hour\n\t          cost:\n\t            request:\n\t              from: Number\n\t              number: 0\n\t            response:\n\t              from: Metadata\n\t              metadata:\n\t                namespace: io.envoy.ai_gateway\n\t                key: llm_output_token\n\t        - clientSelectors:\n\t            - headers:\n\t                - name: x-user-id\n\t                  type: Distinct\n\t          limit:\n\t            requests: 10000\n\t            unit: Hour\n\t          cost:\n\t            request:\n\t              from: Number\n\t              number: 0\n\t            response:\n\t              from: Metadata\n\t              metadata:\n\t                namespace: io.envoy.ai_gateway\n\t                key: llm_total_token\n```\n\nNote that when multiple AIGatewayRoute resources are attached to the same Gateway, and\ndifferent costs are configured for the same metadata key, the ai-gateway will pick one of them\nto configure the metadata key in the generated HTTPRoute, and ignore the rest.",
+          "description": "LLMRequestCosts specifies how to capture the cost of the LLM-related request, notably the token usage.\nThe AI Gateway filter will capture each specified number and store it in the Envoy's dynamic\nmetadata per HTTP request. The namespaced key is \"io.envoy.ai_gateway\".\n\nThese route-level costs override any global defaults defined in GatewayConfig.Spec.GlobalLLMRequestCosts\nfor the same metadataKey. If a metadataKey is not defined in either place, no cost is calculated for it.\n\nThis allows you to define common cost formulas once at the gateway level (e.g., via GatewayConfig)\nand only override them in specific routes when needed (e.g., premium routes with different pricing).\n\nFor example, let's say we have the following LLMRequestCosts configuration:\n```yaml\n\tllmRequestCosts:\n\t- metadataKey: llm_input_token\n\t  type: InputToken\n\t- metadataKey: llm_output_token\n\t  type: OutputToken\n\t- metadataKey: llm_total_token\n\t  type: TotalToken\n\t- metadataKey: llm_cached_input_token\n\t  type: CachedInputToken\n- metadataKey: llm_cache_creation_input_token\n   type: CacheCreationInputToken\n```\nThen, with the following BackendTrafficPolicy of Envoy Gateway, you can have three\nrate limit buckets for each unique x-tenant-id header value. One bucket is for the input token,\nthe other is for the output token, and the last one is for the total token.\nEach bucket will be reduced by the corresponding token usage captured by the AI Gateway filter.\n\n```yaml\n\tapiVersion: gateway.envoyproxy.io/v1alpha1\n\tkind: BackendTrafficPolicy\n\tmetadata:\n\t  name: some-example-token-rate-limit\n\t  namespace: default\n\tspec:\n\t  targetRefs:\n\t  - group: gateway.networking.k8s.io\n\t     kind: HTTPRoute\n\t     name: usage-rate-limit\n\t  rateLimit:\n\t    type: Global\n\t    global:\n\t      rules:\n\t        - clientSelectors:\n\t            # Do the rate limiting based on the x-tenant-id header.\n\t            - headers:\n\t                - name: x-tenant-id\n\t                  type: Distinct\n\t          limit:\n\t            # Configures the number of \"tokens\" allowed per hour.\n\t            requests: 10000\n\t            unit: Hour\n\t          cost:\n\t            request:\n\t              from: Number\n\t              # Setting the request cost to zero allows to only check the rate limit budget,\n\t              # and not consume the budget on the request path.\n\t              number: 0\n\t            # This specifies the cost of the response retrieved from the dynamic metadata set by the AI Gateway filter.\n\t            # The extracted value will be used to consume the rate limit budget, and subsequent requests will be rate limited\n\t            # if the budget is exhausted.\n\t            response:\n\t              from: Metadata\n\t              metadata:\n\t                namespace: io.envoy.ai_gateway\n\t                key: llm_input_token\n\t        - clientSelectors:\n\t            - headers:\n\t                - name: x-tenant-id\n\t                  type: Distinct\n\t          limit:\n\t            requests: 10000\n\t            unit: Hour\n\t          cost:\n\t            request:\n\t              from: Number\n\t              number: 0\n\t            response:\n\t              from: Metadata\n\t              metadata:\n\t                namespace: io.envoy.ai_gateway\n\t                key: llm_output_token\n\t        - clientSelectors:\n\t            - headers:\n\t                - name: x-tenant-id\n\t                  type: Distinct\n\t          limit:\n\t            requests: 10000\n\t            unit: Hour\n\t          cost:\n\t            request:\n\t              from: Number\n\t              number: 0\n\t            response:\n\t              from: Metadata\n\t              metadata:\n\t                namespace: io.envoy.ai_gateway\n\t                key: llm_total_token\n```\n\nNote that when multiple AIGatewayRoute resources are attached to the same Gateway, and\ndifferent costs are configured for the same metadata key, each route's rule is carried in\nthe filter configuration with the route identity; the data plane selects the matching rule\nper request (by route), so each route can define its own cost for the same metadata key.",
           "items": {
             "description": "LLMRequestCost configures each request cost.",
             "properties": {
               "cel": {
-                "description": "CEL is the CEL expression to calculate the cost of the request.\nThe CEL expression must return a signed or unsigned integer. If the\nreturn value is negative, it will be error.\n\nThe expression can use the following variables:\n\n\t* model: the model name extracted from the request content. Type: string.\n\t* backend: the backend name in the form of \"name.namespace\". Type: string.\n\t* input_tokens: the number of input tokens. Type: unsigned integer.\n\t* cached_input_tokens: the number of cached read input tokens. Type: unsigned integer.\n\t* cache_creation_input_tokens: the number of cache creation input tokens. Type: unsigned integer.\n\t* output_tokens: the number of output tokens. Type: unsigned integer.\n\t* total_tokens: the total number of tokens. Type: unsigned integer.\n\nFor example, the following expressions are valid:\n\n\t* \"model == 'llama' ?  input_tokens + output_token * 0.5 : total_tokens\"\n\t* \"backend == 'foo.default' ?  input_tokens + output_tokens : total_tokens\"\n\t* \"backend == 'bar.default' ?  (input_tokens - cached_input_tokens) + cached_input_tokens * 0.1 + cache_creation_input_tokens * 1.25 + output_tokens : total_tokens\"\n\t* \"input_tokens + output_tokens + total_tokens\"\n\t* \"input_tokens * output_tokens\"",
+                "description": "CEL is the CEL expression to calculate the cost of the request.\nThe CEL expression must return a signed or unsigned integer. If the\nreturn value is negative, it will be error.\n\nThe expression can use the following variables:\n\n\t* model: the model name extracted from the request content. Type: string.\n\t* backend: the backend name in the form of \"name.namespace\". Type: string.\n\t* input_tokens: the number of input tokens. Type: unsigned integer.\n\t* cached_input_tokens: the number of cached read input tokens. Type: unsigned integer.\n\t* cache_creation_input_tokens: the number of cache creation input tokens. Type: unsigned integer.\n\t* output_tokens: the number of output tokens. Type: unsigned integer.\n\t* total_tokens: the total number of tokens. Type: unsigned integer.\n\t* reasoning_tokens: the number of reasoning tokens. Type: unsigned integer.\n\nFor example, the following expressions are valid:\n\n\t* \"model == 'llama' ?  input_tokens + output_token * 0.5 : total_tokens\"\n\t* \"backend == 'foo.default' ?  input_tokens + output_tokens : total_tokens\"\n\t* \"backend == 'bar.default' ?  (input_tokens - cached_input_tokens) + cached_input_tokens * 0.1 + cache_creation_input_tokens * 1.25 + output_tokens : total_tokens\"\n\t* \"input_tokens + output_tokens + total_tokens\"\n\t* \"input_tokens * output_tokens\"",
                 "type": "string"
               },
               "metadataKey": {
@@ -120,13 +29,14 @@
                 "type": "string"
               },
               "type": {
-                "description": "Type specifies the type of the request cost. The default is \"OutputToken\",\nand it uses \"output token\" as the cost. The other types are \"InputToken\", \"TotalToken\",\n\"CachedInputToken\", \"CacheCreationInputToken\", and \"CEL\".",
+                "description": "Type specifies the type of the request cost. The default is \"OutputToken\",\nand it uses \"output token\" as the cost. The other types are \"InputToken\", \"TotalToken\",\n\"CachedInputToken\", \"CacheCreationInputToken\", \"ReasoningToken\", and \"CEL\".",
                 "enum": [
                   "OutputToken",
                   "InputToken",
                   "CachedInputToken",
                   "CacheCreationInputToken",
                   "TotalToken",
+                  "ReasoningToken",
                   "CEL"
                 ],
                 "type": "string"
