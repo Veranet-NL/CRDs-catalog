@@ -211,6 +211,30 @@ aigateway.envoyproxy.io:
     filename: aigateway.envoyproxy.io/aiservicebackend_v1alpha1.json
     kind: AIServiceBackend
     name: aiservicebackend_v1alpha1
+  - apiVersion: aigateway.envoyproxy.io/v1beta1
+    filename: aigateway.envoyproxy.io/backendsecuritypolicy_v1beta1.json
+    kind: BackendSecurityPolicy
+    name: backendsecuritypolicy_v1beta1
+  - apiVersion: aigateway.envoyproxy.io/v1beta1
+    filename: aigateway.envoyproxy.io/gatewayconfig_v1beta1.json
+    kind: GatewayConfig
+    name: gatewayconfig_v1beta1
+  - apiVersion: aigateway.envoyproxy.io/v1alpha1
+    filename: aigateway.envoyproxy.io/quotapolicy_v1alpha1.json
+    kind: QuotaPolicy
+    name: quotapolicy_v1alpha1
+  - apiVersion: aigateway.envoyproxy.io/v1beta1
+    filename: aigateway.envoyproxy.io/aiservicebackend_v1beta1.json
+    kind: AIServiceBackend
+    name: aiservicebackend_v1beta1
+  - apiVersion: aigateway.envoyproxy.io/v1beta1
+    filename: aigateway.envoyproxy.io/aigatewayroute_v1beta1.json
+    kind: AIGatewayRoute
+    name: aigatewayroute_v1beta1
+  - apiVersion: aigateway.envoyproxy.io/v1beta1
+    filename: aigateway.envoyproxy.io/mcproute_v1beta1.json
+    kind: MCPRoute
+    name: mcproute_v1beta1
 ais.nvidia.com:
   - apiVersion: ais.nvidia.com/v1beta1
     filename: ais.nvidia.com/aistore_v1beta1.json
