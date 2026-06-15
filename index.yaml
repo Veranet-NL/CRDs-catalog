@@ -10811,6 +10811,18 @@ nauth.io:
     filename: nauth.io/account_v1alpha1.json
     kind: Account
     name: account_v1alpha1
+  - apiVersion: nauth.io/v1alpha1
+    filename: nauth.io/accountexport_v1alpha1.json
+    kind: AccountExport
+    name: accountexport_v1alpha1
+  - apiVersion: nauth.io/v1alpha1
+    filename: nauth.io/accountimport_v1alpha1.json
+    kind: AccountImport
+    name: accountimport_v1alpha1
+  - apiVersion: nauth.io/v1alpha1
+    filename: nauth.io/natscluster_v1alpha1.json
+    kind: NatsCluster
+    name: natscluster_v1alpha1
 network.azure.com:
   - apiVersion: network.azure.com/v1api20220701
     filename: network.azure.com/privateendpoint_v1api20220701.json
