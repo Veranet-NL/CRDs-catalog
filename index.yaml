@@ -15471,6 +15471,10 @@ tinkerbell.org:
     filename: tinkerbell.org/template_v1alpha1.json
     kind: Template
     name: template_v1alpha1
+  - apiVersion: tinkerbell.org/v1alpha1
+    filename: tinkerbell.org/workflowruleset_v1alpha1.json
+    kind: workflowruleset
+    name: workflowruleset_v1alpha1
 tpu.cnrm.cloud.google.com:
   - apiVersion: tpu.cnrm.cloud.google.com/v1alpha1
     filename: tpu.cnrm.cloud.google.com/tpunode_v1alpha1.json
