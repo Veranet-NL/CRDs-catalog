@@ -190,6 +190,19 @@ agent.k8s.elastic.co:
     filename: agent.k8s.elastic.co/agent_v1alpha1.json
     kind: Agent
     name: agent_v1alpha1
+agentgateway.dev:
+  - apiVersion: agentgateway.dev/v1alpha1
+    filename: agentgateway.dev/agentgatewayparameters_v1alpha1.json
+    kind: agentgatewayparameters
+    name: agentgatewayparameters_v1alpha1
+  - apiVersion: agentgateway.dev/v1alpha1
+    filename: agentgateway.dev/agentgatewaybackend_v1alpha1.json
+    kind: agentgatewaybackend
+    name: agentgatewaybackend_v1alpha1
+  - apiVersion: agentgateway.dev/v1alpha1
+    filename: agentgateway.dev/agentgatewaypolicy_v1alpha1.json
+    kind: agentgatewaypolicy
+    name: agentgatewaypolicy_v1alpha1
 aigateway.envoyproxy.io:
   - apiVersion: aigateway.envoyproxy.io/v1alpha1
     filename: aigateway.envoyproxy.io/mcproute_v1alpha1.json
@@ -8692,6 +8705,34 @@ infrastructure.cluster.x-k8s.io:
     filename: infrastructure.cluster.x-k8s.io/azureasomanagedmachinepool_v1beta1.json
     kind: AzureASOManagedMachinePool
     name: azureasomanagedmachinepool_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/openstackmachine_v1beta1.json
+    kind: OpenStackMachine
+    name: openstackmachine_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/openstackclustertemplate_v1beta1.json
+    kind: OpenStackClusterTemplate
+    name: openstackclustertemplate_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/openstackmachinetemplate_v1beta1.json
+    kind: OpenStackMachineTemplate
+    name: openstackmachinetemplate_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    filename: infrastructure.cluster.x-k8s.io/openstackcluster_v1beta1.json
+    kind: OpenStackCluster
+    name: openstackcluster_v1beta1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1alpha1
+    filename: infrastructure.cluster.x-k8s.io/openstackfloatingippool_v1alpha1.json
+    kind: OpenStackFloatingIPPool
+    name: openstackfloatingippool_v1alpha1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1alpha1
+    filename: infrastructure.cluster.x-k8s.io/openstackclusteridentity_v1alpha1.json
+    kind: OpenStackClusterIdentity
+    name: openstackclusteridentity_v1alpha1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1alpha1
+    filename: infrastructure.cluster.x-k8s.io/openstackserver_v1alpha1.json
+    kind: OpenStackServer
+    name: openstackserver_v1alpha1
 ingress.oraclecloud.com:
   - apiVersion: ingress.oraclecloud.com/v1beta1
     filename: ingress.oraclecloud.com/ingressclassparameters_v1beta1.json
@@ -10766,6 +10807,10 @@ nauth.io:
     filename: nauth.io/natscluster_v1alpha1.json
     kind: NatsCluster
     name: natscluster_v1alpha1
+  - apiVersion: nauth.io/v1alpha1
+    filename: nauth.io/accountsigningkey_v1alpha1.json
+    kind: AccountSigningKey
+    name: accountsigningkey_v1alpha1
 network.azure.com:
   - apiVersion: network.azure.com/v1api20180501
     filename: network.azure.com/dnszonesaaaarecord_v1api20180501.json
@@ -11324,6 +11369,18 @@ networking.k8s.aws:
     filename: networking.k8s.aws/policyendpoint_v1alpha1.json
     kind: PolicyEndpoint
     name: policyendpoint_v1alpha1
+  - apiVersion: networking.k8s.aws/v1alpha1
+    filename: networking.k8s.aws/applicationnetworkpolicy_v1alpha1.json
+    kind: ApplicationNetworkPolicy
+    name: applicationnetworkpolicy_v1alpha1
+  - apiVersion: networking.k8s.aws/v1alpha1
+    filename: networking.k8s.aws/clusternetworkpolicy_v1alpha1.json
+    kind: ClusterNetworkPolicy
+    name: clusternetworkpolicy_v1alpha1
+  - apiVersion: networking.k8s.aws/v1alpha1
+    filename: networking.k8s.aws/clusterpolicyendpoint_v1alpha1.json
+    kind: ClusterPolicyEndpoint
+    name: clusterpolicyendpoint_v1alpha1
 networkmanagement.cnrm.cloud.google.com:
   - apiVersion: networkmanagement.cnrm.cloud.google.com/v1alpha1
     filename: networkmanagement.cnrm.cloud.google.com/networkmanagementconnectivitytest_v1alpha1.json
@@ -13366,6 +13423,19 @@ renovate-operator.mogenius.com:
     filename: renovate-operator.mogenius.com/renovatejob_v1alpha1.json
     kind: renovatejob
     name: renovatejob_v1alpha1
+repo-manager.pulpproject.org:
+  - apiVersion: repo-manager.pulpproject.org/v1
+    filename: repo-manager.pulpproject.org/pulpbackup_v1.json
+    kind: PulpBackup
+    name: pulpbackup_v1
+  - apiVersion: repo-manager.pulpproject.org/v1
+    filename: repo-manager.pulpproject.org/pulprestore_v1.json
+    kind: PulpRestore
+    name: pulprestore_v1
+  - apiVersion: repo-manager.pulpproject.org/v1
+    filename: repo-manager.pulpproject.org/pulp_v1.json
+    kind: Pulp
+    name: pulp_v1
 reports.kyverno.io:
   - apiVersion: reports.kyverno.io/v1
     filename: reports.kyverno.io/ephemeralreport_v1.json
