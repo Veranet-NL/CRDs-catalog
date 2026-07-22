@@ -4758,6 +4758,11 @@ druid.apache.org:
     filename: druid.apache.org/druidingestion_v1alpha1.json
     kind: druidingestion
     name: druidingestion_v1alpha1
+dsql.services.k8s.aws:
+  - apiVersion: dsql.services.k8s.aws/v1alpha1
+    filename: dsql.services.k8s.aws/cluster_v1alpha1.json
+    kind: Cluster
+    name: cluster_v1alpha1
 dynamodb.services.k8s.aws:
   - apiVersion: dynamodb.services.k8s.aws/v1alpha1
     filename: dynamodb.services.k8s.aws/backup_v1alpha1.json
@@ -8733,6 +8738,38 @@ infrastructure.cluster.x-k8s.io:
     filename: infrastructure.cluster.x-k8s.io/openstackserver_v1alpha1.json
     kind: OpenStackServer
     name: openstackserver_v1alpha1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1alpha1
+    filename: infrastructure.cluster.x-k8s.io/proxmoxclustertemplate_v1alpha1.json
+    kind: ProxmoxClusterTemplate
+    name: proxmoxclustertemplate_v1alpha1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1alpha2
+    filename: infrastructure.cluster.x-k8s.io/proxmoxcluster_v1alpha2.json
+    kind: ProxmoxCluster
+    name: proxmoxcluster_v1alpha2
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1alpha1
+    filename: infrastructure.cluster.x-k8s.io/proxmoxmachinetemplate_v1alpha1.json
+    kind: ProxmoxMachineTemplate
+    name: proxmoxmachinetemplate_v1alpha1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1alpha1
+    filename: infrastructure.cluster.x-k8s.io/proxmoxcluster_v1alpha1.json
+    kind: ProxmoxCluster
+    name: proxmoxcluster_v1alpha1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1alpha2
+    filename: infrastructure.cluster.x-k8s.io/proxmoxmachine_v1alpha2.json
+    kind: ProxmoxMachine
+    name: proxmoxmachine_v1alpha2
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1alpha1
+    filename: infrastructure.cluster.x-k8s.io/proxmoxmachine_v1alpha1.json
+    kind: ProxmoxMachine
+    name: proxmoxmachine_v1alpha1
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1alpha2
+    filename: infrastructure.cluster.x-k8s.io/proxmoxclustertemplate_v1alpha2.json
+    kind: ProxmoxClusterTemplate
+    name: proxmoxclustertemplate_v1alpha2
+  - apiVersion: infrastructure.cluster.x-k8s.io/v1alpha2
+    filename: infrastructure.cluster.x-k8s.io/proxmoxmachinetemplate_v1alpha2.json
+    kind: ProxmoxMachineTemplate
+    name: proxmoxmachinetemplate_v1alpha2
 ingress.oraclecloud.com:
   - apiVersion: ingress.oraclecloud.com/v1beta1
     filename: ingress.oraclecloud.com/ingressclassparameters_v1beta1.json
@@ -15803,6 +15840,15 @@ v1.edp.epam.com:
     filename: v1.edp.epam.com/keycloakrealmgroup_v1.json
     kind: KeycloakRealmGroup
     name: keycloakrealmgroup_v1
+valkey.io:
+  - apiVersion: valkey.io/v1alpha1
+    filename: valkey.io/valkeynode_v1alpha1.json
+    kind: ValkeyNode
+    name: valkeynode_v1alpha1
+  - apiVersion: valkey.io/v1alpha1
+    filename: valkey.io/valkeycluster_v1alpha1.json
+    kind: ValkeyCluster
+    name: valkeycluster_v1alpha1
 vault.banzaicloud.com:
   - apiVersion: vault.banzaicloud.com/v1alpha1
     filename: vault.banzaicloud.com/vault_v1alpha1.json
