@@ -5752,6 +5752,80 @@ ec2.services.k8s.aws:
     filename: ec2.services.k8s.aws/vpcendpointserviceconfiguration_v1alpha1.json
     kind: VPCEndpointServiceConfiguration
     name: vpcendpointserviceconfiguration_v1alpha1
+ecr.aws.m.upbound.io:
+  - apiVersion: ecr.aws.m.upbound.io/v1beta1
+    filename: ecr.aws.m.upbound.io/lifecyclepolicy_v1beta1.json
+    kind: LifecyclePolicy
+    name: lifecyclepolicy_v1beta1
+  - apiVersion: ecr.aws.m.upbound.io/v1beta1
+    filename: ecr.aws.m.upbound.io/repositorycreationtemplate_v1beta1.json
+    kind: RepositoryCreationTemplate
+    name: repositorycreationtemplate_v1beta1
+  - apiVersion: ecr.aws.m.upbound.io/v1beta1
+    filename: ecr.aws.m.upbound.io/registrypolicy_v1beta1.json
+    kind: RegistryPolicy
+    name: registrypolicy_v1beta1
+  - apiVersion: ecr.aws.m.upbound.io/v1beta1
+    filename: ecr.aws.m.upbound.io/pullthroughcacherule_v1beta1.json
+    kind: PullThroughCacheRule
+    name: pullthroughcacherule_v1beta1
+  - apiVersion: ecr.aws.m.upbound.io/v1beta1
+    filename: ecr.aws.m.upbound.io/registryscanningconfiguration_v1beta1.json
+    kind: RegistryScanningConfiguration
+    name: registryscanningconfiguration_v1beta1
+  - apiVersion: ecr.aws.m.upbound.io/v1beta1
+    filename: ecr.aws.m.upbound.io/repositorypolicy_v1beta1.json
+    kind: RepositoryPolicy
+    name: repositorypolicy_v1beta1
+  - apiVersion: ecr.aws.m.upbound.io/v1beta1
+    filename: ecr.aws.m.upbound.io/replicationconfiguration_v1beta1.json
+    kind: ReplicationConfiguration
+    name: replicationconfiguration_v1beta1
+  - apiVersion: ecr.aws.m.upbound.io/v1beta1
+    filename: ecr.aws.m.upbound.io/repository_v1beta1.json
+    kind: Repository
+    name: repository_v1beta1
+ecr.aws.upbound.io:
+  - apiVersion: ecr.aws.upbound.io/v1beta2
+    filename: ecr.aws.upbound.io/repository_v1beta2.json
+    kind: Repository
+    name: repository_v1beta2
+  - apiVersion: ecr.aws.upbound.io/v1beta1
+    filename: ecr.aws.upbound.io/lifecyclepolicy_v1beta1.json
+    kind: LifecyclePolicy
+    name: lifecyclepolicy_v1beta1
+  - apiVersion: ecr.aws.upbound.io/v1beta1
+    filename: ecr.aws.upbound.io/repositorycreationtemplate_v1beta1.json
+    kind: RepositoryCreationTemplate
+    name: repositorycreationtemplate_v1beta1
+  - apiVersion: ecr.aws.upbound.io/v1beta1
+    filename: ecr.aws.upbound.io/registrypolicy_v1beta1.json
+    kind: RegistryPolicy
+    name: registrypolicy_v1beta1
+  - apiVersion: ecr.aws.upbound.io/v1beta2
+    filename: ecr.aws.upbound.io/replicationconfiguration_v1beta2.json
+    kind: ReplicationConfiguration
+    name: replicationconfiguration_v1beta2
+  - apiVersion: ecr.aws.upbound.io/v1beta1
+    filename: ecr.aws.upbound.io/pullthroughcacherule_v1beta1.json
+    kind: PullThroughCacheRule
+    name: pullthroughcacherule_v1beta1
+  - apiVersion: ecr.aws.upbound.io/v1beta1
+    filename: ecr.aws.upbound.io/registryscanningconfiguration_v1beta1.json
+    kind: RegistryScanningConfiguration
+    name: registryscanningconfiguration_v1beta1
+  - apiVersion: ecr.aws.upbound.io/v1beta1
+    filename: ecr.aws.upbound.io/repositorypolicy_v1beta1.json
+    kind: RepositoryPolicy
+    name: repositorypolicy_v1beta1
+  - apiVersion: ecr.aws.upbound.io/v1beta1
+    filename: ecr.aws.upbound.io/replicationconfiguration_v1beta1.json
+    kind: ReplicationConfiguration
+    name: replicationconfiguration_v1beta1
+  - apiVersion: ecr.aws.upbound.io/v1beta1
+    filename: ecr.aws.upbound.io/repository_v1beta1.json
+    kind: Repository
+    name: repository_v1beta1
 ecr.services.k8s.aws:
   - apiVersion: ecr.services.k8s.aws/v1alpha1
     filename: ecr.services.k8s.aws/repository_v1alpha1.json
@@ -9749,6 +9823,71 @@ kueue.x-k8s.io:
     filename: kueue.x-k8s.io/workloadpriorityclass_v1beta1.json
     kind: WorkloadPriorityClass
     name: workloadpriorityclass_v1beta1
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/workloadpriorityclass_v1beta2.json
+    kind: WorkloadPriorityClass
+    name: workloadpriorityclass_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/provisioningrequestconfig_v1beta2.json
+    kind: ProvisioningRequestConfig
+    name: provisioningrequestconfig_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/workload_v1beta2.json
+    kind: Workload
+    name: workload_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/clusterqueue_v1beta2.json
+    kind: ClusterQueue
+    name: clusterqueue_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta1
+    filename: kueue.x-k8s.io/topology_v1beta1.json
+    kind: Topology
+    name: topology_v1beta1
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/cohort_v1beta2.json
+    kind: Cohort
+    name: cohort_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta1
+    filename: kueue.x-k8s.io/cohort_v1beta1.json
+    kind: Cohort
+    name: cohort_v1beta1
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/multikueueconfig_v1beta2.json
+    kind: MultiKueueConfig
+    name: multikueueconfig_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/resourceflavor_v1beta2.json
+    kind: ResourceFlavor
+    name: resourceflavor_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/topology_v1beta2.json
+    kind: Topology
+    name: topology_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/localqueue_v1beta2.json
+    kind: LocalQueue
+    name: localqueue_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/admissioncheck_v1beta2.json
+    kind: AdmissionCheck
+    name: admissioncheck_v1beta2
+  - apiVersion: kueue.x-k8s.io/v1beta2
+    filename: kueue.x-k8s.io/multikueuecluster_v1beta2.json
+    kind: MultiKueueCluster
+    name: multikueuecluster_v1beta2
+kusto.azure.com:
+  - apiVersion: kusto.azure.com/v1api20230815
+    filename: kusto.azure.com/dataconnection_v1api20230815.json
+    kind: dataConnection
+    name: dataconnection_v1api20230815
+  - apiVersion: kusto.azure.com/v1api20230815
+    filename: kusto.azure.com/database_v1api20230815.json
+    kind: database
+    name: database_v1api20230815
+  - apiVersion: kusto.azure.com/v1api20230815
+    filename: kusto.azure.com/cluster_v1api20230815.json
+    kind: cluster
+    name: cluster_v1api20230815
 kustomize.config.k8s.io:
   - apiVersion: kustomize.config.k8s.io/v1alpha1
     filename: kustomize.config.k8s.io/component_v1alpha1.json
@@ -9814,19 +9953,6 @@ kustomize.config.k8s.io:
     filename: kueue.x-k8s.io/cohort_v1beta1.json
     kind: Cohort
     name: cohort_v1beta1
-kusto.azure.com:
-  - apiVersion: kusto.azure.com/v1api20230815
-    filename: kusto.azure.com/dataconnection_v1api20230815.json
-    kind: dataConnection
-    name: dataconnection_v1api20230815
-  - apiVersion: kusto.azure.com/v1api20230815
-    filename: kusto.azure.com/database_v1api20230815.json
-    kind: database
-    name: database_v1api20230815
-  - apiVersion: kusto.azure.com/v1api20230815
-    filename: kusto.azure.com/cluster_v1api20230815.json
-    kind: cluster
-    name: cluster_v1api20230815
 kustomize.toolkit.fluxcd.io:
   - apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
     filename: kustomize.toolkit.fluxcd.io/kustomization_v1beta1.json
@@ -12911,6 +13037,10 @@ postgresql.cnpg.io:
     filename: postgresql.cnpg.io/failoverquorum_v1.json
     kind: FailoverQuorum
     name: failoverquorum_v1
+  - apiVersion: postgresql.cnpg.io/v1
+    filename: postgresql.cnpg.io/databaserole_v1.json
+    kind: DatabaseRole
+    name: databaserole_v1
 privateca.cnrm.cloud.google.com:
   - apiVersion: privateca.cnrm.cloud.google.com/v1beta1
     filename: privateca.cnrm.cloud.google.com/privatecacertificate_v1beta1.json
