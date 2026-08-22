@@ -1,4 +1,16 @@
 # Inspired by https://github.com/orgs/community/discussions/153608
+#
+# Authentication uses a GitHub App installation token rather than a PAT: the
+# Veranet enterprise rejects fine-grained PATs with a lifetime over 90 days,
+# and App tokens are short-lived (1 hour) so they are not subject to that rule.
+#
+# Requires:
+#   - vars.APP_CLIENT_ID     Client ID of the GitHub App
+#   - secrets.APP_PRIVATE_KEY  Private key (PEM) of that App
+# The App must be installed on this repository with at least
+# "Contents: Read and write" (needed for the merge-upstream API). Grant
+# "Workflows: Read and write" as well, otherwise the sync fails whenever
+# upstream changes a file under .github/workflows/.
 
 name: Sync Fork with Upstream
 on:
@@ -9,14 +21,19 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    env:
-      GH_TOKEN: ${{ secrets.PAT_GIT_PUSH }}
+    permissions: {}  # the default GITHUB_TOKEN is not used
     steps:
-      - name: Checkout Forked Repository
-        uses: actions/checkout@v3
+      - name: Generate a token
+        id: generate-token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1  # v3.2.0
         with:
-          token: ${{ secrets.PAT_GIT_PUSH }}
+          client-id: ${{ vars.APP_CLIENT_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
 
+      # No checkout needed: `gh repo sync <owner/repo>` calls the
+      # /repos/{owner}/{repo}/merge-upstream API instead of using a work tree.
       - name: Sync Fork
+        env:
+          GH_TOKEN: ${{ steps.generate-token.outputs.token }}
         run: |
-          gh repo sync veranet-nl/CRDs-catalog -b main
+          gh repo sync ${{ github.repository }} -b main
