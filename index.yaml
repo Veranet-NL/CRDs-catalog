@@ -3913,6 +3913,123 @@ controlplane.cluster.x-k8s.io:
     filename: controlplane.cluster.x-k8s.io/k0scontrolplane_v1beta1.json
     kind: K0sControlPlane
     name: k0scontrolplane_v1beta1
+coralogix.com:
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/aievaluation_v1alpha1.json
+    kind: AIEvaluation
+    name: aievaluation_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/customrole_v1alpha1.json
+    kind: CustomRole
+    name: customrole_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/preset_v1alpha1.json
+    kind: Preset
+    name: preset_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/rulegroup_v1alpha1.json
+    kind: RuleGroup
+    name: rulegroup_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/view_v1alpha1.json
+    kind: View
+    name: view_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/integration_v1alpha1.json
+    kind: Integration
+    name: integration_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/aicustomevaluation_v1alpha1.json
+    kind: AICustomEvaluation
+    name: aicustomevaluation_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/dashboardsfolder_v1alpha1.json
+    kind: DashboardsFolder
+    name: dashboardsfolder_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/archivelogstarget_v1alpha1.json
+    kind: ArchiveLogsTarget
+    name: archivelogstarget_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/connector_v1alpha1.json
+    kind: Connector
+    name: connector_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/tcotracespolicies_v1alpha1.json
+    kind: TCOTracesPolicies
+    name: tcotracespolicies_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/dashboard_v1alpha1.json
+    kind: Dashboard
+    name: dashboard_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/apikey_v1alpha1.json
+    kind: ApiKey
+    name: apikey_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/group_v1alpha1.json
+    kind: Group
+    name: group_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/customenrichment_v1alpha1.json
+    kind: CustomEnrichment
+    name: customenrichment_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/events2metric_v1alpha1.json
+    kind: events2metric
+    name: events2metric_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/archivemetricstarget_v1alpha1.json
+    kind: archivemetricstarget
+    name: archivemetricstarget_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/viewfolder_v1alpha1.json
+    kind: ViewFolder
+    name: viewfolder_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/alertscheduler_v1alpha1.json
+    kind: AlertScheduler
+    name: alertscheduler_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/slo_v1alpha1.json
+    kind: SLO
+    name: slo_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/tcologspolicies_v1alpha1.json
+    kind: TCOLogsPolicies
+    name: tcologspolicies_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/outboundwebhook_v1alpha1.json
+    kind: OutboundWebhook
+    name: outboundwebhook_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/globalrouter_v1alpha1.json
+    kind: GlobalRouter
+    name: globalrouter_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/recordingrulegroupset_v1alpha1.json
+    kind: RecordingRuleGroupSet
+    name: recordingrulegroupset_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/enrichment_v1alpha1.json
+    kind: Enrichment
+    name: enrichment_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/quotaallocationruleset_v1alpha1.json
+    kind: QuotaAllocationRuleSet
+    name: quotaallocationruleset_v1alpha1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/ipaccess_v1alpha1.json
+    kind: IPAccess
+    name: ipaccess_v1alpha1
+  - apiVersion: coralogix.com/v1beta1
+    filename: coralogix.com/alert_v1beta1.json
+    kind: Alert
+    name: alert_v1beta1
+  - apiVersion: coralogix.com/v1alpha1
+    filename: coralogix.com/scope_v1alpha1.json
+    kind: Scope
+    name: scope_v1alpha1
 core.cnrm.cloud.google.com:
   - apiVersion: core.cnrm.cloud.google.com/v1beta1
     filename: core.cnrm.cloud.google.com/configconnector_v1beta1.json
@@ -6919,6 +7036,18 @@ gateway.k8s.aws:
     filename: gateway.k8s.aws/loadbalancerconfiguration_v1beta1.json
     kind: LoadBalancerConfiguration
     name: loadbalancerconfiguration_v1beta1
+  - apiVersion: gateway.k8s.aws/v1
+    filename: gateway.k8s.aws/targetgroupconfiguration_v1.json
+    kind: TargetGroupConfiguration
+    name: targetgroupconfiguration_v1
+  - apiVersion: gateway.k8s.aws/v1
+    filename: gateway.k8s.aws/listenerruleconfiguration_v1.json
+    kind: ListenerRuleConfiguration
+    name: listenerruleconfiguration_v1
+  - apiVersion: gateway.k8s.aws/v1
+    filename: gateway.k8s.aws/loadbalancerconfiguration_v1.json
+    kind: LoadBalancerConfiguration
+    name: loadbalancerconfiguration_v1
 gateway.kgateway.dev:
   - apiVersion: gateway.kgateway.dev/v1alpha1
     filename: gateway.kgateway.dev/directresponse_v1alpha1.json
@@ -7033,6 +7162,14 @@ gateway.networking.k8s.io:
     filename: gateway.networking.k8s.io/tlsroute_v1.json
     kind: TLSRoute
     name: tlsroute_v1
+  - apiVersion: gateway.networking.k8s.io/v1
+    filename: gateway.networking.k8s.io/tcproute_v1.json
+    kind: TCPRoute
+    name: tcproute_v1
+  - apiVersion: gateway.networking.k8s.io/v1
+    filename: gateway.networking.k8s.io/udproute_v1.json
+    kind: UDPRoute
+    name: udproute_v1
 gateway.networking.x-k8s.io:
   - apiVersion: gateway.networking.x-k8s.io/v1alpha1
     filename: gateway.networking.x-k8s.io/xlistenerset_v1alpha1.json
@@ -7046,6 +7183,10 @@ gateway.networking.x-k8s.io:
     filename: gateway.networking.x-k8s.io/xmesh_v1alpha1.json
     kind: XMesh
     name: xmesh_v1alpha1
+  - apiVersion: gateway.networking.x-k8s.io/v1alpha1
+    filename: gateway.networking.x-k8s.io/xbackend_v1alpha1.json
+    kind: XBackend
+    name: xbackend_v1alpha1
 gateway.nginx.org:
   - apiVersion: gateway.nginx.org/v1alpha1
     filename: gateway.nginx.org/observabilitypolicy_v1alpha1.json
@@ -9029,6 +9170,14 @@ ipam.cluster.x-k8s.io:
     filename: ipam.cluster.x-k8s.io/globalinclusterippool_v1alpha2.json
     kind: GlobalInClusterIPPool
     name: globalinclusterippool_v1alpha2
+  - apiVersion: ipam.cluster.x-k8s.io/v1alpha2
+    filename: ipam.cluster.x-k8s.io/inclusterprefixpool_v1alpha2.json
+    kind: InClusterPrefixPool
+    name: inclusterprefixpool_v1alpha2
+  - apiVersion: ipam.cluster.x-k8s.io/v1alpha2
+    filename: ipam.cluster.x-k8s.io/globalinclusterprefixpool_v1alpha2.json
+    kind: GlobalInClusterPrefixPool
+    name: globalinclusterprefixpool_v1alpha2
 isindir.github.com:
   - apiVersion: isindir.github.com/v1alpha3
     filename: isindir.github.com/sopssecret_v1alpha3.json
@@ -12751,10 +12900,6 @@ platform.confluent.io:
     kind: schemaimporter
     name: schemaimporter_v1beta1
   - apiVersion: platform.confluent.io/v1beta1
-    filename: platform.confluent.io/referencegrant_v1beta1.json
-    kind: ReferenceGrant
-    name: referencegrant_v1beta1
-  - apiVersion: platform.confluent.io/v1beta1
     filename: platform.confluent.io/gateway_v1beta1.json
     kind: gateway
     name: gateway_v1beta1
@@ -12762,6 +12907,46 @@ platform.confluent.io:
     filename: platform.confluent.io/flinkapplication_v1beta1.json
     kind: flinkapplication
     name: flinkapplication_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/flinkstatesnapshot_v1beta1.json
+    kind: flinkstatesnapshot
+    name: flinkstatesnapshot_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/flinkbluegreendeployment_v1beta1.json
+    kind: flinkbluegreendeployment
+    name: flinkbluegreendeployment_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/flinkkafkadatabase_v1beta1.json
+    kind: flinkkafkadatabase
+    name: flinkkafkadatabase_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/flinksessionjob_v1beta1.json
+    kind: flinksessionjob
+    name: flinksessionjob_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/flinkdeployment_v1beta1.json
+    kind: flinkdeployment
+    name: flinkdeployment_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/flinkenvironmentsecretmapping_v1beta1.json
+    kind: flinkenvironmentsecretmapping
+    name: flinkenvironmentsecretmapping_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/flinkcomputepool_v1beta1.json
+    kind: flinkcomputepool
+    name: flinkcomputepool_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/flinkstatement_v1beta1.json
+    kind: flinkstatement
+    name: flinkstatement_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/flinksecret_v1beta1.json
+    kind: flinksecret
+    name: flinksecret_v1beta1
+  - apiVersion: platform.confluent.io/v1beta1
+    filename: platform.confluent.io/flinkkafkacatalog_v1beta1.json
+    kind: flinkkafkacatalog
+    name: flinkkafkacatalog_v1beta1
 policies.kyverno.io:
   - apiVersion: policies.kyverno.io/v1alpha1
     filename: policies.kyverno.io/generatingpolicy_v1alpha1.json
@@ -14416,6 +14601,54 @@ seaweed.seaweedfs.com:
     filename: seaweed.seaweedfs.com/seaweed_v1.json
     kind: seaweed
     name: seaweed_v1
+  - apiVersion: seaweed.seaweedfs.com/v1
+    filename: seaweed.seaweedfs.com/resourcereferencegrant_v1.json
+    kind: resourcereferencegrant
+    name: resourcereferencegrant_v1
+  - apiVersion: seaweed.seaweedfs.com/v1
+    filename: seaweed.seaweedfs.com/s3credentials_v1.json
+    kind: s3credentials
+    name: s3credentials_v1
+  - apiVersion: seaweed.seaweedfs.com/v1
+    filename: seaweed.seaweedfs.com/seaweedrestore_v1.json
+    kind: seaweedrestore
+    name: seaweedrestore_v1
+  - apiVersion: seaweed.seaweedfs.com/v1
+    filename: seaweed.seaweedfs.com/s3identity_v1.json
+    kind: s3identity
+    name: s3identity_v1
+  - apiVersion: seaweed.seaweedfs.com/v1
+    filename: seaweed.seaweedfs.com/seaweedbackup_v1.json
+    kind: seaweedbackup
+    name: seaweedbackup_v1
+  - apiVersion: seaweed.seaweedfs.com/v1
+    filename: seaweed.seaweedfs.com/adminscript_v1.json
+    kind: adminscript
+    name: adminscript_v1
+  - apiVersion: seaweed.seaweedfs.com/v1
+    filename: seaweed.seaweedfs.com/bucket_v1.json
+    kind: bucket
+    name: bucket_v1
+  - apiVersion: seaweed.seaweedfs.com/v1
+    filename: seaweed.seaweedfs.com/s3policy_v1.json
+    kind: s3policy
+    name: s3policy_v1
+  - apiVersion: seaweed.seaweedfs.com/v1
+    filename: seaweed.seaweedfs.com/seaweedcsidriver_v1.json
+    kind: seaweedcsidriver
+    name: seaweedcsidriver_v1
+  - apiVersion: seaweed.seaweedfs.com/v1
+    filename: seaweed.seaweedfs.com/s3policybinding_v1.json
+    kind: s3policybinding
+    name: s3policybinding_v1
+  - apiVersion: seaweed.seaweedfs.com/v1
+    filename: seaweed.seaweedfs.com/bucketlifecyclepolicy_v1.json
+    kind: bucketlifecyclepolicy
+    name: bucketlifecyclepolicy_v1
+  - apiVersion: seaweed.seaweedfs.com/v1
+    filename: seaweed.seaweedfs.com/s3oidcprovider_v1.json
+    kind: s3oidcprovider
+    name: s3oidcprovider_v1
 secret-sync.gke.io:
   - apiVersion: secret-sync.gke.io/v1
     filename: secret-sync.gke.io/secretsync_v1.json
@@ -15580,6 +15813,10 @@ tailscale.com:
     filename: tailscale.com/tailnet_v1alpha1.json
     kind: tailnet
     name: tailnet_v1alpha1
+  - apiVersion: tailscale.com/v1alpha1
+    filename: tailscale.com/peerrelay_v1alpha1.json
+    kind: peerrelay
+    name: peerrelay_v1alpha1
 talos.dev:
   - apiVersion: talos.dev/v1alpha1
     filename: talos.dev/serviceaccount_v1alpha1.json
