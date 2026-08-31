@@ -203,6 +203,10 @@ agentgateway.dev:
     filename: agentgateway.dev/agentgatewaybackend_v1alpha1.json
     kind: agentgatewaybackend
     name: agentgatewaybackend_v1alpha1
+  - apiVersion: agentgateway.dev/v1alpha1
+    filename: agentgateway.dev/agentgatewaymodel_v1alpha1.json
+    kind: agentgatewaymodel
+    name: agentgatewaymodel_v1alpha1
 aigateway.envoyproxy.io:
   - apiVersion: aigateway.envoyproxy.io/v1beta1
     filename: aigateway.envoyproxy.io/gatewayconfig_v1beta1.json
@@ -4265,6 +4269,18 @@ datadoghq.com:
     filename: datadoghq.com/datadogagentinternal_v1alpha1.json
     kind: DatadogAgentInternal
     name: datadogagentinternal_v1alpha1
+  - apiVersion: datadoghq.com/v1alpha1
+    filename: datadoghq.com/datadogcsidriver_v1alpha1.json
+    kind: DatadogCSIDriver
+    name: datadogcsidriver_v1alpha1
+  - apiVersion: datadoghq.com/v1alpha1
+    filename: datadoghq.com/datadoginstrumentation_v1alpha1.json
+    kind: DatadogInstrumentation
+    name: datadoginstrumentation_v1alpha1
+  - apiVersion: datadoghq.com/v1alpha2
+    filename: datadoghq.com/datadogpodautoscalerclusterprofile_v1alpha2.json
+    kind: DatadogPodAutoscalerClusterProfile
+    name: datadogpodautoscalerclusterprofile_v1alpha2
 datafactory.azure.com:
   - apiVersion: datafactory.azure.com/v1api20180601
     filename: datafactory.azure.com/factory_v1api20180601.json
