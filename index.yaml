@@ -10784,6 +10784,15 @@ memorydb.services.k8s.aws:
     filename: memorydb.services.k8s.aws/user_v1alpha1.json
     kind: User
     name: user_v1alpha1
+memorystore.cnrm.cloud.google.com:
+  - apiVersion: memorystore.cnrm.cloud.google.com/v1beta1
+    filename: memorystore.cnrm.cloud.google.com/memorystoreinstance_v1beta1.json
+    kind: MemorystoreInstance
+    name: memorystoreinstance_v1beta1
+  - apiVersion: memorystore.cnrm.cloud.google.com/v1alpha1
+    filename: memorystore.cnrm.cloud.google.com/memorystoreinstance_v1alpha1.json
+    kind: MemorystoreInstance
+    name: memorystoreinstance_v1alpha1
 messaging.knative.dev:
   - apiVersion: messaging.knative.dev/v1
     filename: messaging.knative.dev/subscription_v1.json
@@ -11927,6 +11936,11 @@ objectbucket.io:
     filename: objectbucket.io/objectbucket_v1alpha1.json
     kind: objectbucket
     name: objectbucket_v1alpha1
+observability.giantswarm.io:
+  - apiVersion: observability.giantswarm.io/v1alpha2
+    filename: observability.giantswarm.io/silence_v1alpha2.json
+    kind: Silence
+    name: silence_v1alpha2
 oncall.grafana.crossplane.io:
   - apiVersion: oncall.grafana.crossplane.io/v1alpha1
     filename: oncall.grafana.crossplane.io/outgoingwebhook_v1alpha1.json
@@ -12363,6 +12377,14 @@ orgpolicy.cnrm.cloud.google.com:
     filename: orgpolicy.cnrm.cloud.google.com/orgpolicycustomconstraint_v1beta1.json
     kind: OrgPolicyCustomConstraint
     name: orgpolicycustomconstraint_v1beta1
+  - apiVersion: orgpolicy.cnrm.cloud.google.com/v1beta1
+    filename: orgpolicy.cnrm.cloud.google.com/orgpolicypolicy_v1beta1.json
+    kind: OrgPolicyPolicy
+    name: orgpolicypolicy_v1beta1
+  - apiVersion: orgpolicy.cnrm.cloud.google.com/v1alpha1
+    filename: orgpolicy.cnrm.cloud.google.com/orgpolicypolicy_v1alpha1.json
+    kind: OrgPolicyPolicy
+    name: orgpolicypolicy_v1alpha1
 osconfig.cnrm.cloud.google.com:
   - apiVersion: osconfig.cnrm.cloud.google.com/v1alpha1
     filename: osconfig.cnrm.cloud.google.com/osconfigpatchdeployment_v1alpha1.json
@@ -14773,6 +14795,18 @@ secrets.infisical.com:
     filename: secrets.infisical.com/infisicalpushsecret_v1alpha1.json
     kind: InfisicalPushSecret
     name: infisicalpushsecret_v1alpha1
+  - apiVersion: secrets.infisical.com/v1beta1
+    filename: secrets.infisical.com/infisicalconnection_v1beta1.json
+    kind: InfisicalConnection
+    name: infisicalconnection_v1beta1
+  - apiVersion: secrets.infisical.com/v1beta1
+    filename: secrets.infisical.com/infisicalauth_v1beta1.json
+    kind: InfisicalAuth
+    name: infisicalauth_v1beta1
+  - apiVersion: secrets.infisical.com/v1beta1
+    filename: secrets.infisical.com/infisicalstaticsecret_v1beta1.json
+    kind: InfisicalStaticSecret
+    name: infisicalstaticsecret_v1beta1
 secretsmanager.services.k8s.aws:
   - apiVersion: secretsmanager.services.k8s.aws/v1alpha1
     filename: secretsmanager.services.k8s.aws/secret_v1alpha1.json
@@ -15800,6 +15834,10 @@ tags.cnrm.cloud.google.com:
     filename: tags.cnrm.cloud.google.com/tagstagkey_v1beta1.json
     kind: tagstagkey
     name: tagstagkey_v1beta1
+  - apiVersion: tags.cnrm.cloud.google.com/v1beta1
+    filename: tags.cnrm.cloud.google.com/tagslocationtagbinding_v1beta1.json
+    kind: TagsLocationTagBinding
+    name: tagslocationtagbinding_v1beta1
 tailscale.com:
   - apiVersion: tailscale.com/v1alpha1
     filename: tailscale.com/proxyclass_v1alpha1.json
