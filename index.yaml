@@ -9096,6 +9096,11 @@ insights.azure.com:
     filename: insights.azure.com/scheduledqueryrule_v1api20220615.json
     kind: scheduledQueryRule
     name: scheduledqueryrule_v1api20220615
+installation.mattermost.com:
+  - apiVersion: installation.mattermost.com/v1beta1
+    filename: installation.mattermost.com/mattermost_v1beta1.json
+    kind: Mattermost
+    name: mattermost_v1beta1
 instancetype.kubevirt.io:
   - apiVersion: instancetype.kubevirt.io/v1beta1
     filename: instancetype.kubevirt.io/virtualmachineinstancetype_v1beta1.json
@@ -9711,6 +9716,11 @@ keda.sh:
     filename: keda.sh/cloudeventsource_v1alpha1.json
     kind: CloudEventSource
     name: cloudeventsource_v1alpha1
+keycloak.crossplane.io:
+  - apiVersion: keycloak.crossplane.io/v1beta1
+    filename: keycloak.crossplane.io/providerconfig_v1beta1.json
+    kind: ProviderConfig
+    name: providerconfig_v1beta1
 keyvault.azure.com:
   - apiVersion: keyvault.azure.com/v1api20230701
     filename: keyvault.azure.com/vault_v1api20230701.json
@@ -9856,6 +9866,11 @@ kubeflow.org:
     filename: kubeflow.org/mpijob_v2beta1.json
     kind: mpijob
     name: mpijob_v2beta1
+kubernetes.crossplane.io:
+  - apiVersion: kubernetes.crossplane.io/v1alpha1
+    filename: kubernetes.crossplane.io/providerconfig_v1alpha1.json
+    kind: ProviderConfig
+    name: providerconfig_v1alpha1
 kubernetesconfiguration.azure.com:
   - apiVersion: kubernetesconfiguration.azure.com/v1api20241101
     filename: kubernetesconfiguration.azure.com/extension_v1api20241101.json
@@ -10754,6 +10769,15 @@ maps.k8s.elastic.co:
     filename: maps.k8s.elastic.co/elasticmapsserver_v1alpha1.json
     kind: ElasticMapsServer
     name: elasticmapsserver_v1alpha1
+mattermost.com:
+  - apiVersion: mattermost.com/v1alpha1
+    filename: mattermost.com/mattermostrestoredb_v1alpha1.json
+    kind: MattermostRestoreDB
+    name: mattermostrestoredb_v1alpha1
+  - apiVersion: mattermost.com/v1alpha1
+    filename: mattermost.com/clusterinstallation_v1alpha1.json
+    kind: ClusterInstallation
+    name: clusterinstallation_v1alpha1
 memcache.cnrm.cloud.google.com:
   - apiVersion: memcache.cnrm.cloud.google.com/v1beta1
     filename: memcache.cnrm.cloud.google.com/memcacheinstance_v1beta1.json
