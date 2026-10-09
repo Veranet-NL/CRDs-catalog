@@ -8,9 +8,16 @@
 #   - vars.APP_CLIENT_ID     Client ID of the GitHub App
 #   - secrets.APP_PRIVATE_KEY  Private key (PEM) of that App
 # The App must be installed on this repository with at least
-# "Contents: Read and write" (needed for the merge-upstream API). Grant
-# "Workflows: Read and write" as well, otherwise the sync fails whenever
+# "Contents: Read and write" (needed to push the merge). Grant
+# "Workflows: Read and write" as well, otherwise the push is rejected whenever
 # upstream changes a file under .github/workflows/.
+#
+# Why not `gh repo sync`: index.yaml is generated independently in this fork
+# and upstream (see update-index.yaml). The generator orders new entries by
+# os.listdir(), so both copies drift apart and the merge-upstream API refuses
+# to sync ("diverging changes") as soon as they conflict. Instead we merge in a
+# work tree and, if index.yaml is the only conflict, take upstream's version
+# and regenerate it so the fork-only entries are added back.
 
 name: Sync Fork with Upstream
 on:
@@ -30,10 +37,48 @@ jobs:
           client-id: ${{ vars.APP_CLIENT_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
 
-      # No checkout needed: `gh repo sync <owner/repo>` calls the
-      # /repos/{owner}/{repo}/merge-upstream API instead of using a work tree.
-      - name: Sync Fork
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          ref: main
+          fetch-depth: 0  # the merge needs the full history
+          token: ${{ steps.generate-token.outputs.token }}
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97  # v7.0.0
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      - name: Merge upstream
         env:
           GH_TOKEN: ${{ steps.generate-token.outputs.token }}
+          APP_SLUG: ${{ steps.generate-token.outputs.app-slug }}
         run: |
-          gh repo sync ${{ github.repository }} -b main
+          upstream=$(gh api "repos/${{ github.repository }}" --jq .parent.full_name)
+          user_id=$(gh api "/users/${APP_SLUG}[bot]" --jq .id)
+          git config user.name "${APP_SLUG}[bot]"
+          git config user.email "${user_id}+${APP_SLUG}[bot]@users.noreply.github.com"
+
+          git fetch "https://github.com/${upstream}.git" main
+          message="Merge branch '${upstream%%/*}:main' into main"
+          if ! git merge --no-edit -m "$message" FETCH_HEAD; then
+            conflicts=$(git diff --name-only --diff-filter=U)
+            if [ "$conflicts" != "index.yaml" ]; then
+              echo "::error::Merge conflicts that cannot be resolved automatically:"
+              echo "$conflicts"
+              exit 1
+            fi
+            echo "Resolving index.yaml conflict by regenerating it from upstream's version"
+            git checkout --theirs index.yaml
+            python Utilities/auto-update-index.py . index.yaml
+            git add index.yaml
+            git commit --no-edit
+          fi
+
+      - name: Push
+        run: git push origin HEAD:main
