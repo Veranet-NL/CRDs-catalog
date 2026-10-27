@@ -1826,6 +1826,27 @@ backupdr.cnrm.cloud.google.com:
     filename: backupdr.cnrm.cloud.google.com/backupdrbackupplanassociation_v1beta1.json
     kind: BackupDRBackupPlanAssociation
     name: backupdrbackupplanassociation_v1beta1
+ballast.tightlinesoftware.com:
+  - apiVersion: ballast.tightlinesoftware.com/v1
+    filename: ballast.tightlinesoftware.com/resourcepolicy_v1.json
+    kind: ResourcePolicy
+    name: resourcepolicy_v1
+  - apiVersion: ballast.tightlinesoftware.com/v1
+    filename: ballast.tightlinesoftware.com/ballastconfig_v1.json
+    kind: BallastConfig
+    name: ballastconfig_v1
+  - apiVersion: ballast.tightlinesoftware.com/v1
+    filename: ballast.tightlinesoftware.com/workloadprofile_v1.json
+    kind: WorkloadProfile
+    name: workloadprofile_v1
+  - apiVersion: ballast.tightlinesoftware.com/v1
+    filename: ballast.tightlinesoftware.com/metricssource_v1.json
+    kind: MetricsSource
+    name: metricssource_v1
+  - apiVersion: ballast.tightlinesoftware.com/v1
+    filename: ballast.tightlinesoftware.com/clusterresourcepolicy_v1.json
+    kind: ClusterResourcePolicy
+    name: clusterresourcepolicy_v1
 barmancloud.cnpg.io:
   - apiVersion: barmancloud.cnpg.io/v1
     filename: barmancloud.cnpg.io/objectstore_v1.json
@@ -3774,6 +3795,70 @@ configuration.konghq.com:
     filename: configuration.konghq.com/kongvault_v1alpha1.json
     kind: KongVault
     name: kongvault_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongcertificate_v1alpha1.json
+    kind: KongCertificate
+    name: kongcertificate_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongcredentialacl_v1alpha1.json
+    kind: KongCredentialACL
+    name: kongcredentialacl_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongpluginbinding_v1alpha1.json
+    kind: KongPluginBinding
+    name: kongpluginbinding_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongcredentialapikey_v1alpha1.json
+    kind: KongCredentialAPIKey
+    name: kongcredentialapikey_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongkey_v1alpha1.json
+    kind: KongKey
+    name: kongkey_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongcredentialjwt_v1alpha1.json
+    kind: KongCredentialJWT
+    name: kongcredentialjwt_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongcredentialhmac_v1alpha1.json
+    kind: KongCredentialHMAC
+    name: kongcredentialhmac_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongroute_v1alpha1.json
+    kind: KongRoute
+    name: kongroute_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongservice_v1alpha1.json
+    kind: KongService
+    name: kongservice_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongtarget_v1alpha1.json
+    kind: KongTarget
+    name: kongtarget_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongdataplaneclientcertificate_v1alpha1.json
+    kind: KongDataPlaneClientCertificate
+    name: kongdataplaneclientcertificate_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongkeyset_v1alpha1.json
+    kind: KongKeySet
+    name: kongkeyset_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongsni_v1alpha1.json
+    kind: KongSNI
+    name: kongsni_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongupstream_v1alpha1.json
+    kind: KongUpstream
+    name: kongupstream_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongcacertificate_v1alpha1.json
+    kind: KongCACertificate
+    name: kongcacertificate_v1alpha1
+  - apiVersion: configuration.konghq.com/v1alpha1
+    filename: configuration.konghq.com/kongcredentialbasicauth_v1alpha1.json
+    kind: KongCredentialBasicAuth
+    name: kongcredentialbasicauth_v1alpha1
 connections.grafana.crossplane.io:
   - apiVersion: connections.grafana.crossplane.io/v1alpha1
     filename: connections.grafana.crossplane.io/metricsendpointscrapejob_v1alpha1.json
