@@ -1425,6 +1425,19 @@ argoproj.io:
     filename: argoproj.io/workflowtaskset_v1alpha1.json
     kind: workflowtaskset
     name: workflowtaskset_v1alpha1
+artifact.falcosecurity.dev:
+  - apiVersion: artifact.falcosecurity.dev/v1alpha1
+    filename: artifact.falcosecurity.dev/config_v1alpha1.json
+    kind: Config
+    name: config_v1alpha1
+  - apiVersion: artifact.falcosecurity.dev/v1alpha1
+    filename: artifact.falcosecurity.dev/plugin_v1alpha1.json
+    kind: Plugin
+    name: plugin_v1alpha1
+  - apiVersion: artifact.falcosecurity.dev/v1alpha1
+    filename: artifact.falcosecurity.dev/rulesfile_v1alpha1.json
+    kind: Rulesfile
+    name: rulesfile_v1alpha1
 artifactregistry.cnrm.cloud.google.com:
   - apiVersion: artifactregistry.cnrm.cloud.google.com/v1beta1
     filename: artifactregistry.cnrm.cloud.google.com/artifactregistryrepository_v1beta1.json
@@ -1656,6 +1669,11 @@ authzed.com:
     filename: authzed.com/spicedbcluster_v1alpha1.json
     kind: SpiceDBCluster
     name: spicedbcluster_v1alpha1
+autoops.k8s.elastic.co:
+  - apiVersion: autoops.k8s.elastic.co/v1alpha1
+    filename: autoops.k8s.elastic.co/autoopsagentpolicy_v1alpha1.json
+    kind: AutoOpsAgentPolicy
+    name: autoopsagentpolicy_v1alpha1
 autopilot.k0sproject.io:
   - apiVersion: autopilot.k0sproject.io/v1beta2
     filename: autopilot.k0sproject.io/updateconfig_v1beta2.json
@@ -1705,6 +1723,11 @@ autoscaling.k8s.io:
     filename: autoscaling.k8s.io/verticalpodautoscalercheckpoint_v1.json
     kind: VerticalPodAutoscalerCheckpoint
     name: verticalpodautoscalercheckpoint_v1
+autoscaling.x-k8s.io:
+  - apiVersion: autoscaling.x-k8s.io/v1beta1
+    filename: autoscaling.x-k8s.io/capacitybuffer_v1beta1.json
+    kind: CapacityBuffer
+    name: capacitybuffer_v1beta1
 aws.m.upbound.io:
   - apiVersion: aws.m.upbound.io/v1beta1
     filename: aws.m.upbound.io/providerconfig_v1beta1.json
@@ -2610,6 +2633,14 @@ cilium.io:
     filename: cilium.io/ciliumbgpclusterconfig_v2.json
     kind: CiliumBGPClusterConfig
     name: ciliumbgpclusterconfig_v2
+  - apiVersion: cilium.io/v2alpha1
+    filename: cilium.io/ciliumdatapathplugin_v2alpha1.json
+    kind: CiliumDatapathPlugin
+    name: ciliumdatapathplugin_v2alpha1
+  - apiVersion: cilium.io/v2alpha1
+    filename: cilium.io/ciliumgatewayclassconfig_v2alpha1.json
+    kind: CiliumGatewayClassConfig
+    name: ciliumgatewayclassconfig_v2alpha1
 clickhouse-keeper.altinity.com:
   - apiVersion: clickhouse-keeper.altinity.com/v1
     filename: clickhouse-keeper.altinity.com/clickhousekeeperinstallation_v1.json
@@ -5098,6 +5129,10 @@ dynatrace.com:
     filename: dynatrace.com/dynakube_v1beta5.json
     kind: dynakube
     name: dynakube_v1beta5
+  - apiVersion: dynatrace.com/v1beta6
+    filename: dynatrace.com/dynakube_v1beta6.json
+    kind: dynakube
+    name: dynakube_v1beta6
 ec2.aws.m.upbound.io:
   - apiVersion: ec2.aws.m.upbound.io/v1beta1
     filename: ec2.aws.m.upbound.io/transitgatewayconnectpeer_v1beta1.json
@@ -6477,6 +6512,10 @@ elbv2.k8s.aws:
     filename: elbv2.k8s.aws/ingressclassparams_v1beta1.json
     kind: IngressClassParams
     name: ingressclassparams_v1beta1
+  - apiVersion: elbv2.k8s.aws/v1beta1
+    filename: elbv2.k8s.aws/albtargetcontrolconfig_v1beta1.json
+    kind: ALBTargetControlConfig
+    name: albtargetcontrolconfig_v1beta1
 emrcontainers.services.k8s.aws:
   - apiVersion: emrcontainers.services.k8s.aws/v1alpha1
     filename: emrcontainers.services.k8s.aws/jobrun_v1alpha1.json
@@ -6821,6 +6860,10 @@ extensions.istio.io:
     filename: extensions.istio.io/wasmplugin_v1alpha1.json
     kind: wasmplugin
     name: wasmplugin_v1alpha1
+  - apiVersion: extensions.istio.io/v1alpha1
+    filename: extensions.istio.io/trafficextension_v1alpha1.json
+    kind: trafficextension
+    name: trafficextension_v1alpha1
 external-secrets.io:
   - apiVersion: external-secrets.io/v1beta1
     filename: external-secrets.io/clustersecretstore_v1beta1.json
@@ -6888,6 +6931,10 @@ externaldns.k8s.io:
     filename: externaldns.k8s.io/dnsendpoint_v1alpha1.json
     kind: dnsendpoint
     name: dnsendpoint_v1alpha1
+  - apiVersion: externaldns.k8s.io/v1alpha1
+    filename: externaldns.k8s.io/dnsrecord_v1alpha1.json
+    kind: dnsrecord
+    name: dnsrecord_v1alpha1
 externaldns.nginx.org:
   - apiVersion: externaldns.nginx.org/v1
     filename: externaldns.nginx.org/dnsendpoint_v1.json
@@ -9317,6 +9364,15 @@ installation.mattermost.com:
     filename: installation.mattermost.com/mattermost_v1beta1.json
     kind: Mattermost
     name: mattermost_v1beta1
+instance.falcosecurity.dev:
+  - apiVersion: instance.falcosecurity.dev/v1alpha1
+    filename: instance.falcosecurity.dev/falco_v1alpha1.json
+    kind: Falco
+    name: falco_v1alpha1
+  - apiVersion: instance.falcosecurity.dev/v1alpha1
+    filename: instance.falcosecurity.dev/component_v1alpha1.json
+    kind: Component
+    name: component_v1alpha1
 instancetype.kubevirt.io:
   - apiVersion: instancetype.kubevirt.io/v1beta1
     filename: instancetype.kubevirt.io/virtualmachineinstancetype_v1beta1.json
@@ -10746,6 +10802,10 @@ logging.banzaicloud.io:
     filename: logging.banzaicloud.io/output_v1beta1.json
     kind: output
     name: output_v1beta1
+  - apiVersion: logging.banzaicloud.io/v1beta1
+    filename: logging.banzaicloud.io/axosyslog_v1beta1.json
+    kind: axosyslog
+    name: axosyslog_v1beta1
 logging.cnrm.cloud.google.com:
   - apiVersion: logging.cnrm.cloud.google.com/v1beta1
     filename: logging.cnrm.cloud.google.com/logginglogbucket_v1beta1.json
@@ -13084,6 +13144,11 @@ oss.grafana.o.crossplane.io:
     filename: oss.grafana.o.crossplane.io/dashboardset_v1alpha1.json
     kind: DashboardSet
     name: dashboardset_v1alpha1
+packageregistry.k8s.elastic.co:
+  - apiVersion: packageregistry.k8s.elastic.co/v1alpha1
+    filename: packageregistry.k8s.elastic.co/packageregistry_v1alpha1.json
+    kind: PackageRegistry
+    name: packageregistry_v1alpha1
 packages.eks.amazonaws.com:
   - apiVersion: packages.eks.amazonaws.com/v1alpha1
     filename: packages.eks.amazonaws.com/packagebundlecontroller_v1alpha1.json
@@ -16676,6 +16741,11 @@ trident.netapp.io:
     filename: trident.netapp.io/tridentactionsnapshotrestore_v1.json
     kind: tridentactionsnapshotrestore
     name: tridentactionsnapshotrestore_v1
+trust-manager.io:
+  - apiVersion: trust-manager.io/v1alpha2
+    filename: trust-manager.io/clusterbundle_v1alpha2.json
+    kind: clusterbundle
+    name: clusterbundle_v1alpha2
 trust.cert-manager.io:
   - apiVersion: trust.cert-manager.io/v1alpha1
     filename: trust.cert-manager.io/bundle_v1alpha1.json
