@@ -109,6 +109,14 @@ class PolicyTests(unittest.TestCase):
             api = FakeAPI(); api.files[0].update(status=status, filename=name)
             self.assertEqual(p.evaluate(api, 1, NOW)['decision'], 'manual-review')
 
+    def test_version_names_beyond_alpha_beta(self):
+        # Azure Service Operator publishes versions such as v1api20230301 and v1api20230501preview.
+        for version in ['v1api20230301', 'v1api20230501preview', 'v1beta']:
+            name = f'example.io/widget_{version}.json'
+            api = FakeAPI(); api.files[0]['filename'] = name; api.pr['body'] = BODY.replace(FILE, name)
+            with patch.object(sys.modules[__name__], 'CRD', CRD.replace(b'name: v1', b'name: ' + version.encode())):
+                self.assertEqual(p.evaluate(api, 1, NOW)['decision'], 'eligible')
+
     def test_count_limit(self):
         api = FakeAPI(); api.pr['changed_files'] = 26
         self.assertEqual(p.evaluate(api, 1, NOW)['decision'], 'manual-review')
@@ -186,6 +194,11 @@ class PolicyTests(unittest.TestCase):
     def test_yaml_no_objects_or_aliases(self):
         for raw in [b'!!python/object/apply:os.system [echo nope]', b'a: *undefined']:
             self.expect_error('needs-contributor-input', p.source_identities, raw)
+
+    def test_yaml_unquoted_value_operator(self):
+        # controller-gen emits unquoted '=' in enums like [!=, =, =~], resolved as tag:yaml.org,2002:value.
+        raw = CRD + b'spec:\n  names:\n    kind: widget\n  group: example.io\n  versions:\n  - name: v1\n    schema:\n      openAPIV3Schema:\n        properties:\n          op:\n            enum:\n            - "!="\n            - =\n            - "=~"\n'
+        self.assertEqual(p.source_identities(raw), {('example.io', 'widget', 'v1')})
 
     def test_yaml_shared_aliases(self):
         raw = CRD + b'definition: &TypeStringBool {type: string}\nuses: [*TypeStringBool, *TypeStringBool]\n'

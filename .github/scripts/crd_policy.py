@@ -14,7 +14,7 @@ MAX_FILE = 2 * 1024 * 1024
 MAX_TOTAL = 10 * 1024 * 1024
 MAX_SOURCE = 10 * 1024 * 1024
 MAX_SOURCE_TOTAL = 50 * 1024 * 1024
-PATH = re.compile(r"([a-z0-9](?:[a-z0-9.-]*[a-z0-9])?)/([a-z0-9]+)_(v[0-9]+(?:(?:alpha|beta)[0-9]+)?)\.json\Z")
+PATH = re.compile(r"([a-z0-9](?:[a-z0-9.-]*[a-z0-9])?)/([a-z0-9]+)_(v[0-9]+[a-z0-9]*)\.json\Z")
 SOURCE = re.compile(r"https://github\.com/([A-Za-z0-9_.-]+)/([A-Za-z0-9_.-]+)/blob/([0-9a-f]{40})/([A-Za-z0-9_./-]+)\Z")
 SHA = re.compile(r"[0-9a-f]{40}\Z")
 
@@ -287,6 +287,10 @@ def source_identities(raw):
     signal.alarm(15)
     loader = None
     try:
+        # YAML 1.1 resolves unquoted '=' to tag:yaml.org,2002:value (e.g. enum: [!=, =, =~]).
+        # SafeLoader has no default constructor for this tag; construct it as a string.
+        if "tag:yaml.org,2002:value" not in yaml.SafeLoader.yaml_constructors:
+            yaml.SafeLoader.add_constructor("tag:yaml.org,2002:value", yaml.SafeLoader.construct_yaml_str)
         loader = yaml.SafeLoader(raw)
         identities, budget = set(), [0]
         while loader.check_data():
