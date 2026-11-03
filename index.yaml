@@ -1793,6 +1793,11 @@ awx.ansible.com:
     filename: awx.ansible.com/awxbackup_v1beta1.json
     kind: AWXBackup
     name: awxbackup_v1beta1
+azapi.upbound.io:
+  - apiVersion: azapi.upbound.io/v1beta1
+    filename: azapi.upbound.io/providerconfig_v1beta1.json
+    kind: ProviderConfig
+    name: providerconfig_v1beta1
 azmonitoring.coreos.com:
   - apiVersion: azmonitoring.coreos.com/v1
     filename: azmonitoring.coreos.com/servicemonitor_v1.json
@@ -15204,6 +15209,10 @@ seaweed.seaweedfs.com:
     filename: seaweed.seaweedfs.com/resourcereferencegrant_v1.json
     kind: resourcereferencegrant
     name: resourcereferencegrant_v1
+  - apiVersion: seaweed.seaweedfs.com/v1
+    filename: seaweed.seaweedfs.com/bucketnotification_v1.json
+    kind: bucketnotification
+    name: bucketnotification_v1
 secret-sync.gke.io:
   - apiVersion: secret-sync.gke.io/v1
     filename: secret-sync.gke.io/secretsync_v1.json
