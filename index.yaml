@@ -207,6 +207,11 @@ agentgateway.dev:
     filename: agentgateway.dev/agentgatewaymodel_v1alpha1.json
     kind: agentgatewaymodel
     name: agentgatewaymodel_v1alpha1
+agents.x-k8s.io:
+  - apiVersion: agents.x-k8s.io/v1beta1
+    filename: agents.x-k8s.io/sandbox_v1beta1.json
+    kind: sandbox
+    name: sandbox_v1beta1
 aigateway.envoyproxy.io:
   - apiVersion: aigateway.envoyproxy.io/v1beta1
     filename: aigateway.envoyproxy.io/gatewayconfig_v1beta1.json
@@ -6860,6 +6865,19 @@ export.kubevirt.io:
     filename: export.kubevirt.io/virtualmachineexport_v1beta1.json
     kind: VirtualMachineExport
     name: virtualmachineexport_v1beta1
+extensions.agents.x-k8s.io:
+  - apiVersion: extensions.agents.x-k8s.io/v1beta1
+    filename: extensions.agents.x-k8s.io/sandboxclaim_v1beta1.json
+    kind: sandboxclaim
+    name: sandboxclaim_v1beta1
+  - apiVersion: extensions.agents.x-k8s.io/v1beta1
+    filename: extensions.agents.x-k8s.io/sandboxwarmpool_v1beta1.json
+    kind: sandboxwarmpool
+    name: sandboxwarmpool_v1beta1
+  - apiVersion: extensions.agents.x-k8s.io/v1beta1
+    filename: extensions.agents.x-k8s.io/sandboxtemplate_v1beta1.json
+    kind: sandboxtemplate
+    name: sandboxtemplate_v1beta1
 extensions.istio.io:
   - apiVersion: extensions.istio.io/v1alpha1
     filename: extensions.istio.io/wasmplugin_v1alpha1.json
