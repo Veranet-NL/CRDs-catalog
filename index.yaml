@@ -7228,6 +7228,55 @@ gameservices.cnrm.cloud.google.com:
     filename: gameservices.cnrm.cloud.google.com/gameservicesrealm_v1beta1.json
     kind: gameservicesrealm
     name: gameservicesrealm_v1beta1
+garage.rajsingh.info:
+  - apiVersion: garage.rajsingh.info/v1alpha1
+    filename: garage.rajsingh.info/garagekey_v1alpha1.json
+    kind: garagekey
+    name: garagekey_v1alpha1
+  - apiVersion: garage.rajsingh.info/v1alpha1
+    filename: garage.rajsingh.info/garagenode_v1alpha1.json
+    kind: garagenode
+    name: garagenode_v1alpha1
+  - apiVersion: garage.rajsingh.info/v1alpha1
+    filename: garage.rajsingh.info/garageadmintoken_v1alpha1.json
+    kind: garageadmintoken
+    name: garageadmintoken_v1alpha1
+  - apiVersion: garage.rajsingh.info/v1beta2
+    filename: garage.rajsingh.info/garagecluster_v1beta2.json
+    kind: GarageCluster
+    name: garagecluster_v1beta2
+  - apiVersion: garage.rajsingh.info/v1beta1
+    filename: garage.rajsingh.info/garageadmintoken_v1beta1.json
+    kind: GarageAdminToken
+    name: garageadmintoken_v1beta1
+  - apiVersion: garage.rajsingh.info/v1beta1
+    filename: garage.rajsingh.info/garagekey_v1beta1.json
+    kind: GarageKey
+    name: garagekey_v1beta1
+  - apiVersion: garage.rajsingh.info/v1alpha1
+    filename: garage.rajsingh.info/garagebucket_v1alpha1.json
+    kind: GarageBucket
+    name: garagebucket_v1alpha1
+  - apiVersion: garage.rajsingh.info/v1beta1
+    filename: garage.rajsingh.info/garagebucket_v1beta1.json
+    kind: GarageBucket
+    name: garagebucket_v1beta1
+  - apiVersion: garage.rajsingh.info/v1beta1
+    filename: garage.rajsingh.info/garagecluster_v1beta1.json
+    kind: GarageCluster
+    name: garagecluster_v1beta1
+  - apiVersion: garage.rajsingh.info/v1alpha1
+    filename: garage.rajsingh.info/garagecluster_v1alpha1.json
+    kind: garagecluster
+    name: garagecluster_v1alpha1
+  - apiVersion: garage.rajsingh.info/v1beta1
+    filename: garage.rajsingh.info/garagereferencegrant_v1beta1.json
+    kind: GarageReferenceGrant
+    name: garagereferencegrant_v1beta1
+  - apiVersion: garage.rajsingh.info/v1beta1
+    filename: garage.rajsingh.info/garagenode_v1beta1.json
+    kind: GarageNode
+    name: garagenode_v1beta1
 gateway.envoyproxy.io:
   - apiVersion: gateway.envoyproxy.io/v1alpha1
     filename: gateway.envoyproxy.io/envoyextensionpolicy_v1alpha1.json
@@ -12358,6 +12407,14 @@ notification.toolkit.fluxcd.io:
     filename: notification.toolkit.fluxcd.io/alert_v1beta2.json
     kind: Alert
     name: alert_v1beta2
+  - apiVersion: notification.toolkit.fluxcd.io/v1
+    filename: notification.toolkit.fluxcd.io/alert_v1.json
+    kind: Alert
+    name: alert_v1
+  - apiVersion: notification.toolkit.fluxcd.io/v1
+    filename: notification.toolkit.fluxcd.io/provider_v1.json
+    kind: Provider
+    name: provider_v1
 notificationhubs.azure.com:
   - apiVersion: notificationhubs.azure.com/v1api20230901
     filename: notificationhubs.azure.com/notificationhub_v1api20230901.json
