@@ -4240,6 +4240,11 @@ core.cnrm.cloud.google.com:
     filename: core.cnrm.cloud.google.com/configconnectorcontext_v1beta1.json
     kind: ConfigConnectorContext
     name: configconnectorcontext_v1beta1
+core.libopenstorage.org:
+  - apiVersion: core.libopenstorage.org/v1
+    filename: core.libopenstorage.org/storagecluster_v1.json
+    kind: storagecluster
+    name: storagecluster_v1
 core.openfeature.dev:
   - apiVersion: core.openfeature.dev/v1beta1
     filename: core.openfeature.dev/featureflag_v1beta1.json
