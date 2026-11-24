@@ -1448,6 +1448,18 @@ artifactregistry.cnrm.cloud.google.com:
     filename: artifactregistry.cnrm.cloud.google.com/artifactregistryrepository_v1beta1.json
     kind: artifactregistryrepository
     name: artifactregistryrepository_v1beta1
+  - apiVersion: artifactregistry.cnrm.cloud.google.com/v1alpha1
+    filename: artifactregistry.cnrm.cloud.google.com/artifactregistryattachment_v1alpha1.json
+    kind: ArtifactRegistryAttachment
+    name: artifactregistryattachment_v1alpha1
+  - apiVersion: artifactregistry.cnrm.cloud.google.com/v1alpha1
+    filename: artifactregistry.cnrm.cloud.google.com/artifactregistryrule_v1alpha1.json
+    kind: ArtifactRegistryRule
+    name: artifactregistryrule_v1alpha1
+  - apiVersion: artifactregistry.cnrm.cloud.google.com/v1alpha1
+    filename: artifactregistry.cnrm.cloud.google.com/artifactregistryvpcscconfig_v1alpha1.json
+    kind: ArtifactRegistryVPCSCConfig
+    name: artifactregistryvpcscconfig_v1alpha1
 asserts.grafana.crossplane.io:
   - apiVersion: asserts.grafana.crossplane.io/v1alpha1
     filename: asserts.grafana.crossplane.io/stack_v1alpha1.json
@@ -9399,6 +9411,31 @@ ingress.v1.haproxy.org:
     filename: ingress.v1.haproxy.org/backend_v1.json
     kind: Backend
     name: backend_v1
+ingress.v3.haproxy.org:
+  - apiVersion: ingress.v3.haproxy.org/v3
+    filename: ingress.v3.haproxy.org/defaults_v3.json
+    kind: Defaults
+    name: defaults_v3
+  - apiVersion: ingress.v3.haproxy.org/v3
+    filename: ingress.v3.haproxy.org/frontend_v3.json
+    kind: Frontend
+    name: frontend_v3
+  - apiVersion: ingress.v3.haproxy.org/v3
+    filename: ingress.v3.haproxy.org/tcp_v3.json
+    kind: TCP
+    name: tcp_v3
+  - apiVersion: ingress.v3.haproxy.org/v3
+    filename: ingress.v3.haproxy.org/validationrules_v3.json
+    kind: ValidationRules
+    name: validationrules_v3
+  - apiVersion: ingress.v3.haproxy.org/v3
+    filename: ingress.v3.haproxy.org/global_v3.json
+    kind: Global
+    name: global_v3
+  - apiVersion: ingress.v3.haproxy.org/v3
+    filename: ingress.v3.haproxy.org/backend_v3.json
+    kind: Backend
+    name: backend_v3
 insights.azure.com:
   - apiVersion: insights.azure.com/v1api20220615
     filename: insights.azure.com/webtest_v1api20220615.json
