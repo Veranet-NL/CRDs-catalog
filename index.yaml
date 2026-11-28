@@ -7491,6 +7491,10 @@ gateway.networking.x-k8s.io:
     filename: gateway.networking.x-k8s.io/xbackend_v1alpha1.json
     kind: XBackend
     name: xbackend_v1alpha1
+  - apiVersion: gateway.networking.x-k8s.io/v1alpha1
+    filename: gateway.networking.x-k8s.io/xtelemetrypolicy_v1alpha1.json
+    kind: xtelemetrypolicy
+    name: xtelemetrypolicy_v1alpha1
 gateway.nginx.org:
   - apiVersion: gateway.nginx.org/v1alpha1
     filename: gateway.nginx.org/observabilitypolicy_v1alpha1.json
